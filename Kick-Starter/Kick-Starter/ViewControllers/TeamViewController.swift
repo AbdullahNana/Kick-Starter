@@ -8,8 +8,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
-    
+final class TeamViewController: UIViewController {
     private lazy var viewModel = TeamViewModel()
 
     override func viewDidLoad() {
@@ -24,4 +23,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
