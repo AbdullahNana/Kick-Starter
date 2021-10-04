@@ -16,6 +16,8 @@
 		27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90187270AED4700FAE650 /* Kick_StarterTests.swift */; };
 		27C90192270AED4700FAE650 /* Kick_StarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90191270AED4700FAE650 /* Kick_StarterUITests.swift */; };
 		27C90194270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90193270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift */; };
+		27C901A1270B30A200FAE650 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A0270B30A200FAE650 /* TeamData.swift */; };
+		27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A2270B30AF00FAE650 /* TeamViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		27C9018D270AED4700FAE650 /* Kick-StarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kick-StarterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90191270AED4700FAE650 /* Kick_StarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kick_StarterUITests.swift; sourceTree = "<group>"; };
 		27C90193270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kick_StarterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27C901A0270B30A200FAE650 /* TeamData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
+		27C901A2270B30AF00FAE650 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				27C90179270AED4700FAE650 /* Assets.xcassets */,
 				27C9017B270AED4700FAE650 /* LaunchScreen.storyboard */,
 				27C9017E270AED4700FAE650 /* Info.plist */,
+				27C901A0270B30A200FAE650 /* TeamData.swift */,
+				27C901A2270B30AF00FAE650 /* TeamViewModel.swift */,
 			);
 			path = "Kick-Starter";
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */,
 				27C90175270AED4300FAE650 /* ViewController.swift in Sources */,
 				27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */,
+				27C901A1270B30A200FAE650 /* TeamData.swift in Sources */,
 				27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
