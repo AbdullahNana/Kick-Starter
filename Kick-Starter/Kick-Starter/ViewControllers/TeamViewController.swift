@@ -17,8 +17,8 @@ final class TeamViewController: UIViewController {
     }
 
     private func updateTeamData() {
-        viewModel.loadTeamData { data in
-            print(data)
+        viewModel.loadTeamData { _ in
+            print(self.viewModel.teamData)
         }
     }
 }
