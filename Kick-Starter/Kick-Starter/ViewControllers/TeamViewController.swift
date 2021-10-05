@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 final class TeamViewController: UIViewController {
-    private lazy var viewModel = TeamViewModel()
+    private lazy var teamViewModel = TeamViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +17,8 @@ final class TeamViewController: UIViewController {
     }
 
     private func updateTeamData() {
-        viewModel.loadTeamData { _ in
-            print(self.viewModel.teamData)
+        teamViewModel.loadTeamData { _ in
+            print(self.teamViewModel.teamData)
         }
     }
 }
