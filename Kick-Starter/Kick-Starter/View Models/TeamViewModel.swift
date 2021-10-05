@@ -13,7 +13,7 @@ final class TeamViewModel {
     func teamData(completionHandler: @escaping (Result<TeamData, Error>) -> Void) {
         
         var request = URLRequest(url: URL(string: "https://v3.football.api-sports.io/teams?league=39&season=2020")!, timeoutInterval: Double.infinity)
-        request.addValue("a32ada5a87b8d582f0e4a9fb60c6cdfd", forHTTPHeaderField: "x-rapidapi-key")
+        request.addValue(Constants.APIKey, forHTTPHeaderField: "x-rapidapi-key")
         request.addValue("v3.football.api-sports.io", forHTTPHeaderField: "x-rapidapi-host")
         
         request.httpMethod = "GET"
@@ -42,7 +42,6 @@ final class TeamViewModel {
                         self.teamResults = team
                         completion(team)
                     case .failure(let error):
-//                        self.delegate?.didFailWithError(error: error as NSError)
                         print(error)
                     }
                 }
