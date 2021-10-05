@@ -8,7 +8,7 @@
 import Foundation
 
 final class TeamRepository {
-    func teamData(method: HTTPMethod, endpoint: ApiEndpoint, completionHandler: @escaping (Result<TeamData, Error>) -> Void) {
+    func teamData(method: HTTPMethod, endpoint: ApiEndpoint, completionHandler: @escaping (Result<SoccerTeamResponseModel, Error>) -> Void) {
         let urlString = endpoint.rawValue
         guard let url = URL(string: urlString) else { return }
         
@@ -23,26 +23,13 @@ final class TeamRepository {
             guard let data = data else { return }
             
             do {
-                let decodedWeatherData = try JSONDecoder().decode(TeamData.self, from: data)
+                let decodedWeatherData = try JSONDecoder().decode(SoccerTeamResponseModel.self, from: data)
                 completionHandler(.success(decodedWeatherData))
                 
             } catch let error as NSError {
                 completionHandler(.failure(error))
-                print(error)
             }
             
         }.resume()
-    }
-}
-
-extension TeamRepository {
-    enum HTTPMethod: String {
-        case GET
-        case POST
-    }
-    
-    enum ApiEndpoint: String {
-        case teamData = "https://v3.football.api-sports.io/teams?league=39&season=2020"
-        case leagueData = "https://v3.football.api-sports.io/leagues?id=39"
     }
 }

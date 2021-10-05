@@ -8,10 +8,10 @@
 import Foundation
 
 final class TeamViewModel {
-    private lazy var teamResults = TeamData(get: "", response: [])
+    private lazy var teamResults = SoccerTeamResponseModel(get: "", response: [])
     private lazy var teamRepository = TeamRepository()
     
-    func loadTeamData(completion: @escaping (TeamData) -> Void) {
+    func loadTeamData(completion: @escaping (SoccerTeamResponseModel) -> Void) {
         teamRepository.teamData(method: .GET, endpoint: .teamData) { result in
                 DispatchQueue.main.async {
                     switch result {
@@ -25,7 +25,7 @@ final class TeamViewModel {
             }
     }
     
-    var teamData: TeamData {
+    var teamData: SoccerTeamResponseModel {
         teamResults
     }
 }

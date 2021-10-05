@@ -28,7 +28,7 @@ struct Response: Codable {
     let venue: Venue
 }
 
-struct TeamData: Codable {
+struct SoccerTeamResponseModel: Codable {
     let get: String
     let response: [Response]
 }
