@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 final class TeamViewController: UIViewController {
-    private lazy var teamViewModel = TeamViewModel()
+    private lazy var teamViewModel = TeamViewModel(repository: TeamRepository())
 
     override func viewDidLoad() {
         super.viewDidLoad()

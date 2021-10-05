@@ -8,8 +8,13 @@
 import Foundation
 
 final class TeamViewModel {
-    private lazy var teamResults = SoccerTeamResponseModel(get: "", response: [])
-    private lazy var teamRepository = TeamRepository()
+    private var teamResults: SoccerTeamResponseModel?
+    
+    private var teamRepository: TeamRepository
+    
+    init(repository: TeamRepository) {
+        self.teamRepository =  repository
+    }
     
     func loadTeamData(completion: @escaping (SoccerTeamResponseModel) -> Void) {
         teamRepository.teamData(method: .GET, endpoint: .teamData) { result in
@@ -26,6 +31,6 @@ final class TeamViewModel {
     }
     
     var teamData: SoccerTeamResponseModel {
-        teamResults
+        teamResults ?? SoccerTeamResponseModel(get: "", response: [])
     }
 }
