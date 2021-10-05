@@ -8,13 +8,15 @@
 import Foundation
 
 final class TeamRepository {
-    func teamData(completionHandler: @escaping (Result<TeamData, Error>) -> Void) {
+    func teamData(method: HTTPMethod, endpoint: ApiEndpoint, completionHandler: @escaping (Result<TeamData, Error>) -> Void) {
+        let urlString = endpoint.rawValue
+        guard let url = URL(string: urlString) else { return }
         
-        var request = URLRequest(url: URL(string: "https://v3.football.api-sports.io/teams?league=39&season=2020")!, timeoutInterval: Double.infinity)
+        var request = URLRequest(url: url)
         request.addValue(Constants.APIKey, forHTTPHeaderField: "x-rapidapi-key")
         request.addValue("v3.football.api-sports.io", forHTTPHeaderField: "x-rapidapi-host")
         
-        request.httpMethod = "GET"
+        request.httpMethod = method.rawValue
         
         URLSession.shared.dataTask(with: request) { (data, _, error) in
             
@@ -30,5 +32,17 @@ final class TeamRepository {
             }
             
         }.resume()
+    }
+}
+
+extension TeamRepository {
+    enum HTTPMethod: String {
+        case GET
+        case POST
+    }
+    
+    enum ApiEndpoint: String {
+        case teamData = "https://v3.football.api-sports.io/teams?league=39&season=2020"
+        case leagueData = "https://v3.football.api-sports.io/leagues?id=39"
     }
 }

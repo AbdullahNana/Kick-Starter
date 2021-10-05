@@ -19,8 +19,8 @@
 		27C901A1270B30A200FAE650 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A0270B30A200FAE650 /* TeamData.swift */; };
 		27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A2270B30AF00FAE650 /* TeamViewModel.swift */; };
 		27C901A6270B46D100FAE650 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
-		27C901B4270C540900FAE650 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901B3270C540900FAE650 /* Constants.swift */; };
-		27C901B6270C559B00FAE650 /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901B5270C559B00FAE650 /* TeamRepository.swift */; };
+		27C901B8270C5CB800FAE650 /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901B5270C559B00FAE650 /* TeamRepository.swift */; };
+		27C901B9270C5CCB00FAE650 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901B3270C540900FAE650 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +109,7 @@
 		27C9016F270AED4300FAE650 /* Kick-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				27C901B7270C591600FAE650 /* Repository */,
 				27C901B2270C53FB00FAE650 /* Constants */,
 				27C901AA270B482300FAE650 /* Models */,
 				27C901A9270B481600FAE650 /* View Models */,
@@ -117,7 +118,6 @@
 				27C90179270AED4700FAE650 /* Assets.xcassets */,
 				27C9017E270AED4700FAE650 /* Info.plist */,
 				27C901A5270B46D100FAE650 /* .swiftlint.yml */,
-				27C901B5270C559B00FAE650 /* TeamRepository.swift */,
 			);
 			path = "Kick-Starter";
 			sourceTree = "<group>";
@@ -180,6 +180,14 @@
 				27C901B3270C540900FAE650 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		27C901B7270C591600FAE650 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				27C901B5270C559B00FAE650 /* TeamRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +347,9 @@
 				27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */,
 				27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */,
 				27C901A1270B30A200FAE650 /* TeamData.swift in Sources */,
+				27C901B9270C5CCB00FAE650 /* Constants.swift in Sources */,
+				27C901B8270C5CB800FAE650 /* TeamRepository.swift in Sources */,
 				27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */,
-				27C901B6270C559B00FAE650 /* TeamRepository.swift in Sources */,
-				27C901B4270C540900FAE650 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

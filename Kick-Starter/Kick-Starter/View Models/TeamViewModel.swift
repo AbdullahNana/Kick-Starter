@@ -12,7 +12,7 @@ final class TeamViewModel {
     private lazy var teamRepository = TeamRepository()
     
     func loadTeamData(completion: @escaping (TeamData) -> Void) {
-        teamRepository.teamData { result in
+        teamRepository.teamData(method: .GET, endpoint: .teamData) { result in
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let team):
@@ -23,7 +23,6 @@ final class TeamViewModel {
                     }
                 }
             }
-        
     }
     
     var teamData: TeamData {
