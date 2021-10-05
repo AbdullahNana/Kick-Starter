@@ -19,6 +19,7 @@
 		27C901A1270B30A200FAE650 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A0270B30A200FAE650 /* TeamData.swift */; };
 		27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A2270B30AF00FAE650 /* TeamViewModel.swift */; };
 		27C901A6270B46D100FAE650 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
+		27C901B4270C540900FAE650 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901B3270C540900FAE650 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		27C901A0270B30A200FAE650 /* TeamData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
 		27C901A2270B30AF00FAE650 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		27C901A5270B46D100FAE650 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		27C901B3270C540900FAE650 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		27C9016F270AED4300FAE650 /* Kick-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				27C901B2270C53FB00FAE650 /* Constants */,
 				27C901AA270B482300FAE650 /* Models */,
 				27C901A9270B481600FAE650 /* View Models */,
 				27C901A8270B47B500FAE650 /* ViewControllers */,
@@ -166,6 +169,14 @@
 				27C901A0270B30A200FAE650 /* TeamData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		27C901B2270C53FB00FAE650 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				27C901B3270C540900FAE650 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 				27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */,
 				27C901A1270B30A200FAE650 /* TeamData.swift in Sources */,
 				27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */,
+				27C901B4270C540900FAE650 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
