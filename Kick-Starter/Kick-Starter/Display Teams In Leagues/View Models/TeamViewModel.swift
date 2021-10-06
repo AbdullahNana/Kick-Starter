@@ -17,14 +17,13 @@ final class TeamViewModel {
         self.delegate = delegate
     }
     
-    func fetchTeamData(completion: @escaping (SoccerTeamResponseModel) -> Void) {
+    func fetchTeamData() {
         teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { [weak self] result in
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let team):
                         self?.teamResponse = team
                         self?.delegate?.refreshViewContents()
-                        completion(team)
                     case .failure(let error):
                         self?.delegate?.showErrorMessage(error: error)
                     }

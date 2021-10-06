@@ -17,9 +17,7 @@ final class TeamViewController: UIViewController {
     }
 
     private func updateTeamData() {
-        teamViewModel.fetchTeamData { _ in
-            
-        }
+        teamViewModel.fetchTeamData()
     }
 }
 
