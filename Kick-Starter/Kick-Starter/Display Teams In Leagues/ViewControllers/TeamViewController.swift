@@ -20,7 +20,6 @@ final class TeamViewController: UIViewController {
     private func updateTeamData() {
         teamViewModel.loadTeamData { _ in
             print(self.teamViewModel.teamData)
-            self.imageView.loadImage(urlString: self.teamViewModel.teamData.response.first?.team.logo ?? "")
         }
     }
 }
