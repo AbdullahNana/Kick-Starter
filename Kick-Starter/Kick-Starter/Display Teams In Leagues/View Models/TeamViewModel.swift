@@ -8,28 +8,31 @@
 import Foundation
 
 final class TeamViewModel {
-    private var teamResults: SoccerTeamResponseModel?
-    private var teamRepository: TeamRepository
+    private var teamResponse: SoccerTeamResponseModel?
+    private var teamRepository: Repositable
+    private weak var delegate: TeamViewModelDelegate?
     
-    init(repository: TeamRepository) {
+    init(repository: Repositable, delegate: TeamViewModelDelegate) {
         self.teamRepository =  repository
+        self.delegate = delegate
     }
     
-    func loadTeamData(completion: @escaping (SoccerTeamResponseModel) -> Void) {
-        teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { result in
+    func fetchTeamData(completion: @escaping (SoccerTeamResponseModel) -> Void) {
+        teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { [weak self] result in
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let team):
-                        self.teamResults = team
+                        self?.teamResponse = team
+                        self?.delegate?.refreshViewContents()
                         completion(team)
                     case .failure(let error):
-                        print(error)
+                        self?.delegate?.showErrorMessage(error: error)
                     }
                 }
             }
     }
     
     var teamData: SoccerTeamResponseModel {
-        teamResults ?? SoccerTeamResponseModel(get: "", response: [])
+        teamResponse ?? SoccerTeamResponseModel(get: "", response: [])
     }
 }

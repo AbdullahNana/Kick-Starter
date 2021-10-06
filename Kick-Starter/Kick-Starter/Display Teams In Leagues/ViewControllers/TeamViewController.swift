@@ -9,17 +9,26 @@ import UIKit
 import Foundation
 
 final class TeamViewController: UIViewController {
-    private lazy var teamViewModel = TeamViewModel(repository: TeamRepository())
+    private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
 
-    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateTeamData()
     }
 
     private func updateTeamData() {
-        teamViewModel.loadTeamData { _ in
-            print(self.teamViewModel.teamData)
+        teamViewModel.fetchTeamData { _ in
+            
         }
+    }
+}
+
+extension TeamViewController: TeamViewModelDelegate {
+    func refreshViewContents() {
+        print(self.teamViewModel.teamData)
+    }
+    
+    func showErrorMessage(error: Error) {
+        print(error.localizedDescription)
     }
 }
