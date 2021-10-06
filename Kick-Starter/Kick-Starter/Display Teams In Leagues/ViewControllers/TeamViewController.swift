@@ -10,7 +10,7 @@ import Foundation
 
 final class TeamViewController: UIViewController {
     private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
-    @IBOutlet weak var teamLogoImageView: UIImageView!
+    @IBOutlet private weak var teamLogoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
