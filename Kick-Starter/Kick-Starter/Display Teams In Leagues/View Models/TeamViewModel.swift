@@ -9,7 +9,6 @@ import Foundation
 
 final class TeamViewModel {
     private var teamResults: SoccerTeamResponseModel?
-    
     private var teamRepository: TeamRepository
     
     init(repository: TeamRepository) {
@@ -17,7 +16,7 @@ final class TeamViewModel {
     }
     
     func loadTeamData(completion: @escaping (SoccerTeamResponseModel) -> Void) {
-        teamRepository.teamData(method: .GET, endpoint: .teamData) { result in
+        teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { result in
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let team):
