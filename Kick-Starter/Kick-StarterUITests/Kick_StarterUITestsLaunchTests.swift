@@ -7,7 +7,7 @@
 
 import XCTest
 
-class Kick_StarterUITestsLaunchTests: XCTestCase {
+class KickStarterUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
