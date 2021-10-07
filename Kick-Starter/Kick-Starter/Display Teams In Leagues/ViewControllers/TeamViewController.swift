@@ -58,6 +58,6 @@ extension TeamViewController: TeamViewModelDelegate {
     }
     
     func showErrorMessage(error: Error) {
-        print(error.localizedDescription)
+        showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
     }
 }
