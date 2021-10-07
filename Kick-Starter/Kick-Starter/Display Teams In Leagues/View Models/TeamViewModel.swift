@@ -39,4 +39,12 @@ final class TeamViewModel {
     var numberOfTeamResults: Int {
         teamResponse?.response.count ?? 0
     }
+    
+    var errorTitle: String {
+        NSLocalizedString("ERROR", comment: "")
+    }
+    
+    var actionTitle: String {
+        NSLocalizedString("OKAY", comment: "")
+    }
 }
