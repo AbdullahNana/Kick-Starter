@@ -15,23 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A58-j4-3We">
-                                <rect key="frame" x="109" y="341" width="196" height="214"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="A58-j4-3We" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="AXY-Pe-ptU"/>
-                            <constraint firstItem="A58-j4-3We" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="e1C-Fg-Wh9"/>
-                            <constraint firstItem="A58-j4-3We" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPH-23-9S3"/>
-                            <constraint firstItem="A58-j4-3We" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rec-zQ-kYp"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="teamLogoImageView" destination="A58-j4-3We" id="9Ev-QU-y1c"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
