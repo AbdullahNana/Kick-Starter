@@ -24,7 +24,6 @@ final class TeamViewController: UIViewController {
 
 extension TeamViewController: TeamViewModelDelegate {
     func refreshViewContents() {
-        teamLogoImageView.loadImage(urlString: teamViewModel.teamLogoURLString)
     }
     
     func showErrorMessage(error: Error) {
