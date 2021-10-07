@@ -32,8 +32,7 @@ final class TeamViewModel {
     }
     
     func teamData(at index: Int) -> Response? {
-        let teamData = teamResponse?.response
-        return teamData?[safe: index]
+        teamResponse?.response[safe: index]
     }
     
     var numberOfTeamResults: Int {
