@@ -45,10 +45,6 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let team = teamViewModel.teamData(at: indexPath.row)?.team
         cell.configureTeamCell(for: team)
         
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 5
-        cell.backgroundColor = .clear
-        
         return cell
     }
 }
