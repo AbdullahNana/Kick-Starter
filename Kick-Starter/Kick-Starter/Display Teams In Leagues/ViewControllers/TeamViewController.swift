@@ -38,17 +38,18 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TeamCollectionViewCell",
-                                                      for: indexPath as IndexPath) as? TeamCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TeamCollectionViewCell",
+                                                            for: indexPath as IndexPath) as? TeamCollectionViewCell
+        else {return UICollectionViewCell()}
         
         let team = teamViewModel.teamData(at: indexPath.row)?.team
-        cell?.configureTeamCell(for: team)
+        cell.configureTeamCell(for: team)
         
-        cell?.layer.borderColor = UIColor.black.cgColor
-        cell?.layer.borderWidth = 5
-        cell?.backgroundColor = .clear
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 5
+        cell.backgroundColor = .clear
         
-        return cell!
+        return cell
     }
 }
 
@@ -58,6 +59,6 @@ extension TeamViewController: TeamViewModelDelegate {
     }
     
     func showErrorMessage(error: Error) {
-        showAlert(alertTitle: teamViewModel.errorTitle, alertMessage: error.localizedDescription, actionTitle: teamViewModel.actionTitle)
+        showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
     }
 }

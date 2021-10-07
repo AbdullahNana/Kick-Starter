@@ -13,7 +13,6 @@
 		272F3139270EFBBA00C467DA /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3138270EFBBA00C467DA /* TeamCollectionViewCell.swift */; };
 		272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313A270EFF5500C467DA /* UIViewController+Extension.swift */; };
 		272F313D270EFF6C00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
-		272F3141270F0F1000C467DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 272F3140270F0F1000C467DA /* Localizable.strings */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -55,9 +54,6 @@
 		272F3138270EFBBA00C467DA /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
 		272F313A270EFF5500C467DA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		272F313C270EFF6C00C467DA /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
-		272F313E270F0EEE00C467DA /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
-		272F313F270F0EEE00C467DA /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		272F3140270F0F1000C467DA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,7 +187,6 @@
 				27C90179270AED4700FAE650 /* Assets.xcassets */,
 				27C9017E270AED4700FAE650 /* Info.plist */,
 				27C901A5270B46D100FAE650 /* .swiftlint.yml */,
-				272F3140270F0F1000C467DA /* Localizable.strings */,
 			);
 			path = "Kick-Starter";
 			sourceTree = "<group>";
@@ -351,7 +346,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"en-GB",
 			);
 			mainGroup = 27C90164270AED4300FAE650;
 			productRefGroup = 27C9016E270AED4300FAE650 /* Products */;
@@ -370,7 +364,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272F3141270F0F1000C467DA /* Localizable.strings in Resources */,
 				27C901A6270B46D100FAE650 /* .swiftlint.yml in Resources */,
 				27C9017D270AED4700FAE650 /* LaunchScreen.storyboard in Resources */,
 				27C9017A270AED4700FAE650 /* Assets.xcassets in Resources */,
@@ -473,7 +466,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				27C90177270AED4300FAE650 /* Base */,
-				272F313E270F0EEE00C467DA /* en-GB */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -482,7 +474,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				27C9017C270AED4700FAE650 /* Base */,
-				272F313F270F0EEE00C467DA /* en-GB */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

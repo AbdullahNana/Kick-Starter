@@ -12,7 +12,7 @@ class TeamCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var teamLogoImageView: UIImageView!
     @IBOutlet private weak var teamNameLabel: UILabel!
     
-    func configureTeamCell(for team: Team? = nil) {
+    func configureTeamCell(for team: Team?) {
         teamNameLabel.text = team?.name
         teamLogoImageView.loadImage(urlString: team?.logo ?? "")
         teamYearFoundedLabel.text = String(team?.founded ?? 0)
