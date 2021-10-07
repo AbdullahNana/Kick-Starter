@@ -10,7 +10,8 @@ import Foundation
 
 final class TeamViewController: UIViewController {
     private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
-
+    @IBOutlet private weak var teamLogoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateTeamData()
@@ -23,7 +24,7 @@ final class TeamViewController: UIViewController {
 
 extension TeamViewController: TeamViewModelDelegate {
     func refreshViewContents() {
-        print(self.teamViewModel.teamData)
+        teamLogoImageView.loadImage(urlString: teamViewModel.teamLogoURLString)
     }
     
     func showErrorMessage(error: Error) {

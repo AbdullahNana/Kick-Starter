@@ -34,4 +34,8 @@ final class TeamViewModel {
     var teamData: SoccerTeamResponseModel {
         teamResponse ?? SoccerTeamResponseModel(get: "", response: [])
     }
+    
+    var teamLogoURLString: String {
+        teamData.response.first?.team.logo ?? ""
+    }
 }
