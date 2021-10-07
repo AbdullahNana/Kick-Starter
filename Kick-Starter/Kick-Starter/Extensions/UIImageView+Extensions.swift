@@ -14,7 +14,7 @@ extension UIImageView {
             return
         }
         
-        self.image = UIImage(systemName: "circle.fill")
+        self.image = UIImage(named: "logo")
         
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url) {
