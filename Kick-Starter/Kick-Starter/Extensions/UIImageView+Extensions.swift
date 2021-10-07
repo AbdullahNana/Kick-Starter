@@ -14,11 +14,14 @@ extension UIImageView {
             return
         }
         
-        DispatchQueue.main.async { [weak self] in
-            self?.image = UIImage(systemName: "circle.fill")
+        self.image = UIImage(systemName: "circle.fill")
+        
+        DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
-                    self?.image = image
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
                 }
             }
         }
