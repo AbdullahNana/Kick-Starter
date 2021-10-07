@@ -35,13 +35,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er1-MY-m3U">
-                                                    <rect key="frame" x="81.5" y="10" width="41.5" height="20.5"/>
+                                                    <rect key="frame" x="22" y="10" width="160" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="TKS-pY-ubo"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RxO-Fx-WuL">
                                                     <rect key="frame" x="10" y="40.5" width="184" height="169"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="RbR-M7-zpJ"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-dy-o5A">
                                                     <rect key="frame" x="81.5" y="219.5" width="41.5" height="20.5"/>
@@ -82,6 +88,9 @@
                             <constraint firstItem="coa-9w-4tA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="z2c-8F-CSn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="coa-9w-4tA" id="uQw-Ph-nWD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

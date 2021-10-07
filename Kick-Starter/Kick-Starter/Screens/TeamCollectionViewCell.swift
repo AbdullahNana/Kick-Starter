@@ -8,20 +8,17 @@
 import UIKit
 
 class TeamCollectionViewCell: UICollectionViewCell {
-    
-    @IBOutlet weak var teamYearFoundedLabel: UILabel!
-    @IBOutlet weak var teamLogoImageView: UIImageView!
-    @IBOutlet weak var teamNameLabel: UILabel!
-    
-    private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
+    @IBOutlet private weak var teamYearFoundedLabel: UILabel!
+    @IBOutlet private weak var teamLogoImageView: UIImageView!
+    @IBOutlet private weak var teamNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-}
-
-extension TeamCollectionViewCell: TeamViewModelDelegate {
-    func refreshViewContents() {}
     
-    func showErrorMessage(error: Error) {}
+    func configureTeamCell(for team: Team? = nil) {
+        teamNameLabel.text = team?.name
+        teamLogoImageView.loadImage(urlString: team?.logo ?? "")
+        teamYearFoundedLabel.text = String(team?.founded ?? 0)
+    }
 }
