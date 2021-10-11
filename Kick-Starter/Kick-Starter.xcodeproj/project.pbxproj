@@ -15,6 +15,7 @@
 		272F313D270EFF6C00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
 		272F3144270F873300C467DA /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3143270F873300C467DA /* Colours.swift */; };
 		272F314A2714291800C467DA /* TeamViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F31492714291800C467DA /* TeamViewModelTests.swift */; };
+		272F314C2714805900C467DA /* MockTeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F314B2714805900C467DA /* MockTeamRepository.swift */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -58,6 +59,7 @@
 		272F313C270EFF6C00C467DA /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		272F3143270F873300C467DA /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		272F31492714291800C467DA /* TeamViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelTests.swift; sourceTree = "<group>"; };
+		272F314B2714805900C467DA /* MockTeamRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTeamRepository.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				27C90187270AED4700FAE650 /* Kick_StarterTests.swift */,
 				272F31492714291800C467DA /* TeamViewModelTests.swift */,
+				272F314B2714805900C467DA /* MockTeamRepository.swift */,
 			);
 			path = "Kick-StarterTests";
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272F314C2714805900C467DA /* MockTeamRepository.swift in Sources */,
 				27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */,
 				272F314A2714291800C467DA /* TeamViewModelTests.swift in Sources */,
 			);

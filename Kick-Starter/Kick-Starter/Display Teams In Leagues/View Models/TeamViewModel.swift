@@ -35,6 +35,10 @@ final class TeamViewModel {
         teamResponse?.response[safe: index]
     }
     
+    var teamData: [Response] {
+        teamResponse?.response ?? []
+    }
+    
     var numberOfTeamResults: Int {
         teamResponse?.response.count ?? 0
     }
