@@ -20,8 +20,3 @@ final class MockTeamRepository: Repositable {
         completionHandler(.success(SoccerTeamResponseModel(get: "teams", response: [mockedTeamData])))
     }
 }
-
-extension MockTeamRepository: TeamViewModelDelegate {
-    func refreshViewContents() {}
-    func showErrorMessage(error: Error) {}
-}

@@ -1,44 +1,34 @@
 //
-//  TeamViewModel.swift
-//  Kick-Starter
+//  MockedTeamViewModel.swift
+//  Kick-StarterTests
 //
-//  Created by Abdullah Nana on 2021/10/04.
+//  Created by Abdullah Nana on 2021/10/11.
 //
 
 import Foundation
+@testable import Kick_Starter
 
-final class TeamViewModel {
+class MockedTeamViewModel {
     private var teamResponse: SoccerTeamResponseModel?
     private var teamRepository: Repositable
-    private weak var delegate: TeamViewModelDelegate?
-    
-    init(repository: Repositable, delegate: TeamViewModelDelegate) {
+    init(repository: Repositable) {
         self.teamRepository =  repository
-        self.delegate = delegate
     }
-    
     func fetchTeamData() {
         teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let team):
                     self?.teamResponse = team
-                    self?.delegate?.refreshViewContents()
-                case .failure(let error):
-                    self?.delegate?.showErrorMessage(error: error)
+                case .failure(_):
+                    return
                 }
             }
         }
     }
-    
-    func teamData(at index: Int) -> Response? {
-        teamResponse?.response[safe: index]
-    }
-    
     var teamData: [Response] {
         teamResponse?.response ?? []
     }
-    
     var numberOfTeamResults: Int {
         teamResponse?.response.count ?? 0
     }

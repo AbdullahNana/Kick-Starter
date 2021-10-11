@@ -9,19 +9,15 @@ import XCTest
 @testable import Kick_Starter
 
 class TeamViewModelTests: XCTestCase {
-    private var teamViewModel: TeamViewModel!
     private var mockedTeamRepository: MockTeamRepository!
+    private var mockedTeamViewModel: MockedTeamViewModel!
 
     override func setUp() {
         mockedTeamRepository = MockTeamRepository()
-        teamViewModel = .init(repository: mockedTeamRepository, delegate: mockedTeamRepository)
-    }
-    func testTeamDataUpdated() {
-        teamViewModel.fetchTeamData()
-        XCTAssert(!teamViewModel.teamData.isEmpty)
+        mockedTeamViewModel = MockedTeamViewModel(repository: mockedTeamRepository)
     }
     func testNumberOfTeams() throws {
-        let numberOfTeams = teamViewModel.numberOfTeamResults
-        XCTAssertEqual(numberOfTeams, 20, "Number of teams are not equal")
+        mockedTeamViewModel.fetchTeamData()
+        XCTAssert(!mockedTeamViewModel.teamData.isEmpty)
     }
 }
