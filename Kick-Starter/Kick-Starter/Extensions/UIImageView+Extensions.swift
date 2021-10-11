@@ -10,16 +10,18 @@ import UIKit
 
 extension UIImageView {
     func loadImage(urlString: String) {
-        
         guard let url = URL(string: urlString) else {
             return
         }
         
-        DispatchQueue.main.async { [weak self] in
-            self?.image = UIImage(systemName: "circle.fill")
+        self.image = UIImage(named: "logo")
+        
+        DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
-                    self?.image = image
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
                 }
             }
         }

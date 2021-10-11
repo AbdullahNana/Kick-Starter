@@ -23,8 +23,8 @@ final class TeamRepository: Repositable {
             guard let data = data else { return }
             
             do {
-                let decodedWeatherData = try JSONDecoder().decode(SoccerTeamResponseModel.self, from: data)
-                completionHandler(.success(decodedWeatherData))
+                let decodedTeamData = try JSONDecoder().decode(SoccerTeamResponseModel.self, from: data)
+                completionHandler(.success(decodedTeamData))
                 
             } catch let error as NSError {
                 completionHandler(.failure(error))

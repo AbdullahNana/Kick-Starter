@@ -31,11 +31,11 @@ final class TeamViewModel {
             }
     }
     
-    var teamData: SoccerTeamResponseModel {
-        teamResponse ?? SoccerTeamResponseModel(get: "", response: [])
+    func teamData(at index: Int) -> Response? {
+        teamResponse?.response[safe: index]
     }
     
-    var teamLogoURLString: String {
-        teamData.response.first?.team.logo ?? ""
+    var numberOfTeamResults: Int {
+        teamResponse?.response.count ?? 0
     }
 }
