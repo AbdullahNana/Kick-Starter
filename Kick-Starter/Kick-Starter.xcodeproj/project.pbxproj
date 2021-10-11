@@ -10,6 +10,7 @@
 		272F3131270D80F600C467DA /* Repositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3130270D80F600C467DA /* Repositable.swift */; };
 		272F3134270D832C00C467DA /* TeamViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3133270D832C00C467DA /* TeamViewModelDelegate.swift */; };
 		272F3137270DBBB000C467DA /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3136270DBBB000C467DA /* UIImageView+Extensions.swift */; };
+		272F3148271419B700C467DA /* TeamViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3147271419B700C467DA /* TeamViewModelTests.swift */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -48,6 +49,7 @@
 		272F3130270D80F600C467DA /* Repositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositable.swift; sourceTree = "<group>"; };
 		272F3133270D832C00C467DA /* TeamViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelDelegate.swift; sourceTree = "<group>"; };
 		272F3136270DBBB000C467DA /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		272F3147271419B700C467DA /* TeamViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelTests.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				27C90187270AED4700FAE650 /* Kick_StarterTests.swift */,
+				272F3147271419B700C467DA /* TeamViewModelTests.swift */,
 			);
 			path = "Kick-StarterTests";
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */,
+				272F3148271419B700C467DA /* TeamViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
