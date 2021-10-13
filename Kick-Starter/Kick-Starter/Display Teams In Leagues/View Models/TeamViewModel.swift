@@ -19,14 +19,12 @@ final class TeamViewModel {
     
     func fetchTeamData() {
         teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let team):
-                    self?.teamResponse = team
-                    self?.delegate?.refreshViewContents()
-                case .failure(let error):
-                    self?.delegate?.showErrorMessage(error: error)
-                }
+            switch result {
+            case .success(let team):
+                self?.teamResponse = team
+                self?.delegate?.refreshViewContents()
+            case .failure(let error):
+                self?.delegate?.showErrorMessage(error: error)
             }
         }
     }
