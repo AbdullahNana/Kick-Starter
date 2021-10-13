@@ -8,7 +8,7 @@
 import Foundation
 
 final class TeamViewModel {
-    private var teamResponse: SoccerTeamResponseModel?
+    private(set) var teamResponse: [SoccerTeamResponseModel]?
     private var teamRepository: Repositable
     private weak var delegate: TeamViewModelDelegate?
     
@@ -21,7 +21,7 @@ final class TeamViewModel {
         teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { [weak self] result in
             switch result {
             case .success(let team):
-                self?.teamResponse = team
+                self?.teamResponse = [team]
                 self?.delegate?.refreshViewContents()
             case .failure(let error):
                 self?.delegate?.showErrorMessage(error: error)
@@ -30,14 +30,10 @@ final class TeamViewModel {
     }
     
     func teamData(at index: Int) -> Response? {
-        teamResponse?.response[safe: index]
-    }
-    
-    var teamData: [Response] {
-        teamResponse?.response ?? []
+        teamResponse?.first?.response[safe: index]
     }
     
     var numberOfTeamResults: Int {
-        teamResponse?.response.count ?? 0
+        teamResponse?.first?.response.count ?? 0
     }
 }

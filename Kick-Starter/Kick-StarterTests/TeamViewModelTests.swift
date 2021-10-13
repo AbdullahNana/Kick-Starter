@@ -11,45 +11,66 @@ import XCTest
 class TeamViewModelTests: XCTestCase {
     private var mockedTeamRepository: MockTeamRepository!
     private var viewModelUnderTest: TeamViewModel!
-    private var mockedDelegate: TeamViewModelDelegate!
-    let mockedTeamData = Response(team: Team(id: 33, name: "Manchester United", country: "England",
-                                             founded: 1878,
-                                             logo: "https://media.api-sports.io/football/teams/33.png"),
-                                  venue: Venue(id: 557, name: "Old Trafford", city: "Manchester",
-                                               capacity: 76212,
-                                               image: "https://media.api-sports.io/football/venues/556.png"))
+    private var mockedDelegate: MockDelegate!
 
     override func setUp() {
         mockedTeamRepository = MockTeamRepository()
         mockedDelegate = MockDelegate()
         viewModelUnderTest = TeamViewModel(repository: mockedTeamRepository, delegate: mockedDelegate)
     }
-    func testTeamDataArrayUpdatesAfterSuccesfulApiCall() {
-        mockedTeamRepository.apiCallResult = .success(SoccerTeamResponseModel(get: "teams", response: [mockedTeamData]))
-        viewModelUnderTest.fetchTeamData()
-        XCTAssert(!viewModelUnderTest.teamData.isEmpty)
+    private var mockedTeamData: SoccerTeamResponseModel {
+        let mockedTeamData = Response(team: Team(id: 33, name: "Manchester United", country: "England",
+                                                 founded: 1878,
+                                                 logo: "https://media.api-sports.io/football/teams/33.png"),
+                                      venue: Venue(id: 557, name: "Old Trafford", city: "Manchester",
+                                                   capacity: 76212,
+                                                   image: "https://media.api-sports.io/football/venues/556.png"))
+        return SoccerTeamResponseModel(get: "teams", response: [mockedTeamData])
     }
-    func testTeamDataArrayDoesNotUpdatesAfterFailedApiCall() {
-        mockedTeamRepository.apiCallResult = .failure(URLError(.badServerResponse))
+    func testFetchTeamDataSuccess() {
+        mockedTeamRepository.teamApiResponse = .success(mockedTeamData)
         viewModelUnderTest.fetchTeamData()
-        XCTAssert(viewModelUnderTest.teamData.isEmpty)
+        XCTAssert(!(viewModelUnderTest.teamResponse?.isEmpty ?? true))
+        XCTAssert(mockedDelegate.refreshCalled)
     }
-    func testNumberOfTeamDataResults() {
-        mockedTeamRepository.apiCallResult = .success(SoccerTeamResponseModel(get: "teams", response: [mockedTeamData]))
+    func testFetchTeamDataFailure() {
+        viewModelUnderTest.fetchTeamData()
+        XCTAssert(viewModelUnderTest.teamResponse?.isEmpty ?? true)
+        XCTAssert(mockedDelegate.showErrorCalled)
+    }
+    func testNumberOfTeamDataResultsArrayReturnsCorrectValueAfterSuccess() {
+        mockedTeamRepository.teamApiResponse = .success(mockedTeamData)
         viewModelUnderTest.fetchTeamData()
         XCTAssertEqual(1, viewModelUnderTest.numberOfTeamResults)
     }
+    func testNumberOfTeamDataResultsArrayReturnsNilAfterFailure() {
+        viewModelUnderTest.fetchTeamData()
+        XCTAssertEqual(0, viewModelUnderTest.numberOfTeamResults)
+    }
+    func testNumberOfTeamDataResultsFunctionReturnsCorrectValueAfterSuccess() {
+        mockedTeamRepository.teamApiResponse = .success(mockedTeamData)
+        viewModelUnderTest.fetchTeamData()
+        XCTAssertEqual(viewModelUnderTest.teamData(at: 0)?.team.name, "Manchester United")
+    }
+    func testNumberOfTeamDataResultsFunctionReturnsNilAfterFailure() {
+        viewModelUnderTest.fetchTeamData()
+        XCTAssertEqual(viewModelUnderTest.teamData(at: 0)?.team.name, nil)
+    }
     final class MockDelegate: TeamViewModelDelegate {
+        var refreshCalled = false
+        var showErrorCalled = false
         func refreshViewContents() {
+            refreshCalled = true
         }
         func showErrorMessage(error: Error) {
+            showErrorCalled = true
         }
     }
     final class MockTeamRepository: Repositable {
-        var apiCallResult: Result<SoccerTeamResponseModel, Error> = .failure(URLError(.badServerResponse))
+        var teamApiResponse: Result<SoccerTeamResponseModel, Error> = .failure(URLError(.badServerResponse))
         func fetchTeamData(method: HTTPMethod, endpoint: ApiEndpoint,
                            completionHandler: @escaping TeamRepositoryResultBlock) {
-            completionHandler(apiCallResult)
+            completionHandler(teamApiResponse)
         }
     }
 }
