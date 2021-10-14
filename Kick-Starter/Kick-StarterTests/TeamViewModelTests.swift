@@ -30,12 +30,12 @@ class TeamViewModelTests: XCTestCase {
     func testFetchTeamDataSuccess() {
         mockedTeamRepository.teamApiResponse = .success(mockedTeamData)
         viewModelUnderTest.fetchTeamData()
-        XCTAssert(!(viewModelUnderTest.teamResponse?.isEmpty ?? true))
+        XCTAssert(!(viewModelUnderTest.teamResponse?.response.isEmpty ?? true))
         XCTAssert(mockedDelegate.refreshCalled)
     }
     func testFetchTeamDataFailure() {
         viewModelUnderTest.fetchTeamData()
-        XCTAssert(viewModelUnderTest.teamResponse?.isEmpty ?? true)
+        XCTAssert(viewModelUnderTest.teamResponse?.response.isEmpty ?? true)
         XCTAssert(mockedDelegate.showErrorCalled)
     }
     func testNumberOfTeamDataResultsArrayReturnsCorrectValueAfterSuccess() {

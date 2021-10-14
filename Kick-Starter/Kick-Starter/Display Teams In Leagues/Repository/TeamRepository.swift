@@ -24,7 +24,9 @@ final class TeamRepository: Repositable {
             
             do {
                 let decodedTeamData = try JSONDecoder().decode(SoccerTeamResponseModel.self, from: data)
-                completionHandler(.success(decodedTeamData))
+                DispatchQueue.main.async {
+                    completionHandler(.success(decodedTeamData))
+                }
                 
             } catch let error as NSError {
                 completionHandler(.failure(error))
