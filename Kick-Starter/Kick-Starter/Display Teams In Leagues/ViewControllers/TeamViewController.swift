@@ -51,7 +51,7 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension TeamViewController: TeamViewModelDelegate {
     func refreshViewContents() {
-        collectionView.reloadData()
+        self.collectionView.reloadData()
     }
     
     func showErrorMessage(error: Error) {

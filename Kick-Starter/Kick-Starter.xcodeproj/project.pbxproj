@@ -14,6 +14,14 @@
 		272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313A270EFF5500C467DA /* UIViewController+Extension.swift */; };
 		272F313D270EFF6C00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
 		272F3144270F873300C467DA /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3143270F873300C467DA /* Colours.swift */; };
+		272F314A2714291800C467DA /* TeamViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F31492714291800C467DA /* TeamViewModelTests.swift */; };
+		272F314F2715C03E00C467DA /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A2270B30AF00FAE650 /* TeamViewModel.swift */; };
+		272F31502715C42C00C467DA /* SoccerTeamResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A0270B30A200FAE650 /* SoccerTeamResponseModel.swift */; };
+		272F31512715C44500C467DA /* Repositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3130270D80F600C467DA /* Repositable.swift */; };
+		272F31522715C44F00C467DA /* TeamViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3133270D832C00C467DA /* TeamViewModelDelegate.swift */; };
+		272F31532715C45D00C467DA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901BA270C837A00FAE650 /* Endpoints.swift */; };
+		272F31542715C48B00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
+		272F31552716C22E00C467DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -56,6 +64,7 @@
 		272F313A270EFF5500C467DA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		272F313C270EFF6C00C467DA /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		272F3143270F873300C467DA /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		272F31492714291800C467DA /* TeamViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelTests.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				27C90187270AED4700FAE650 /* Kick_StarterTests.swift */,
+				272F31492714291800C467DA /* TeamViewModelTests.swift */,
 			);
 			path = "Kick-StarterTests";
 			sourceTree = "<group>";
@@ -386,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272F31552716C22E00C467DA /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +456,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272F314F2715C03E00C467DA /* TeamViewModel.swift in Sources */,
+				272F31542715C48B00C467DA /* Array+Extension.swift in Sources */,
 				27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */,
+				272F31522715C44F00C467DA /* TeamViewModelDelegate.swift in Sources */,
+				272F31512715C44500C467DA /* Repositable.swift in Sources */,
+				272F31502715C42C00C467DA /* SoccerTeamResponseModel.swift in Sources */,
+				272F31532715C45D00C467DA /* Endpoints.swift in Sources */,
+				272F314A2714291800C467DA /* TeamViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
