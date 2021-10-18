@@ -10,10 +10,11 @@
 
 @interface SingleVenueViewController () {
     SingleVenueViewModel *_viewModel;
-    IBOutlet UIImageView *venueImageView;
+    
     IBOutlet UILabel *venueNameLabel;
-    IBOutlet UILabel *venueCityLabel;
+    IBOutlet UIImageView *venueImageView;
     IBOutlet UILabel *venueCapacityLabel;
+    IBOutlet UILabel *venueCityLabel;
 }
 @end
 

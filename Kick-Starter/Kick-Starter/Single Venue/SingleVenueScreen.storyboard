@@ -53,12 +53,6 @@
                             <constraint firstItem="FPt-6u-8WT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="zTc-e2-g6u"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="venueCapacityLabel" destination="VaR-No-Li2" id="hPr-sm-yqr"/>
-                        <outlet property="venueCityLabel" destination="RLW-NT-1gf" id="RH7-Tv-hyo"/>
-                        <outlet property="venueImageView" destination="FPt-6u-8WT" id="J1n-yU-LC2"/>
-                        <outlet property="venueNameLabel" destination="apq-dO-PbU" id="5u5-Kl-vNU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
