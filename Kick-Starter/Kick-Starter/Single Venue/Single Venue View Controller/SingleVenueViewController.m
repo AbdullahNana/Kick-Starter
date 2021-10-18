@@ -39,6 +39,6 @@
 - (void)setupView {
     [venueImageView loadImageWithUrlString: _viewModel.venueImage];
     venueNameLabel.text = _viewModel.venueName;
-    venueCityLabel.text = _viewModel.venueCity; 
+    venueCityLabel.text = _viewModel.venueCity;
 }
 @end

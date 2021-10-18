@@ -108,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUx-g8-r5d">
-                                <rect key="frame" x="186" y="461" width="42" height="21"/>
+                                <rect key="frame" x="186" y="393" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -126,21 +126,13 @@
                                     <constraint firstAttribute="width" constant="350" id="aiu-bK-Kpq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03E-L5-MZH">
-                                <rect key="frame" x="186" y="554" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lm9-lv-iYc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HUx-g8-r5d" firstAttribute="centerX" secondItem="g5e-W6-tvu" secondAttribute="centerX" id="43k-sM-IbI"/>
-                            <constraint firstItem="HUx-g8-r5d" firstAttribute="top" secondItem="vGd-rY-2Qo" secondAttribute="bottom" constant="88" id="5HG-Qv-j1f"/>
-                            <constraint firstItem="03E-L5-MZH" firstAttribute="centerX" secondItem="g5e-W6-tvu" secondAttribute="centerX" id="6kx-Ly-6Vp"/>
+                            <constraint firstItem="HUx-g8-r5d" firstAttribute="top" secondItem="vGd-rY-2Qo" secondAttribute="bottom" constant="20" id="5HG-Qv-j1f"/>
                             <constraint firstItem="jMq-Mt-1ec" firstAttribute="top" secondItem="lm9-lv-iYc" secondAttribute="top" constant="30" id="GIe-yJ-8Fz"/>
-                            <constraint firstItem="03E-L5-MZH" firstAttribute="top" secondItem="HUx-g8-r5d" secondAttribute="bottom" constant="72" id="Quv-gy-1Mc"/>
                             <constraint firstItem="jMq-Mt-1ec" firstAttribute="centerX" secondItem="g5e-W6-tvu" secondAttribute="centerX" id="U00-6b-oDj"/>
                             <constraint firstItem="vGd-rY-2Qo" firstAttribute="top" secondItem="jMq-Mt-1ec" secondAttribute="bottom" constant="34" id="lEc-Lg-ucK"/>
                             <constraint firstItem="lm9-lv-iYc" firstAttribute="trailing" secondItem="vGd-rY-2Qo" secondAttribute="trailing" constant="20" id="nEr-Sk-Hhm"/>
@@ -148,7 +140,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="vN0-RA-UkH"/>
                     <connections>
-                        <outlet property="venueCapacityLabel" destination="03E-L5-MZH" id="FxK-4W-czr"/>
                         <outlet property="venueCityLabel" destination="HUx-g8-r5d" id="vc3-D3-0dn"/>
                         <outlet property="venueImageView" destination="vGd-rY-2Qo" id="72O-7Z-82a"/>
                         <outlet property="venueNameLabel" destination="jMq-Mt-1ec" id="ODJ-Gq-NR9"/>

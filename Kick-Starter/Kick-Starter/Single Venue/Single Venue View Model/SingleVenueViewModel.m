@@ -22,7 +22,7 @@
 - (NSString *) venueName {
     return _singleVenue.name;
 }
-- (NSInteger *) venueCapacity {
+- (NSInteger ) venueCapacity {
     return  _singleVenue.capacity;
 }
 - (NSString *) venueCity {

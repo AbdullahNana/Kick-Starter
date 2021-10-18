@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SingleVenueViewModel : NSObject
 - (void)set:(Venue *) selectedVenue;
 - (NSString *) venueName;
-- (NSInteger *) venueCapacity;
+- (NSInteger ) venueCapacity;
 - (NSString *) venueCity;
 - (NSString *) venueImage;
 
