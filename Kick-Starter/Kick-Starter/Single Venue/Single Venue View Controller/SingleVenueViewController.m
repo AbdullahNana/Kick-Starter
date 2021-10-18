@@ -40,5 +40,6 @@
     [venueImageView loadImageWithUrlString: _viewModel.venueImage];
     venueNameLabel.text = _viewModel.venueName;
     venueCityLabel.text = _viewModel.venueCity;
+    venueCapacityLabel.text = _viewModel.venueCapacity;
 }
 @end
