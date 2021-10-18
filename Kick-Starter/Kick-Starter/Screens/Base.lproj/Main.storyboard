@@ -91,11 +91,27 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="coa-9w-4tA" id="uQw-Ph-nWD"/>
+                        <segue destination="oSj-UC-LPl" kind="presentation" identifier="singleVenueViewSegue" id="gmg-VR-rbz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="97.767857142857139"/>
+        </scene>
+        <!--Single Venue View Controller-->
+        <scene sceneID="AVK-Zv-Zvd">
+            <objects>
+                <viewController id="oSj-UC-LPl" customClass="SingleVenueViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g5e-W6-tvu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lm9-lv-iYc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BP8-hz-r68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="107"/>
         </scene>
     </scenes>
     <resources>

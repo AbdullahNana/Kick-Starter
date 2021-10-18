@@ -15,7 +15,7 @@ struct Team: Codable {
     let logo: String
 }
 
-struct Venue: Codable {
+@objcMembers class Venue: NSObject, Codable {
     let id: Int
     let name: String
     let city: String

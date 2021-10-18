@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIImageView {
+@objc extension UIImageView {
     func loadImage(urlString: String) {
         guard let url = URL(string: urlString) else {
             return
