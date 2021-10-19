@@ -118,7 +118,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		272F312C270D7D8A00C467DA /* Display Teams In Leagues */ = {
+		272F312C270D7D8A00C467DA /* Display Teams */ = {
 			isa = PBXGroup;
 			children = (
 				27C901B7270C591600FAE650 /* Repository */,
@@ -126,7 +126,7 @@
 				27C901A9270B481600FAE650 /* View Models */,
 				27C901A8270B47B500FAE650 /* ViewControllers */,
 			);
-			path = "Display Teams In Leagues";
+			path = "Display Teams";
 			sourceTree = "<group>";
 		};
 		272F312D270D7E3300C467DA /* API Enums */ = {
@@ -237,7 +237,7 @@
 				272F3135270DBB9E00C467DA /* Extensions */,
 				272F312E270D7EE500C467DA /* Screens */,
 				272F312D270D7E3300C467DA /* API Enums */,
-				272F312C270D7D8A00C467DA /* Display Teams In Leagues */,
+				272F312C270D7D8A00C467DA /* Display Teams */,
 				27C901B2270C53FB00FAE650 /* Constants */,
 				27C901A7270B47A600FAE650 /* Delegates */,
 				27C90179270AED4700FAE650 /* Assets.xcassets */,

@@ -27,6 +27,6 @@ class TeamCollectionViewCell: UICollectionViewCell {
     func configureTeamCell(for team: Team?) {
         teamNameLabel.text = team?.name
         teamLogoImageView.loadImage(urlString: team?.logo ?? "")
-        teamYearFoundedLabel.text = String(team?.founded ?? 0)
+        teamYearFoundedLabel.text = "Founded: " + String(team?.founded ?? 0)
     }
 }

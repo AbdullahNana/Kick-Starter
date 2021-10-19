@@ -18,7 +18,7 @@ final class TeamViewModel {
         self.delegate = delegate
     }
     
-    func endpoint(league: String = "78", season: String = "2020") -> String {
+    func endpoint(league: String = "39", season: String = "2020") -> String {
         return "https://v3.football.api-sports.io/teams?league=\(league)&season=\(season)"
     }
     
