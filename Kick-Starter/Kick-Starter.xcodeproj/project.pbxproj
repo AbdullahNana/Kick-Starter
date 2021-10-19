@@ -22,6 +22,8 @@
 		272F31532715C45D00C467DA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901BA270C837A00FAE650 /* Endpoints.swift */; };
 		272F31542715C48B00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
 		272F31552716C22E00C467DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
+		27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22842271D930A00686D91 /* SingleVenueViewController.m */; };
+		27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -65,6 +67,11 @@
 		272F313C270EFF6C00C467DA /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		272F3143270F873300C467DA /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		272F31492714291800C467DA /* TeamViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelTests.swift; sourceTree = "<group>"; };
+		27A22840271D930A00686D91 /* Kick-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kick-Starter-Bridging-Header.h"; sourceTree = "<group>"; };
+		27A22841271D930A00686D91 /* SingleVenueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewController.h; sourceTree = "<group>"; };
+		27A22842271D930A00686D91 /* SingleVenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewController.m; sourceTree = "<group>"; };
+		27A22845271D9B0D00686D91 /* SingleVenueViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewModel.h; sourceTree = "<group>"; };
+		27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewModel.m; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +181,34 @@
 			path = Styling;
 			sourceTree = "<group>";
 		};
+		27A2283C271D924700686D91 /* Single Venue */ = {
+			isa = PBXGroup;
+			children = (
+				27A22844271D9A8900686D91 /* Single Venue View Model */,
+				27A2283F271D92CE00686D91 /* Single Venue View Controller */,
+			);
+			path = "Single Venue";
+			sourceTree = "<group>";
+		};
+		27A2283F271D92CE00686D91 /* Single Venue View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27A22841271D930A00686D91 /* SingleVenueViewController.h */,
+				27A22842271D930A00686D91 /* SingleVenueViewController.m */,
+				27A22840271D930A00686D91 /* Kick-Starter-Bridging-Header.h */,
+			);
+			path = "Single Venue View Controller";
+			sourceTree = "<group>";
+		};
+		27A22844271D9A8900686D91 /* Single Venue View Model */ = {
+			isa = PBXGroup;
+			children = (
+				27A22845271D9B0D00686D91 /* SingleVenueViewModel.h */,
+				27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */,
+			);
+			path = "Single Venue View Model";
+			sourceTree = "<group>";
+		};
 		27C90164270AED4300FAE650 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +232,7 @@
 		27C9016F270AED4300FAE650 /* Kick-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				27A2283C271D924700686D91 /* Single Venue */,
 				272F3142270F871E00C467DA /* Styling */,
 				272F3135270DBB9E00C467DA /* Extensions */,
 				272F312E270D7EE500C467DA /* Screens */,
@@ -349,6 +385,7 @@
 				TargetAttributes = {
 					27C9016C270AED4300FAE650 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					27C90182270AED4700FAE650 = {
 						CreatedOnToolsVersion = 13.0;
@@ -444,7 +481,9 @@
 				272F3134270D832C00C467DA /* TeamViewModelDelegate.swift in Sources */,
 				27C901A1270B30A200FAE650 /* SoccerTeamResponseModel.swift in Sources */,
 				27C901B9270C5CCB00FAE650 /* Constants.swift in Sources */,
+				27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */,
 				27C901B8270C5CB800FAE650 /* TeamRepository.swift in Sources */,
+				27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */,
 				272F3139270EFBBA00C467DA /* TeamCollectionViewCell.swift in Sources */,
 				272F313D270EFF6C00C467DA /* Array+Extension.swift in Sources */,
 				27C901BB270C837A00FAE650 /* Endpoints.swift in Sources */,
@@ -634,6 +673,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -651,6 +691,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kick-Starter/Single Venue/Single Venue View Controller/Kick-Starter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -661,6 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -678,6 +721,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kick-Starter/Single Venue/Single Venue View Controller/Kick-Starter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

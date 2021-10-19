@@ -17,6 +17,17 @@ final class TeamViewController: UIViewController {
         updateTeamData()
         collectionViewSetup()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        // swiftlint:disable force_cast
+        let destination = segue.destination as! SingleVenueViewController
+        // swiftlint:enable force_cast
+        
+        guard let selectedVenue = teamViewModel.selectedVenue else { return }
+        destination.set(selectedVenue)
+    }
 
     private func updateTeamData() {
         teamViewModel.fetchTeamData()
@@ -46,6 +57,11 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.configureTeamCell(for: team)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        teamViewModel.setSelectedVenue(index: indexPath.item)
+        performSegue(withIdentifier: "singleVenueViewSegue", sender: self )
     }
 }
 
