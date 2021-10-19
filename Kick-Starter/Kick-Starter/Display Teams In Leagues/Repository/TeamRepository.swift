@@ -8,8 +8,8 @@
 import Foundation
 
 final class TeamRepository: Repositable {
-    func fetchTeamData(method: HTTPMethod, endpoint: ApiEndpoint, completionHandler: @escaping TeamRepositoryResultBlock ) {
-        let urlString = endpoint.rawValue
+    func fetchTeamData(method: HTTPMethod, endpoint: String, completionHandler: @escaping TeamRepositoryResultBlock ) {
+        let urlString = endpoint
         guard let url = URL(string: urlString) else { return }
         
         var request = URLRequest(url: url)

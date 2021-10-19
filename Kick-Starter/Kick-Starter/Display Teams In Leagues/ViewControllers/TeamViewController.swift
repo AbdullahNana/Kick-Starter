@@ -30,7 +30,7 @@ final class TeamViewController: UIViewController {
     }
 
     private func updateTeamData() {
-        teamViewModel.fetchTeamData()
+        teamViewModel.fetchTeamData(endpoint: teamViewModel.endpoint())
     }
     
     private func collectionViewSetup() {

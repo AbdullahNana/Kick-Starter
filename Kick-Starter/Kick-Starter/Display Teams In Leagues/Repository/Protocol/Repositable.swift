@@ -10,5 +10,5 @@ import Foundation
 typealias TeamRepositoryResultBlock = (Result<SoccerTeamResponseModel, Error>) -> Void
 
 protocol Repositable {
-    func fetchTeamData(method: HTTPMethod, endpoint: ApiEndpoint, completionHandler: @escaping TeamRepositoryResultBlock)
+    func fetchTeamData(method: HTTPMethod, endpoint: String, completionHandler: @escaping TeamRepositoryResultBlock)
 }

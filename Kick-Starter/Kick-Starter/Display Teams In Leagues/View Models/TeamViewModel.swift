@@ -18,11 +18,16 @@ final class TeamViewModel {
         self.delegate = delegate
     }
     
-    func fetchTeamData() {
-        teamRepository.fetchTeamData(method: .GET, endpoint: .teamData) { [weak self] result in
+    func endpoint(league: String = "78", season: String = "2020") -> String {
+        return "https://v3.football.api-sports.io/teams?league=\(league)&season=\(season)"
+    }
+    
+    func fetchTeamData(endpoint: String) {
+        teamRepository.fetchTeamData(method: .GET, endpoint: endpoint) { [weak self] result in
             switch result {
             case .success(let team):
                 self?.teamResponse = team
+                print(team)
                 self?.delegate?.refreshViewContents()
             case .failure(let error):
                 self?.delegate?.showErrorMessage(error: error)
