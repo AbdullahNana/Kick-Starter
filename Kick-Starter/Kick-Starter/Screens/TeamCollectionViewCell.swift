@@ -18,10 +18,11 @@ class TeamCollectionViewCell: UICollectionViewCell {
     }
     
     private func applyCellStyling() {
-        layer.borderColor = UIColor.blackBorderColour
+        layer.borderColor = UIColor.whiteBorderColour
         layer.borderWidth = 5
         backgroundColor = UIColor.cellBackgroundColour
         layer.cornerRadius = 10
+        backgroundColor = UIColor.cellBackgroundColour
     }
     
     func configureTeamCell(for team: Team?) {

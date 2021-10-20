@@ -18,10 +18,7 @@ class LeagueTableViewCell: UITableViewCell {
     }
     
     private func applyCellStyling() {
-//        layer.borderColor = UIColor.whiteBorderColour
-//        layer.borderWidth = 4
         backgroundColor = UIColor.cellBackgroundColour
-//        layer.cornerRadius = 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

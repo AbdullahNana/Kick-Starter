@@ -40,6 +40,7 @@ final class TeamViewController: UIViewController {
     private func collectionViewSetup() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.backgroundColor = UIColor.clear
     }
 }
 
@@ -67,10 +68,6 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
         teamViewModel.setSelectedVenue(index: indexPath.item)
         performSegue(withIdentifier: "singleVenueViewSegue", sender: self )
     }
-
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        10
-//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
