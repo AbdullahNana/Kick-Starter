@@ -31,6 +31,9 @@
 		27A2285927201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
 		27A2285A27201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
 		27A2285B27201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
+		27A228612720A16800686D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228602720A16700686D91 /* ViewController.swift */; };
+		27A228622720A16800686D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228602720A16700686D91 /* ViewController.swift */; };
+		27A228632720A16800686D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228602720A16700686D91 /* ViewController.swift */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -88,6 +91,7 @@
 		27A2284D271F32FF00686D91 /* LeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModel.swift; sourceTree = "<group>"; };
 		27A2284F271F55F000686D91 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		27A2285827201BF400686D91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27A228602720A16700686D91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				27A22849271F325900686D91 /* LeagueTableViewController.swift */,
+				27A228602720A16700686D91 /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -672,6 +677,7 @@
 				272F3144270F873300C467DA /* Colours.swift in Sources */,
 				272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */,
 				27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */,
+				27A228612720A16800686D91 /* ViewController.swift in Sources */,
 				27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */,
 				272F3137270DBBB000C467DA /* UIImageView+Extensions.swift in Sources */,
 				27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */,
@@ -699,6 +705,7 @@
 				272F314F2715C03E00C467DA /* TeamViewModel.swift in Sources */,
 				272F31542715C48B00C467DA /* Array+Extension.swift in Sources */,
 				27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */,
+				27A228622720A16800686D91 /* ViewController.swift in Sources */,
 				272F31522715C44F00C467DA /* TeamViewModelDelegate.swift in Sources */,
 				272F31512715C44500C467DA /* Repositable.swift in Sources */,
 				272F31502715C42C00C467DA /* SoccerTeamResponseModel.swift in Sources */,
@@ -711,6 +718,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A228632720A16800686D91 /* ViewController.swift in Sources */,
 				27C90194270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift in Sources */,
 				27C90192270AED4700FAE650 /* Kick_StarterUITests.swift in Sources */,
 			);
