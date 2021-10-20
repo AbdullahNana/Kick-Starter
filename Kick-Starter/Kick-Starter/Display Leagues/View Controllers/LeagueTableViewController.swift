@@ -17,7 +17,9 @@ class LeagueTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .clear
-        tableView.backgroundView = UIImageView(image: UIImage(named: "pitch")!)
+        tableView.backgroundView = UIImageView(image: UIImage(named: "pitch"))
+        tableView.separatorStyle = .singleLine
+        tableView.separatorColor = .white
         
         let ref = Database.database().reference()
         
@@ -50,15 +52,15 @@ class LeagueTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        leagueViewModel.numberOfLeagues
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         1
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        10
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        leagueViewModel.numberOfLeagues
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        300
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,7 +68,7 @@ class LeagueTableViewController: UITableViewController {
                                 for: indexPath as IndexPath) as? LeagueTableViewCell
                                 else {return UITableViewCell()}
         
-        let league = leagueViewModel.leagues[indexPath.section]
+        let league = leagueViewModel.leagues[indexPath.row]
         
         cell.configure(for: league)
         return cell
