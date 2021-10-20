@@ -30,7 +30,6 @@ final class TeamViewController: UIViewController {
 
     func set(league: LeagueModel) {
         teamViewModel.set(league: league)
-        print("id: \(league.id)")
         updateTeamData(league: String(league.id))
     }
     

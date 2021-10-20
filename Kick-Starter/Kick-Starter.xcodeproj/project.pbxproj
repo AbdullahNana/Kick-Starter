@@ -150,6 +150,7 @@
 			children = (
 				27C90176270AED4300FAE650 /* Main.storyboard */,
 				27C9017B270AED4700FAE650 /* LaunchScreen.storyboard */,
+				27A2284B271F329A00686D91 /* LeagueTableViewCell.swift */,
 				272F3138270EFBBA00C467DA /* TeamCollectionViewCell.swift */,
 			);
 			path = Screens;
@@ -220,12 +221,35 @@
 		27A22848271F323D00686D91 /* Display Leagues */ = {
 			isa = PBXGroup;
 			children = (
-				27A22849271F325900686D91 /* LeagueTableViewController.swift */,
-				27A2284B271F329A00686D91 /* LeagueTableViewCell.swift */,
-				27A2284D271F32FF00686D91 /* LeagueViewModel.swift */,
-				27A2284F271F55F000686D91 /* LeagueModel.swift */,
+				27A22853271FE78000686D91 /* View Controllers */,
+				27A22852271FE77900686D91 /* Models */,
+				27A22851271FE76F00686D91 /* View Models */,
 			);
 			path = "Display Leagues";
+			sourceTree = "<group>";
+		};
+		27A22851271FE76F00686D91 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				27A2284D271F32FF00686D91 /* LeagueViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		27A22852271FE77900686D91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27A2284F271F55F000686D91 /* LeagueModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27A22853271FE78000686D91 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27A22849271F325900686D91 /* LeagueTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		27C90164270AED4300FAE650 = {
