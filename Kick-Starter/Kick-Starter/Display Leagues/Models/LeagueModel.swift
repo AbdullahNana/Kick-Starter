@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct LeagueModel {
-    let id: Int
+struct LeagueModel: Codable {
+    let imageURL: String
+    let leagueId: Int
     let leagueName: String
-    let logo: UIImage
 }

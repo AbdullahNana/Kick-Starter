@@ -11,12 +11,12 @@ final class LeagueViewModel {
     private(set) var selectedLeague: LeagueModel?
     
     private(set) var leagues: [LeagueModel] = [
-        LeagueModel(id: 140, leagueName: "Spanish La Liga", logo: UIImage(named: "La Liga") ?? UIImage()),
-        LeagueModel(id: 61, leagueName: "French League 1", logo: UIImage(named: "League 1") ?? UIImage()),
-        LeagueModel(id: 135, leagueName: "Italian Serie A", logo: UIImage(named: "Serie A") ?? UIImage()),
-        LeagueModel(id: 78, leagueName: "German Bundesliga", logo: UIImage(named: "Bundesliga") ?? UIImage()),
-        LeagueModel(id: 61, leagueName: "English Premier League", logo: UIImage(named: "Premier League") ?? UIImage()),
-        LeagueModel(id: 61, leagueName: "South African PSL", logo: UIImage(named: "PSL") ?? UIImage())
+        LeagueModel(imageURL: "La Liga", leagueId: 140, leagueName: "Spanish La Liga"),
+        LeagueModel(imageURL: "League 1", leagueId: 61, leagueName: "French League 1"),
+        LeagueModel(imageURL: "Serie A", leagueId: 135, leagueName: "Italian Serie A"),
+        LeagueModel(imageURL: "Bundesliga", leagueId: 78, leagueName: "German Bundesliga"),
+        LeagueModel(imageURL: "Premier League", leagueId: 61, leagueName: "English Premier League"),
+        LeagueModel(imageURL: "PSL", leagueId: 61, leagueName: "South African PSL")
     ]
     
     var numberOfLeagues: Int {

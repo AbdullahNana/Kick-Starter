@@ -11,8 +11,14 @@ class LeagueTableViewCell: UITableViewCell {
 
     @IBOutlet weak var leagueNameLabel: UILabel!
     @IBOutlet weak var leagueLogoImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        applyCellStyling()
+    }
+    
+    private func applyCellStyling() {
+        backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -21,6 +27,6 @@ class LeagueTableViewCell: UITableViewCell {
 
     func configure(for league: LeagueModel) {
         leagueNameLabel.text = league.leagueName
-        leagueLogoImageView.image = league.logo
+        leagueLogoImageView.image =  UIImage(named: league.imageURL)
     }
 }
