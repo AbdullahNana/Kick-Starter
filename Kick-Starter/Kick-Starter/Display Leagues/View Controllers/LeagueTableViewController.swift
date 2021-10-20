@@ -17,7 +17,7 @@ class LeagueTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .clear
-        //self.tableView.backgroundView = UIImageView(image: UIImage(named: "La Liga")!)
+        tableView.backgroundView = UIImageView(image: UIImage(named: "pitch")!)
         
         let ref = Database.database().reference()
         
@@ -27,7 +27,7 @@ class LeagueTableViewController: UITableViewController {
             for league in value {
                 self.arr.append(league)
             }
-            //print(self.arr)
+//            print(self.arr)
         })
         
 //        ref.child("leagues").observe(.value, with: { snapshot in
@@ -36,8 +36,6 @@ class LeagueTableViewController: UITableViewController {
 //            let yourStructObject = try? JSONDecoder().decode(LeagueModel.self, from: data)
 //            print(yourStructObject)
 //        })
-
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,8 +49,16 @@ class LeagueTableViewController: UITableViewController {
         destination.set(league: selectedLeague)
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         leagueViewModel.numberOfLeagues
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        10
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,10 +66,14 @@ class LeagueTableViewController: UITableViewController {
                                 for: indexPath as IndexPath) as? LeagueTableViewCell
                                 else {return UITableViewCell()}
         
-        let league = leagueViewModel.leagues[indexPath.row]
+        let league = leagueViewModel.leagues[indexPath.section]
         
         cell.configure(for: league)
         return cell
+    }
+    
+    func layoutSubviews() {
+        tableView.frame = tableView.frame.inset(by: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

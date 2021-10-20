@@ -15,8 +15,8 @@ final class LeagueViewModel {
         LeagueModel(imageURL: "League 1", leagueId: 61, leagueName: "French League 1"),
         LeagueModel(imageURL: "Serie A", leagueId: 135, leagueName: "Italian Serie A"),
         LeagueModel(imageURL: "Bundesliga", leagueId: 78, leagueName: "German Bundesliga"),
-        LeagueModel(imageURL: "Premier League", leagueId: 61, leagueName: "English Premier League"),
-        LeagueModel(imageURL: "PSL", leagueId: 61, leagueName: "South African PSL")
+        LeagueModel(imageURL: "Premier League", leagueId: 39, leagueName: "English Premier League"),
+        LeagueModel(imageURL: "PSL", leagueId: 288, leagueName: "South African PSL")
     ]
     
     var numberOfLeagues: Int {
