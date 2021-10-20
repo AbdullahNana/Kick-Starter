@@ -10,6 +10,7 @@ import Foundation
 final class TeamViewModel {
     private(set) var teamResponse: SoccerTeamResponseModel?
     private(set) var selectedVenue: Venue?
+    private(set) var selectedLeague: LeagueModel?
     private var teamRepository: Repositable
     private weak var delegate: TeamViewModelDelegate?
     
@@ -33,6 +34,10 @@ final class TeamViewModel {
                 self?.delegate?.showErrorMessage(error: error)
             }
         }
+    }
+    
+    func set(league: LeagueModel) {
+        selectedLeague = league
     }
     
     func teamData(at index: Int) -> Response? {

@@ -24,6 +24,10 @@
 		272F31552716C22E00C467DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
 		27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22842271D930A00686D91 /* SingleVenueViewController.m */; };
 		27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */; };
+		27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22849271F325900686D91 /* LeagueTableViewController.swift */; };
+		27A2284C271F329A00686D91 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284B271F329A00686D91 /* LeagueTableViewCell.swift */; };
+		27A2284E271F32FF00686D91 /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284D271F32FF00686D91 /* LeagueViewModel.swift */; };
+		27A22850271F55F000686D91 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284F271F55F000686D91 /* LeagueModel.swift */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -72,6 +76,10 @@
 		27A22842271D930A00686D91 /* SingleVenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewController.m; sourceTree = "<group>"; };
 		27A22845271D9B0D00686D91 /* SingleVenueViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewModel.h; sourceTree = "<group>"; };
 		27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewModel.m; sourceTree = "<group>"; };
+		27A22849271F325900686D91 /* LeagueTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableViewController.swift; sourceTree = "<group>"; };
+		27A2284B271F329A00686D91 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
+		27A2284D271F32FF00686D91 /* LeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModel.swift; sourceTree = "<group>"; };
+		27A2284F271F55F000686D91 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +217,17 @@
 			path = "Single Venue View Model";
 			sourceTree = "<group>";
 		};
+		27A22848271F323D00686D91 /* Display Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				27A22849271F325900686D91 /* LeagueTableViewController.swift */,
+				27A2284B271F329A00686D91 /* LeagueTableViewCell.swift */,
+				27A2284D271F32FF00686D91 /* LeagueViewModel.swift */,
+				27A2284F271F55F000686D91 /* LeagueModel.swift */,
+			);
+			path = "Display Leagues";
+			sourceTree = "<group>";
+		};
 		27C90164270AED4300FAE650 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +251,7 @@
 		27C9016F270AED4300FAE650 /* Kick-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				27A22848271F323D00686D91 /* Display Leagues */,
 				27A2283C271D924700686D91 /* Single Venue */,
 				272F3142270F871E00C467DA /* Styling */,
 				272F3135270DBB9E00C467DA /* Extensions */,
@@ -475,15 +495,19 @@
 				272F3144270F873300C467DA /* Colours.swift in Sources */,
 				272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */,
 				27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */,
+				27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */,
 				272F3137270DBBB000C467DA /* UIImageView+Extensions.swift in Sources */,
 				27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */,
 				27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */,
+				27A2284C271F329A00686D91 /* LeagueTableViewCell.swift in Sources */,
 				272F3134270D832C00C467DA /* TeamViewModelDelegate.swift in Sources */,
 				27C901A1270B30A200FAE650 /* SoccerTeamResponseModel.swift in Sources */,
 				27C901B9270C5CCB00FAE650 /* Constants.swift in Sources */,
+				27A22850271F55F000686D91 /* LeagueModel.swift in Sources */,
 				27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */,
 				27C901B8270C5CB800FAE650 /* TeamRepository.swift in Sources */,
 				27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */,
+				27A2284E271F32FF00686D91 /* LeagueViewModel.swift in Sources */,
 				272F3139270EFBBA00C467DA /* TeamCollectionViewCell.swift in Sources */,
 				272F313D270EFF6C00C467DA /* Array+Extension.swift in Sources */,
 				27C901BB270C837A00FAE650 /* Endpoints.swift in Sources */,

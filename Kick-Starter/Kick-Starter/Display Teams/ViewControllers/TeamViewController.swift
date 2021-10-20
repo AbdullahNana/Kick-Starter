@@ -14,7 +14,6 @@ final class TeamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateTeamData()
         collectionViewSetup()
     }
     
@@ -29,8 +28,15 @@ final class TeamViewController: UIViewController {
         destination.set(selectedVenue)
     }
 
-    private func updateTeamData() {
-        teamViewModel.fetchTeamData(endpoint: teamViewModel.endpoint())
+    func set(league: LeagueModel) {
+        teamViewModel.set(league: league)
+        print("id: \(league.id)")
+        updateTeamData(league: String(league.id))
+    }
+    
+    func updateTeamData(league: String) {
+        teamViewModel.fetchTeamData(endpoint: teamViewModel.endpoint(league: league))
+        print(teamViewModel.endpoint(league: league))
     }
     
     private func collectionViewSetup() {
