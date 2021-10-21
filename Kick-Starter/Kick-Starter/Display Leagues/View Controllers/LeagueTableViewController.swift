@@ -9,15 +9,19 @@ import UIKit
 
 class LeagueTableViewController: UITableViewController {
     private lazy var leagueViewModel = LeagueViewModel(repository: LeagueRepository(), delegate: self)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        applyTableViewStyling()
+        
+        leagueViewModel.fetchLeagueData()
+    }
+    
+    private func applyTableViewStyling() {
         tableView.backgroundColor = .clear
         tableView.backgroundView = UIImageView(image: UIImage(named: "pitch"))
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = .white
-        
-        leagueViewModel.fetchLeagueData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

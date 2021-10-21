@@ -31,9 +31,6 @@
 		27A2285927201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
 		27A2285A27201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
 		27A2285B27201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
-		27A228612720A16800686D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228602720A16700686D91 /* ViewController.swift */; };
-		27A228622720A16800686D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228602720A16700686D91 /* ViewController.swift */; };
-		27A228632720A16800686D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228602720A16700686D91 /* ViewController.swift */; };
 		27A2286527215B1600686D91 /* LeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286427215B1600686D91 /* LeagueRepository.swift */; };
 		27A2286727215B4700686D91 /* LeagueRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286627215B4700686D91 /* LeagueRepositable.swift */; };
 		27A228692721677E00686D91 /* LeagueViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228682721677E00686D91 /* LeagueViewModelDelegate.swift */; };
@@ -90,7 +87,6 @@
 		27A2284D271F32FF00686D91 /* LeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModel.swift; sourceTree = "<group>"; };
 		27A2284F271F55F000686D91 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		27A2285827201BF400686D91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		27A228602720A16700686D91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27A2286427215B1600686D91 /* LeagueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepository.swift; sourceTree = "<group>"; };
 		27A2286627215B4700686D91 /* LeagueRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepositable.swift; sourceTree = "<group>"; };
 		27A228682721677E00686D91 /* LeagueViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModelDelegate.swift; sourceTree = "<group>"; };
@@ -264,7 +260,6 @@
 			children = (
 				27A2286A272168DE00686D91 /* Protocol */,
 				27A22849271F325900686D91 /* LeagueTableViewController.swift */,
-				27A228602720A16700686D91 /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -566,7 +561,6 @@
 				27A228692721677E00686D91 /* LeagueViewModelDelegate.swift in Sources */,
 				272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */,
 				27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */,
-				27A228612720A16800686D91 /* ViewController.swift in Sources */,
 				27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */,
 				272F3137270DBBB000C467DA /* UIImageView+Extensions.swift in Sources */,
 				27A2286727215B4700686D91 /* LeagueRepositable.swift in Sources */,
@@ -596,7 +590,6 @@
 				272F314F2715C03E00C467DA /* TeamViewModel.swift in Sources */,
 				272F31542715C48B00C467DA /* Array+Extension.swift in Sources */,
 				27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */,
-				27A228622720A16800686D91 /* ViewController.swift in Sources */,
 				272F31522715C44F00C467DA /* TeamViewModelDelegate.swift in Sources */,
 				272F31512715C44500C467DA /* TeamRepositable.swift in Sources */,
 				272F31502715C42C00C467DA /* SoccerTeamResponseModel.swift in Sources */,
@@ -609,7 +602,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A228632720A16800686D91 /* ViewController.swift in Sources */,
 				27C90194270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift in Sources */,
 				27C90192270AED4700FAE650 /* Kick_StarterUITests.swift in Sources */,
 			);

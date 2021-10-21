@@ -9,7 +9,7 @@ import Foundation
 
 final class LeagueRepository: LeagueRepositable {
     func fetchLeagueData(completionHandler: @escaping LeagueRepositoryResultBlock) {
-        let urlString = "https://kick-starter-2c472-default-rtdb.firebaseio.com/leagues.json"
+        let urlString = "https://\(Constants.AppID).firebaseio.com/leagues.json"
         guard let url = URL(string: urlString) else { return }
         
         let request = URLRequest(url: url)
