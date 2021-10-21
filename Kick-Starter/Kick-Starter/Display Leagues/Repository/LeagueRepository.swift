@@ -25,7 +25,9 @@ final class LeagueRepository: LeagueRepositable {
                 }
                 
             } catch let error as NSError {
+                DispatchQueue.main.async {
                     completionHandler(.failure(error))
+                }
             }
             
         }.resume()
