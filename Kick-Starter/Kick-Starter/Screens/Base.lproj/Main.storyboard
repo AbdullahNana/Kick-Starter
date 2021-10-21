@@ -85,7 +85,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="coa-9w-4tA">
-                                <rect key="frame" x="0.0" y="64" width="414" height="749"/>
+                                <rect key="frame" x="0.0" y="115" width="414" height="698"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sDu-2X-okp">
                                     <size key="itemSize" width="204" height="250"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -146,25 +146,33 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QFW-X0-WVJ">
+                                <rect key="frame" x="0.0" y="54" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="coa-9w-4tA" firstAttribute="top" secondItem="QFW-X0-WVJ" secondAttribute="bottom" constant="10" id="41c-AD-WmT"/>
                             <constraint firstItem="coa-9w-4tA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" priority="100" id="6OY-Nt-QDg"/>
                             <constraint firstItem="coa-9w-4tA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OAy-3g-WcS"/>
+                            <constraint firstItem="QFW-X0-WVJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hcY-fU-PWb"/>
+                            <constraint firstItem="QFW-X0-WVJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j73-Lr-AyI"/>
                             <constraint firstItem="coa-9w-4tA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pyP-Mo-gOb"/>
-                            <constraint firstItem="coa-9w-4tA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="z2c-8F-CSn"/>
+                            <constraint firstItem="QFW-X0-WVJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="x8m-sR-7zf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EMx-c0-zMq"/>
                     <connections>
                         <outlet property="collectionView" destination="coa-9w-4tA" id="uQw-Ph-nWD"/>
+                        <outlet property="searchBar" destination="QFW-X0-WVJ" id="Jag-3j-ubL"/>
                         <segue destination="oSj-UC-LPl" kind="show" identifier="singleVenueViewSegue" id="gmg-VR-rbz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296" y="-512"/>
+            <point key="canvasLocation" x="1295.6521739130435" y="-512.27678571428567"/>
         </scene>
         <!--Single Venue View Controller-->
         <scene sceneID="AVK-Zv-Zvd">
@@ -257,7 +265,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-QA-5U8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-QA-5U8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -314,6 +322,7 @@
         <image name="background" width="1242" height="2208"/>
         <image name="globe.europe.africa.fill" catalog="system" width="128" height="121"/>
         <image name="play.square" catalog="system" width="128" height="114"/>
+        <image name="sky" width="640" height="1280"/>
         <image name="view" width="1000" height="1500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

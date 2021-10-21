@@ -20,7 +20,11 @@ final class TeamViewModel {
     }
     
     func endpoint(league: String = "39", season: String = "2020") -> String {
-        return "https://v3.football.api-sports.io/teams?league=\(league)&season=\(season)"
+        "https://v3.football.api-sports.io/teams?league=\(league)&season=\(season)"
+    }
+    
+    func searchEndpoint(searchString: String) -> String {
+        "https://v3.football.api-sports.io/teams?search=\(searchString)"
     }
     
     func fetchTeamData(endpoint: String) {

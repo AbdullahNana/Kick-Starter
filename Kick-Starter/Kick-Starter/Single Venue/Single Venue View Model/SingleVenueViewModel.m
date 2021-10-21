@@ -23,7 +23,7 @@
     return _singleVenue.name;
 }
 - (NSString *) venueCapacity {
-    NSString* capacity = [NSString stringWithFormat:@"Venue Capacity: %li",(long) (long)_singleVenue.capacity];
+    NSString* capacity = [NSString stringWithFormat:@"Venue Capacity: %li", _singleVenue.cap];
     return capacity;
 }
 - (NSString *) venueCity {
