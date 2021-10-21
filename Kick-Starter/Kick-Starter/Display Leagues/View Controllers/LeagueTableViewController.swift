@@ -6,8 +6,7 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+
 
 class LeagueTableViewController: UITableViewController {
     private lazy var leagueViewModel = LeagueViewModel()
@@ -21,23 +20,6 @@ class LeagueTableViewController: UITableViewController {
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = .white
         
-        let ref = Database.database().reference()
-        
-        ref.child("Leagues").observeSingleEvent(of: .value, with: { snapshot in
-            guard let value = snapshot.value as? NSArray else {return}
-            print(value)
-            for league in value {
-                self.arr.append(league)
-            }
-//            print(self.arr)
-        })
-        
-//        ref.child("leagues").observe(.value, with: { snapshot in
-//            print(snapshot.value)
-//            guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
-//            let yourStructObject = try? JSONDecoder().decode(LeagueModel.self, from: data)
-//            print(yourStructObject)
-//        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
