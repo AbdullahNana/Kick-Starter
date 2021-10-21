@@ -11,6 +11,6 @@ import UIKit
 extension UIColor {
     static let blackBorderColour = UIColor.black.cgColor
     static let whiteBorderColour = UIColor.white.cgColor
-    static let clearColor = UIColor.clear
+    static let clearBackgroundColor = UIColor.clear
     static let whiteColor = UIColor.white
 }
