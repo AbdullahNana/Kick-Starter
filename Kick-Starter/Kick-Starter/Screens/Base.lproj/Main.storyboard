@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WYV-y9-XSA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DRM-Om-Wqu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -70,7 +70,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAT-XL-tgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="656.52173913043487" y="105.80357142857143"/>
+            <point key="canvasLocation" x="46" y="-547"/>
         </scene>
         <!--Team View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -85,7 +85,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="coa-9w-4tA">
-                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="749"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sDu-2X-okp">
                                     <size key="itemSize" width="204" height="250"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949.2753623188407" y="97.767857142857139"/>
+            <point key="canvasLocation" x="1296" y="-512"/>
         </scene>
         <!--Single Venue View Controller-->
         <scene sceneID="AVK-Zv-Zvd">
@@ -247,12 +247,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BP8-hz-r68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2940.579710144928" y="106.47321428571428"/>
+            <point key="canvasLocation" x="2533" y="-479"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Live Scores-->
+        <scene sceneID="Ug8-nr-Hyx">
+            <objects>
+                <viewController id="NC5-ND-yer" customClass="LiveScoreViewController" customModule="Kick_Starter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cA-rO-yxv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-QA-5U8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y5D-lW-ii6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Live Scores" image="play.square" catalog="system" selectedImage="play.square" id="Wet-1q-flY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7e-wM-aRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1079.7101449275362" y="114.50892857142857"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sCR-F6-DoY">
+            <objects>
+                <tabBarController id="DRM-Om-Wqu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qlZ-Ue-hwE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WYV-y9-XSA" kind="relationship" relationship="viewControllers" id="2e8-LI-qUk"/>
+                        <segue destination="NC5-ND-yer" kind="relationship" relationship="viewControllers" id="Aok-BT-3S1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWs-tr-gyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1973" y="-189"/>
+        </scene>
+        <!--Leagues-->
         <scene sceneID="KLA-C7-uwv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WYV-y9-XSA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Leagues" image="globe.europe.africa.fill" catalog="system" selectedImage="globe.europe.africa.fill" id="h9Q-rq-wtK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YMx-tQ-hVp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -265,11 +307,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOC-eO-sO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-252.17391304347828" y="105.80357142857143"/>
+            <point key="canvasLocation" x="-1032" y="-547"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="1242" height="2208"/>
+        <image name="globe.europe.africa.fill" catalog="system" width="128" height="121"/>
+        <image name="play.square" catalog="system" width="128" height="114"/>
         <image name="view" width="1000" height="1500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
