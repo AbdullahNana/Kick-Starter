@@ -18,7 +18,7 @@ class LeagueTableViewCell: UITableViewCell {
     }
     
     private func applyCellStyling() {
-        backgroundColor = UIColor.cellBackgroundColour
+        backgroundColor = UIColor.clearColor
         selectionStyle = .none
     }
 
