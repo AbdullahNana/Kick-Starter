@@ -19,6 +19,7 @@ class LeagueTableViewCell: UITableViewCell {
     
     private func applyCellStyling() {
         backgroundColor = UIColor.cellBackgroundColour
+        selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

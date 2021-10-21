@@ -27,7 +27,8 @@
     return capacity;
 }
 - (NSString *) venueCity {
-    return _singleVenue.city;
+    
+    return [@"City: " stringByAppendingString: _singleVenue.city];
 }
 - (NSString *) venueImage {
     return _singleVenue.image;
