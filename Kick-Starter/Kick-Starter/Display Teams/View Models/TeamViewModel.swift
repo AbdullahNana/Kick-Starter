@@ -10,15 +10,16 @@ import Foundation
 final class TeamViewModel {
     private(set) var teamResponse: SoccerTeamResponseModel?
     private(set) var selectedVenue: Venue?
-    private var teamRepository: Repositable
+    private(set) var selectedLeague: League?
+    private var teamRepository: TeamRepositable
     private weak var delegate: TeamViewModelDelegate?
     
-    init(repository: Repositable, delegate: TeamViewModelDelegate) {
+    init(repository: TeamRepositable, delegate: TeamViewModelDelegate) {
         self.teamRepository =  repository
         self.delegate = delegate
     }
     
-    func endpoint(league: String = "78", season: String = "2020") -> String {
+    func endpoint(league: String = "39", season: String = "2020") -> String {
         return "https://v3.football.api-sports.io/teams?league=\(league)&season=\(season)"
     }
     
@@ -27,12 +28,15 @@ final class TeamViewModel {
             switch result {
             case .success(let team):
                 self?.teamResponse = team
-                print(team)
                 self?.delegate?.refreshViewContents()
             case .failure(let error):
                 self?.delegate?.showErrorMessage(error: error)
             }
         }
+    }
+    
+    func set(league: League) {
+        selectedLeague = league
     }
     
     func teamData(at index: Int) -> Response? {

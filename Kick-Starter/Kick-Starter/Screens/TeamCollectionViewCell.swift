@@ -18,15 +18,16 @@ class TeamCollectionViewCell: UICollectionViewCell {
     }
     
     private func applyCellStyling() {
-        layer.borderColor = UIColor.blackBorderColour
+        layer.borderColor = UIColor.whiteBorderColour
         layer.borderWidth = 5
-        backgroundColor = UIColor.cellBackgroundColour
+        backgroundColor = UIColor.clearBackgroundColor
         layer.cornerRadius = 10
+        backgroundColor = UIColor.clearBackgroundColor
     }
     
     func configureTeamCell(for team: Team?) {
         teamNameLabel.text = team?.name
         teamLogoImageView.loadImage(urlString: team?.logo ?? "")
-        teamYearFoundedLabel.text = String(team?.founded ?? 0)
+        teamYearFoundedLabel.text = "Founded: " + String(team?.founded ?? 0)
     }
 }

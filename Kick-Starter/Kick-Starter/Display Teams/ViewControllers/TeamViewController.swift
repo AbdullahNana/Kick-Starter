@@ -14,7 +14,6 @@ final class TeamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateTeamData()
         collectionViewSetup()
     }
     
@@ -29,13 +28,19 @@ final class TeamViewController: UIViewController {
         destination.set(selectedVenue)
     }
 
-    private func updateTeamData() {
-        teamViewModel.fetchTeamData(endpoint: teamViewModel.endpoint())
+    func set(league: League) {
+        teamViewModel.set(league: league)
+        updateTeamData(league: league.leagueID)
+    }
+    
+    func updateTeamData(league: String) {
+        teamViewModel.fetchTeamData(endpoint: teamViewModel.endpoint(league: league))
     }
     
     private func collectionViewSetup() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.backgroundColor = UIColor.clear
     }
 }
 
@@ -62,6 +67,10 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         teamViewModel.setSelectedVenue(index: indexPath.item)
         performSegue(withIdentifier: "singleVenueViewSegue", sender: self )
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 }
 

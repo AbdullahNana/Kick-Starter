@@ -15,6 +15,7 @@
     IBOutlet UIImageView *venueImageView;
     IBOutlet UILabel *venueCapacityLabel;
     IBOutlet UILabel *venueCityLabel;
+    IBOutlet UIStackView *imageStackView;
 }
 @end
 
@@ -36,10 +37,24 @@
     }
 }
 
+-(void)cellStyling {
+    venueImageView.clipsToBounds = YES;
+    venueImageView.layer.cornerRadius = 20;
+    [venueImageView.layer setBorderColor: [[UIColor blackColor] CGColor]];
+    [venueImageView.layer setBorderWidth: 4.0];
+    
+    imageStackView.layer.shadowColor = [UIColor blackColor].CGColor;
+    imageStackView.layer.shadowOffset = CGSizeMake(5, 5);
+    imageStackView.layer.shadowOpacity = 0.98;
+    imageStackView.layer.shadowRadius = 10.0;
+}
+
 - (void)setupView {
+    [self cellStyling];
     [venueImageView loadImageWithUrlString: _viewModel.venueImage];
     venueNameLabel.text = _viewModel.venueName;
     venueCityLabel.text = _viewModel.venueCity;
     venueCapacityLabel.text = _viewModel.venueCapacity;
+    
 }
 @end

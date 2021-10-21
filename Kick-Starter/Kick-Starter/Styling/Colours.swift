@@ -10,5 +10,7 @@ import UIKit
 
 extension UIColor {
     static let blackBorderColour = UIColor.black.cgColor
-    static let cellBackgroundColour = UIColor.clear
+    static let whiteBorderColour = UIColor.white.cgColor
+    static let clearBackgroundColor = UIColor.clear
+    static let whiteColor = UIColor.white
 }
