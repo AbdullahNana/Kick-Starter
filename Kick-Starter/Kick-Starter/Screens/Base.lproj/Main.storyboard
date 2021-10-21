@@ -146,8 +146,9 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QFW-X0-WVJ">
+                            <searchBar contentMode="redraw" placeholder="Search Team" translatesAutoresizingMaskIntoConstraints="NO" id="QFW-X0-WVJ">
                                 <rect key="frame" x="0.0" y="54" width="414" height="51"/>
+                                <color key="barTintColor" red="0.040590502319999999" green="0.087564326819999996" blue="0.19135382770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
