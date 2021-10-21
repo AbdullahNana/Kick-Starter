@@ -10,11 +10,11 @@ import Foundation
 final class TeamViewModel {
     private(set) var teamResponse: SoccerTeamResponseModel?
     private(set) var selectedVenue: Venue?
-    private(set) var selectedLeague: LeagueModel?
-    private var teamRepository: Repositable
+    private(set) var selectedLeague: League?
+    private var teamRepository: TeamRepositable
     private weak var delegate: TeamViewModelDelegate?
     
-    init(repository: Repositable, delegate: TeamViewModelDelegate) {
+    init(repository: TeamRepositable, delegate: TeamViewModelDelegate) {
         self.teamRepository =  repository
         self.delegate = delegate
     }
@@ -28,7 +28,6 @@ final class TeamViewModel {
             switch result {
             case .success(let team):
                 self?.teamResponse = team
-                print(team)
                 self?.delegate?.refreshViewContents()
             case .failure(let error):
                 self?.delegate?.showErrorMessage(error: error)
@@ -36,7 +35,7 @@ final class TeamViewModel {
         }
     }
     
-    func set(league: LeagueModel) {
+    func set(league: League) {
         selectedLeague = league
     }
     

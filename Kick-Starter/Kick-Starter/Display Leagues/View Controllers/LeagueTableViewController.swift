@@ -7,11 +7,8 @@
 
 import UIKit
 
-
 class LeagueTableViewController: UITableViewController {
-    private lazy var leagueViewModel = LeagueViewModel()
-    var leagues = [LeagueModel]()
-    var arr = [Any]()
+    private lazy var leagueViewModel = LeagueViewModel(repository: LeagueRepository(), delegate: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +17,7 @@ class LeagueTableViewController: UITableViewController {
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = .white
         
+        leagueViewModel.fetchLeagueData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,7 +28,7 @@ class LeagueTableViewController: UITableViewController {
         // swiftlint:enable force_cast
 
         guard let selectedLeague = leagueViewModel.selectedLeague else { return }
-        destination.set(league: selectedLeague)
+        destination.set(league: selectedLeague.league)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,7 +48,7 @@ class LeagueTableViewController: UITableViewController {
                                 for: indexPath as IndexPath) as? LeagueTableViewCell
                                 else {return UITableViewCell()}
         
-        let league = leagueViewModel.leagues[indexPath.row]
+        guard let league = leagueViewModel.leagueData(at: indexPath.row) else { return UITableViewCell() }
         
         cell.configure(for: league)
         return cell
@@ -63,5 +61,15 @@ class LeagueTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         leagueViewModel.setSelectedLeague(index: indexPath.row)
         performSegue(withIdentifier: "teamCollectionViewSegue", sender: self)
+    }
+}
+
+extension LeagueTableViewController: LeagueViewModelDelegate {
+    func refreshViewContents() {
+        self.tableView.reloadData()
+    }
+    
+    func showErrorMessage(error: Error) {
+        showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
     }
 }

@@ -26,7 +26,7 @@ class LeagueTableViewCell: UITableViewCell {
     }
 
     func configure(for league: LeagueModel) {
-        leagueNameLabel.text = league.leagueName
-        leagueLogoImageView.image =  UIImage(named: league.imageURL)
+        leagueNameLabel.text = league.league.leagueName
+        leagueLogoImageView.image =  UIImage(named: league.league.imageURL)
     }
 }

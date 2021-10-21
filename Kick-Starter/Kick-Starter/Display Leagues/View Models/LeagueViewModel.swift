@@ -8,22 +8,37 @@
 import Foundation
 
 final class LeagueViewModel {
+    private(set) var leagueResponse: [LeagueModel]?
+    private var leagueRepository: LeagueRepositable
     private(set) var selectedLeague: LeagueModel?
+    private weak var delegate: LeagueViewModelDelegate?
     
-    private(set) var leagues: [LeagueModel] = [
-        LeagueModel(imageURL: "La Liga", leagueId: 140, leagueName: "Spanish La Liga"),
-        LeagueModel(imageURL: "League 1", leagueId: 61, leagueName: "French League 1"),
-        LeagueModel(imageURL: "Serie A", leagueId: 135, leagueName: "Italian Serie A"),
-        LeagueModel(imageURL: "Bundesliga", leagueId: 78, leagueName: "German Bundesliga"),
-        LeagueModel(imageURL: "Premier League", leagueId: 39, leagueName: "English Premier League"),
-        LeagueModel(imageURL: "PSL", leagueId: 288, leagueName: "South African PSL")
-    ]
+    init(repository: LeagueRepositable, delegate: LeagueViewModelDelegate) {
+        self.leagueRepository =  repository
+        self.delegate = delegate
+    }
     
     var numberOfLeagues: Int {
-        leagues.count
+        leagueResponse?.count ?? 0
     }
     
     func setSelectedLeague(index: Int) {
-        selectedLeague = leagues[safe: index]
+        selectedLeague = leagueResponse?[safe: index]
+    }
+    
+    func leagueData(at index: Int) -> LeagueModel? {
+        leagueResponse?[safe: index]
+    }
+    
+    func fetchLeagueData() {
+        leagueRepository.fetchLeagueData { [weak self] result in
+            switch result {
+            case .success(let league):
+                self?.leagueResponse = league
+                self?.delegate?.refreshViewContents()
+            case .failure(let error):
+                self?.delegate?.showErrorMessage(error: error)
+            }
+        }
     }
 }

@@ -8,7 +8,14 @@
 import Foundation
 
 struct LeagueModel: Codable {
-    let imageURL: String
-    let leagueId: Int
-    let leagueName: String
+    let league: League
+}
+
+struct League: Codable {
+    let leagueID, leagueName, imageURL: String
+    
+    enum CodingKeys: String, CodingKey {
+        case leagueID = "leagueId"
+        case leagueName, imageURL
+    }
 }

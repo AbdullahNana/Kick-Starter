@@ -28,9 +28,9 @@ final class TeamViewController: UIViewController {
         destination.set(selectedVenue)
     }
 
-    func set(league: LeagueModel) {
+    func set(league: League) {
         teamViewModel.set(league: league)
-        updateTeamData(league: String(league.leagueId))
+        updateTeamData(league: league.leagueID)
     }
     
     func updateTeamData(league: String) {
