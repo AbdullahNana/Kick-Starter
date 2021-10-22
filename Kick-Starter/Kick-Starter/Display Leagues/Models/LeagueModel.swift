@@ -12,7 +12,9 @@ struct LeagueModel: Codable {
 }
 
 struct League: Codable {
-    let leagueID, leagueName, imageURL: String
+    let leagueID: String
+    let leagueName: String
+    let imageURL: String
     
     enum CodingKeys: String, CodingKey {
         case leagueID = "leagueId"

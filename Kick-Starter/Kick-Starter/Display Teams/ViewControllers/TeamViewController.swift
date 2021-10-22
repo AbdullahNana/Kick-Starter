@@ -46,6 +46,7 @@ final class TeamViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.clearBackgroundColor
+        searchBar.searchTextField.textColor = UIColor.white
         searchBar.delegate = self
     }
 }
