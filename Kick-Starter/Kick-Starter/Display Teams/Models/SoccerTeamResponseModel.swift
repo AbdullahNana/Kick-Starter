@@ -45,7 +45,7 @@ struct Response: Codable {
     let venue: Venue
 }
 
-struct SoccerTeamResponseModel: Codable {
+struct SoccerTeamResponseModel: Codable {    
     let get: String
     let response: [Response]
 }

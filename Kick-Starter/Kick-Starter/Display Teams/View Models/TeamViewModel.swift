@@ -51,6 +51,10 @@ final class TeamViewModel {
         selectedVenue = teamResponse?.response[safe: index]?.venue
     }
     
+    var teamList: SoccerTeamResponseModel {
+        teamResponse ?? SoccerTeamResponseModel(get: "teams", response: [])
+    }
+    
     var numberOfTeamResults: Int {
         teamResponse?.response.count ?? 0
     }
