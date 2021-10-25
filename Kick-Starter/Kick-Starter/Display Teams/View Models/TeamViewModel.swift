@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 final class TeamViewModel {
     private(set) var teamResponse: SoccerTeamResponseModel?
@@ -33,10 +32,6 @@ final class TeamViewModel {
             switch result {
             case .success(let team):
                 self?.teamResponse = team
-                if team.response.isEmpty {
-                    print(team.response)
-                    print(team)
-                }
                 self?.delegate?.refreshViewContents()
             case .failure(let error):
                 self?.delegate?.showErrorMessage(error: error)

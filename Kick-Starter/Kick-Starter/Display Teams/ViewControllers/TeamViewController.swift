@@ -16,6 +16,7 @@ final class TeamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionViewSetup()
+        searchBaeSetup()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -46,6 +47,9 @@ final class TeamViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.clearBackgroundColor
+    }
+    
+    private func searchBaeSetup() {
         searchBar.searchTextField.textColor = UIColor.white
         searchBar.delegate = self
     }
