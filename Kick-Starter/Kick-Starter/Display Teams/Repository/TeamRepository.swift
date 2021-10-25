@@ -29,7 +29,9 @@ final class TeamRepository: TeamRepositable {
                 }
                 
             } catch let error as NSError {
-                completionHandler(.failure(error))
+                DispatchQueue.main.async {
+                    completionHandler(.failure(error))
+                }
             }
             
         }.resume()

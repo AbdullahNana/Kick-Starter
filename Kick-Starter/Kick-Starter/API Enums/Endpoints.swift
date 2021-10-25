@@ -14,5 +14,5 @@ enum HTTPMethod: String {
 
 enum ApiEndpoint: String {
     case teamData = "https://v3.football.api-sports.io/teams?league=39&season=2020"
-    case leagueData = "https://v3.football.api-sports.io/leagues?id=39"
+    case liveScores = "https://www.livescore.com/en/"
 }

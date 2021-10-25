@@ -11,10 +11,12 @@ import Foundation
 final class TeamViewController: UIViewController {
     private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
     @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionViewSetup()
+        searchBaeSetup()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,10 +39,19 @@ final class TeamViewController: UIViewController {
         teamViewModel.fetchTeamData(endpoint: teamViewModel.endpoint(league: league))
     }
     
+    func updateSearchData(searchString: String) {
+        teamViewModel.fetchTeamData(endpoint: teamViewModel.searchEndpoint(searchString: searchString))
+    }
+    
     private func collectionViewSetup() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundColor = UIColor.clear
+        collectionView.backgroundColor = UIColor.clearBackgroundColor
+    }
+    
+    private func searchBaeSetup() {
+        searchBar.searchTextField.textColor = UIColor.white
+        searchBar.delegate = self
     }
 }
 
@@ -81,5 +92,20 @@ extension TeamViewController: TeamViewModelDelegate {
     
     func showErrorMessage(error: Error) {
         showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
+    }
+}
+
+extension TeamViewController: UISearchBarDelegate {
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        guard let team = searchBar.text else { return }
+        searchBar.text = ""
+        updateSearchData(searchString: team)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let team = searchBar.text else { return }
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        updateSearchData(searchString: team)
     }
 }

@@ -22,7 +22,7 @@ class TeamViewModelTests: XCTestCase {
         let mockedTeamData = Response(team: Team(id: 33, name: "Manchester United", country: "England",
                                                  founded: 1878,
                                                  logo: "https://media.api-sports.io/football/teams/33.png"),
-                                      venue: Venue(from: Decoder, id: 557, name: "Old Trafford", city: "Manchester",
+                                      venue: Venue(id: 557, name: "Old Trafford", city: "Manchester",
                                                    capacity: 76212,
                                                    image: "https://media.api-sports.io/football/venues/556.png"))
         return SoccerTeamResponseModel(get: "teams", response: [mockedTeamData])
@@ -66,7 +66,7 @@ class TeamViewModelTests: XCTestCase {
             showErrorCalled = true
         }
     }
-    final class MockTeamRepository: Repositable {
+    final class MockTeamRepository: TeamRepositable {
         var teamApiResponse: Result<SoccerTeamResponseModel, Error> = .failure(URLError(.badServerResponse))
         func fetchTeamData(method: HTTPMethod, endpoint: String,
                            completionHandler: @escaping TeamRepositoryResultBlock) {

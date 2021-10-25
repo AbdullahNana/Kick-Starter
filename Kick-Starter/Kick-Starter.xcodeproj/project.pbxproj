@@ -27,13 +27,15 @@
 		27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22849271F325900686D91 /* LeagueTableViewController.swift */; };
 		27A2284C271F329A00686D91 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284B271F329A00686D91 /* LeagueTableViewCell.swift */; };
 		27A2284E271F32FF00686D91 /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284D271F32FF00686D91 /* LeagueViewModel.swift */; };
-		27A22850271F55F000686D91 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284F271F55F000686D91 /* LeagueModel.swift */; };
 		27A2285927201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
 		27A2285A27201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
 		27A2285B27201BF400686D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A2285827201BF400686D91 /* GoogleService-Info.plist */; };
 		27A2286527215B1600686D91 /* LeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286427215B1600686D91 /* LeagueRepository.swift */; };
 		27A2286727215B4700686D91 /* LeagueRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286627215B4700686D91 /* LeagueRepositable.swift */; };
 		27A228692721677E00686D91 /* LeagueViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228682721677E00686D91 /* LeagueViewModelDelegate.swift */; };
+		27A2287027217F4500686D91 /* LiveScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286F27217F4500686D91 /* LiveScoreViewController.swift */; };
+		27A2287227217F5F00686D91 /* LiveScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2287127217F5F00686D91 /* LiveScoreViewModel.swift */; };
+		27A228742722970500686D91 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284F271F55F000686D91 /* LeagueModel.swift */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -90,6 +92,8 @@
 		27A2286427215B1600686D91 /* LeagueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepository.swift; sourceTree = "<group>"; };
 		27A2286627215B4700686D91 /* LeagueRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepositable.swift; sourceTree = "<group>"; };
 		27A228682721677E00686D91 /* LeagueViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModelDelegate.swift; sourceTree = "<group>"; };
+		27A2286F27217F4500686D91 /* LiveScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreViewController.swift; sourceTree = "<group>"; };
+		27A2287127217F5F00686D91 /* LiveScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreViewModel.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +293,15 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		27A2286E27217F2B00686D91 /* Live Scores */ = {
+			isa = PBXGroup;
+			children = (
+				27A2286F27217F4500686D91 /* LiveScoreViewController.swift */,
+				27A2287127217F5F00686D91 /* LiveScoreViewModel.swift */,
+			);
+			path = "Live Scores";
+			sourceTree = "<group>";
+		};
 		27C90164270AED4300FAE650 = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +325,7 @@
 		27C9016F270AED4300FAE650 /* Kick-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				27A2286E27217F2B00686D91 /* Live Scores */,
 				27A22848271F323D00686D91 /* Display Leagues */,
 				27A2283C271D924700686D91 /* Single Venue */,
 				272F3142270F871E00C467DA /* Styling */,
@@ -563,15 +577,17 @@
 				27C901A3270B30AF00FAE650 /* TeamViewModel.swift in Sources */,
 				27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */,
 				272F3137270DBBB000C467DA /* UIImageView+Extensions.swift in Sources */,
+				27A2287027217F4500686D91 /* LiveScoreViewController.swift in Sources */,
 				27A2286727215B4700686D91 /* LeagueRepositable.swift in Sources */,
 				27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */,
 				27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */,
 				27A2284C271F329A00686D91 /* LeagueTableViewCell.swift in Sources */,
+				27A228742722970500686D91 /* LeagueModel.swift in Sources */,
 				272F3134270D832C00C467DA /* TeamViewModelDelegate.swift in Sources */,
 				27C901A1270B30A200FAE650 /* SoccerTeamResponseModel.swift in Sources */,
 				27A2286527215B1600686D91 /* LeagueRepository.swift in Sources */,
+				27A2287227217F5F00686D91 /* LiveScoreViewModel.swift in Sources */,
 				27C901B9270C5CCB00FAE650 /* Constants.swift in Sources */,
-				27A22850271F55F000686D91 /* LeagueModel.swift in Sources */,
 				27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */,
 				27C901B8270C5CB800FAE650 /* TeamRepository.swift in Sources */,
 				27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */,
