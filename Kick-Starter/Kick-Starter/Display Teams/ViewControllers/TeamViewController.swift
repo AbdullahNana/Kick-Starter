@@ -17,6 +17,7 @@ final class TeamViewController: UIViewController {
         super.viewDidLoad()
         collectionViewSetup()
         searchBaeSetup()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background") ?? UIImage())
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -86,6 +87,10 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
 }
 
 extension TeamViewController: TeamViewModelDelegate {
+    func showSearchError() {
+        showAlert(alertTitle: "Error", alertMessage: "Please search for a valid team.", actionTitle: "Okay")
+    }
+    
     func refreshViewContents() {
         self.collectionView.reloadData()
     }
