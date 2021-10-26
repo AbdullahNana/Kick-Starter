@@ -17,7 +17,11 @@ final class TeamViewController: UIViewController {
         super.viewDidLoad()
         collectionViewSetup()
         searchBaeSetup()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background") ?? UIImage())
+        applyStyling()
+    }
+    
+    private func applyStyling() {
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background") ?? UIImage())
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
