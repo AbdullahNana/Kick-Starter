@@ -104,13 +104,7 @@ extension TeamViewController: TeamViewModelDelegate {
     }
 }
 
-extension TeamViewController: UISearchBarDelegate {
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        guard let team = searchBar.text else { return }
-        searchBar.text = ""
-        updateSearchData(searchString: team)
-    }
-    
+extension TeamViewController: UISearchBarDelegate {    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let team = searchBar.text else { return }
         searchBar.text = ""
