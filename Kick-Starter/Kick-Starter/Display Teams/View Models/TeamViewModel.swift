@@ -33,6 +33,9 @@ final class TeamViewModel {
             case .success(let team):
                 self?.teamResponse = team
                 self?.delegate?.refreshViewContents()
+                if team.response.isEmpty {
+                    self?.delegate?.showSearchError()
+                }
             case .failure(let error):
                 self?.delegate?.showErrorMessage(error: error)
             }

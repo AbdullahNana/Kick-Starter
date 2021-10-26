@@ -81,10 +81,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="TJi-mV-MU1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="coa-9w-4tA">
                                 <rect key="frame" x="0.0" y="115" width="414" height="698"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sDu-2X-okp">
@@ -268,13 +264,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-QA-5U8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-QA-5U8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y5D-lW-ii6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uox-QA-5U8" firstAttribute="bottom" secondItem="Y5D-lW-ii6" secondAttribute="bottom" id="1aB-w1-jPq"/>
+                            <constraint firstItem="Uox-QA-5U8" firstAttribute="top" secondItem="4cA-rO-yxv" secondAttribute="top" id="3Nh-8a-xkh"/>
+                            <constraint firstItem="Uox-QA-5U8" firstAttribute="trailing" secondItem="Y5D-lW-ii6" secondAttribute="trailing" id="Hfk-0M-KkT"/>
+                            <constraint firstItem="Uox-QA-5U8" firstAttribute="leading" secondItem="Y5D-lW-ii6" secondAttribute="leading" id="WJF-aU-g0w"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Live Scores" image="play.square" catalog="system" selectedImage="play.square" id="Wet-1q-flY"/>
                 </viewController>
@@ -323,7 +324,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1242" height="2208"/>
         <image name="globe.europe.africa.fill" catalog="system" width="128" height="121"/>
         <image name="play.square" catalog="system" width="128" height="114"/>
         <image name="sky" width="640" height="1280"/>

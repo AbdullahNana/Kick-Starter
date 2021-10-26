@@ -10,4 +10,5 @@ import Foundation
 protocol TeamViewModelDelegate: AnyObject {
     func refreshViewContents()
     func showErrorMessage(error: Error)
+    func showSearchError()
 }
