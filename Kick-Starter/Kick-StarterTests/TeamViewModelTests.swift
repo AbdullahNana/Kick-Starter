@@ -57,6 +57,8 @@ class TeamViewModelTests: XCTestCase {
         XCTAssertEqual(viewModelUnderTest.teamData(at: 0)?.team.name, nil)
     }
     final class MockDelegate: TeamViewModelDelegate {
+        func showSearchError() {}
+        
         var refreshCalled = false
         var showErrorCalled = false
         func refreshViewContents() {
