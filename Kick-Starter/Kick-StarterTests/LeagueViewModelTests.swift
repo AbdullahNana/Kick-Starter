@@ -16,42 +16,53 @@ class LeagueViewModelTests: XCTestCase {
     override func setUp() {
         mockedLeagueRepository = MockLeagueRepository()
         mockedDelegate = MockDelegate()
-        viewModelUnderTest = LeagueViewModel(repository: MockLeagueRepository(), delegate: MockDelegate())
+        viewModelUnderTest = LeagueViewModel(repository: mockedLeagueRepository, delegate: mockedDelegate)
     }
-    private var mockedTeamData: [LeagueModel] {
+    private var mockedLeagueData: [LeagueModel] {
         let mockedLeagueData = League(leagueID: "39", leagueName: "English Premier League", imageURL: "Premier League")
 
         return [LeagueModel(league: mockedLeagueData)]
     }
-    func testFetchLeagueDataSuccess() {
-        mockedLeagueRepository.leagueApiResponse = .success(mockedTeamData)
+    func testFetchLeagueDataSuccess() throws {
+        mockedLeagueRepository.leagueApiResponse = .success(mockedLeagueData)
         viewModelUnderTest.fetchLeagueData()
         XCTAssert(!(viewModelUnderTest.leagueResponse?.isEmpty ?? true))
         XCTAssert(mockedDelegate.refreshCalled)
     }
-//    func testFetchTeamDataFailure() {
-//        viewModelUnderTest.fetchTeamData(endpoint: viewModelUnderTest.endpoint())
-//        XCTAssert(viewModelUnderTest.teamResponse?.response.isEmpty ?? true)
-//        XCTAssert(mockedDelegate.showErrorCalled)
-//    }
-//    func testNumberOfTeamDataResultsArrayReturnsCorrectValueAfterSuccess() {
-//        mockedTeamRepository.teamApiResponse = .success(mockedTeamData)
-//        viewModelUnderTest.fetchTeamData(endpoint: viewModelUnderTest.endpoint())
-//        XCTAssertEqual(1, viewModelUnderTest.numberOfTeamResults)
-//    }
-//    func testNumberOfTeamDataResultsArrayReturnsNilAfterFailure() {
-//        viewModelUnderTest.fetchTeamData(endpoint: viewModelUnderTest.endpoint())
-//        XCTAssertEqual(0, viewModelUnderTest.numberOfTeamResults)
-//    }
-//    func testNumberOfTeamDataResultsFunctionReturnsCorrectValueAfterSuccess() {
-//        mockedTeamRepository.teamApiResponse = .success(mockedTeamData)
-//        viewModelUnderTest.fetchTeamData(endpoint: viewModelUnderTest.endpoint())
-//        XCTAssertEqual(viewModelUnderTest.teamData(at: 0)?.team.name, "Manchester United")
-//    }
-//    func testNumberOfTeamDataResultsFunctionReturnsNilAfterFailure() {
-//        viewModelUnderTest.fetchTeamData(endpoint: viewModelUnderTest.endpoint())
-//        XCTAssertEqual(viewModelUnderTest.teamData(at: 0)?.team.name, nil)
-//    }
+    func testFetchTeamDataFailure() {
+        viewModelUnderTest.fetchLeagueData()
+        XCTAssert(viewModelUnderTest.leagueResponse?.isEmpty ?? true)
+        XCTAssert(mockedDelegate.showErrorCalled)
+    }
+    func testNumberOfLeagueDataResultsArrayReturnsCorrectValueAfterSuccess() {
+        mockedLeagueRepository.leagueApiResponse = .success(mockedLeagueData)
+        viewModelUnderTest.fetchLeagueData()
+        XCTAssertEqual(1, viewModelUnderTest.numberOfLeagues)
+    }
+    func testNumberOfLeagueDataResultsArrayReturnsNilAfterFailure() {
+        viewModelUnderTest.fetchLeagueData()
+        XCTAssertEqual(0, viewModelUnderTest.numberOfLeagues)
+    }
+    func testNumberOfTeamDataResultsFunctionReturnsCorrectValueAfterSuccess() {
+        mockedLeagueRepository.leagueApiResponse = .success(mockedLeagueData)
+        viewModelUnderTest.fetchLeagueData()
+        XCTAssertEqual(viewModelUnderTest.leagueData(at: 0)?.league.leagueName, "English Premier League")
+    }
+    func testNumberOfTeamDataResultsFunctionReturnsNilAfterFailure() {
+        viewModelUnderTest.fetchLeagueData()
+        XCTAssertEqual(viewModelUnderTest.leagueData(at: 0)?.league.leagueName, nil)
+    }
+    func testSelectedLeagueSetCorrectlyAfterSuccess() {
+        mockedLeagueRepository.leagueApiResponse = .success(mockedLeagueData)
+        viewModelUnderTest.fetchLeagueData()
+        viewModelUnderTest.setSelectedLeague(index: 0)
+        XCTAssertEqual(viewModelUnderTest.leagueData(at: 0)?.league.leagueName, "English Premier League")
+    }
+    func testSelectedLeagueSetsLeagueArrayToNilAfterFailure() {
+        viewModelUnderTest.fetchLeagueData()
+        viewModelUnderTest.setSelectedLeague(index: 0)
+        XCTAssertEqual(viewModelUnderTest.leagueData(at: 0)?.league.leagueName, nil)
+    }
     final class MockDelegate: LeagueViewModelDelegate {
         var refreshCalled = false
         var showErrorCalled = false

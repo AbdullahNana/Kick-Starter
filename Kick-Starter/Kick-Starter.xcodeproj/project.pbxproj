@@ -37,6 +37,10 @@
 		27A2287227217F5F00686D91 /* LiveScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2287127217F5F00686D91 /* LiveScoreViewModel.swift */; };
 		27A228742722970500686D91 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284F271F55F000686D91 /* LeagueModel.swift */; };
 		27A22876272973BD00686D91 /* LeagueViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22875272973BD00686D91 /* LeagueViewModelTests.swift */; };
+		27A2287827297C7D00686D91 /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284D271F32FF00686D91 /* LeagueViewModel.swift */; };
+		27A2287927297C8600686D91 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284F271F55F000686D91 /* LeagueModel.swift */; };
+		27A2287A27297CB500686D91 /* LeagueRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286627215B4700686D91 /* LeagueRepositable.swift */; };
+		27A2287B27297CE200686D91 /* LeagueViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228682721677E00686D91 /* LeagueViewModelDelegate.swift */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -605,11 +609,15 @@
 			files = (
 				272F314F2715C03E00C467DA /* TeamViewModel.swift in Sources */,
 				272F31542715C48B00C467DA /* Array+Extension.swift in Sources */,
+				27A2287827297C7D00686D91 /* LeagueViewModel.swift in Sources */,
 				272F31522715C44F00C467DA /* TeamViewModelDelegate.swift in Sources */,
+				27A2287A27297CB500686D91 /* LeagueRepositable.swift in Sources */,
+				27A2287927297C8600686D91 /* LeagueModel.swift in Sources */,
 				272F31512715C44500C467DA /* TeamRepositable.swift in Sources */,
 				272F31502715C42C00C467DA /* SoccerTeamResponseModel.swift in Sources */,
 				272F31532715C45D00C467DA /* Endpoints.swift in Sources */,
 				272F314A2714291800C467DA /* TeamViewModelTests.swift in Sources */,
+				27A2287B27297CE200686D91 /* LeagueViewModelDelegate.swift in Sources */,
 				27A22876272973BD00686D91 /* LeagueViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
