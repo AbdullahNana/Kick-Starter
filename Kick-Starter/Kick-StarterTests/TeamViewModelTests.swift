@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import Kick_Starter
 
 class TeamViewModelTests: XCTestCase {
     private var mockedTeamRepository: MockTeamRepository!
@@ -58,7 +57,6 @@ class TeamViewModelTests: XCTestCase {
     }
     final class MockDelegate: TeamViewModelDelegate {
         func showSearchError() {}
-        
         var refreshCalled = false
         var showErrorCalled = false
         func refreshViewContents() {

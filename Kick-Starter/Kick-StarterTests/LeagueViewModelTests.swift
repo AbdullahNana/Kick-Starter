@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import Kick_Starter
 
 class LeagueViewModelTests: XCTestCase {
 
