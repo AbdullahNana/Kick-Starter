@@ -7,24 +7,23 @@
 
 import UIKit
 import SafariServices
+import WebKit
 
-class LiveScoreViewController: UIViewController {
+class LiveScoreViewController: UIViewController, UIWebViewDelegate {
     private lazy var liveScoreViewModel = LiveScoreViewModel()
-
+    @IBOutlet private weak var liveScoreWebView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayLiveScore()
+        displayLiveScores()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        displayLiveScore()
+        displayLiveScores()
     }
-    
-    func displayLiveScore() {
-        guard let url = liveScoreViewModel.liveScoreURL() else { return }
-        let config = SFSafariViewController.Configuration()
-        let safariViewController = SFSafariViewController(url: url, configuration: config)
-        safariViewController.modalPresentationStyle = .overFullScreen
-        present(safariViewController, animated: true)
+
+    func displayLiveScores() {
+        let request = liveScoreViewModel.liveScoreURL()
+        liveScoreWebView.load(request)
     }
 }
