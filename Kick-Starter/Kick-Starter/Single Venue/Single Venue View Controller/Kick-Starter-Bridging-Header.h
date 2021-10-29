@@ -3,3 +3,4 @@
 //
 
 #import "SingleVenueViewController.h"
+#import "SingleVenueViewModel.h"

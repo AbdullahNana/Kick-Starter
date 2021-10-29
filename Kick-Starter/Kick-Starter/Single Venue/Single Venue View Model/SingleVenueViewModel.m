@@ -6,6 +6,7 @@
 //
 
 #import "SingleVenueViewModel.h"
+#import "Kick-Starter-Swift.h"
 
 @implementation SingleVenueViewModel {
     Venue * _singleVenue;

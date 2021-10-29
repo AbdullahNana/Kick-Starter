@@ -22,6 +22,7 @@
 		272F31532715C45D00C467DA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901BA270C837A00FAE650 /* Endpoints.swift */; };
 		272F31542715C48B00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
 		272F31552716C22E00C467DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
+		279100CA272A77FA007546F5 /* SingleVenueViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */; };
 		27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22842271D930A00686D91 /* SingleVenueViewController.m */; };
 		27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */; };
 		27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22849271F325900686D91 /* LeagueTableViewController.swift */; };
@@ -36,13 +37,17 @@
 		27A2287027217F4500686D91 /* LiveScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286F27217F4500686D91 /* LiveScoreViewController.swift */; };
 		27A2287227217F5F00686D91 /* LiveScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2287127217F5F00686D91 /* LiveScoreViewModel.swift */; };
 		27A228742722970500686D91 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284F271F55F000686D91 /* LeagueModel.swift */; };
+		27A22876272973BD00686D91 /* LeagueViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22875272973BD00686D91 /* LeagueViewModelTests.swift */; };
+		27A2287827297C7D00686D91 /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284D271F32FF00686D91 /* LeagueViewModel.swift */; };
+		27A2287927297C8600686D91 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284F271F55F000686D91 /* LeagueModel.swift */; };
+		27A2287A27297CB500686D91 /* LeagueRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286627215B4700686D91 /* LeagueRepositable.swift */; };
+		27A2287B27297CE200686D91 /* LeagueViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228682721677E00686D91 /* LeagueViewModelDelegate.swift */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
 		27C90178270AED4300FAE650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C90176270AED4300FAE650 /* Main.storyboard */; };
 		27C9017A270AED4700FAE650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C90179270AED4700FAE650 /* Assets.xcassets */; };
 		27C9017D270AED4700FAE650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C9017B270AED4700FAE650 /* LaunchScreen.storyboard */; };
-		27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90187270AED4700FAE650 /* Kick_StarterTests.swift */; };
 		27C90192270AED4700FAE650 /* Kick_StarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90191270AED4700FAE650 /* Kick_StarterUITests.swift */; };
 		27C90194270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90193270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift */; };
 		27C901A1270B30A200FAE650 /* SoccerTeamResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901A0270B30A200FAE650 /* SoccerTeamResponseModel.swift */; };
@@ -79,6 +84,7 @@
 		272F313C270EFF6C00C467DA /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		272F3143270F873300C467DA /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		272F31492714291800C467DA /* TeamViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelTests.swift; sourceTree = "<group>"; };
+		279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVenueViewModelTests.swift; sourceTree = "<group>"; };
 		27A22840271D930A00686D91 /* Kick-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kick-Starter-Bridging-Header.h"; sourceTree = "<group>"; };
 		27A22841271D930A00686D91 /* SingleVenueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewController.h; sourceTree = "<group>"; };
 		27A22842271D930A00686D91 /* SingleVenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewController.m; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		27A228682721677E00686D91 /* LeagueViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModelDelegate.swift; sourceTree = "<group>"; };
 		27A2286F27217F4500686D91 /* LiveScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreViewController.swift; sourceTree = "<group>"; };
 		27A2287127217F5F00686D91 /* LiveScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreViewModel.swift; sourceTree = "<group>"; };
+		27A22875272973BD00686D91 /* LeagueViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModelTests.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +110,6 @@
 		27C9017C270AED4700FAE650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27C9017E270AED4700FAE650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27C90183270AED4700FAE650 /* Kick-StarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kick-StarterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C90187270AED4700FAE650 /* Kick_StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kick_StarterTests.swift; sourceTree = "<group>"; };
 		27C9018D270AED4700FAE650 /* Kick-StarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kick-StarterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90191270AED4700FAE650 /* Kick_StarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kick_StarterUITests.swift; sourceTree = "<group>"; };
 		27C90193270AED4700FAE650 /* Kick_StarterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kick_StarterUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -346,8 +352,9 @@
 		27C90186270AED4700FAE650 /* Kick-StarterTests */ = {
 			isa = PBXGroup;
 			children = (
-				27C90187270AED4700FAE650 /* Kick_StarterTests.swift */,
 				272F31492714291800C467DA /* TeamViewModelTests.swift */,
+				27A22875272973BD00686D91 /* LeagueViewModelTests.swift */,
+				279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */,
 			);
 			path = "Kick-StarterTests";
 			sourceTree = "<group>";
@@ -605,12 +612,17 @@
 			files = (
 				272F314F2715C03E00C467DA /* TeamViewModel.swift in Sources */,
 				272F31542715C48B00C467DA /* Array+Extension.swift in Sources */,
-				27C90188270AED4700FAE650 /* Kick_StarterTests.swift in Sources */,
+				27A2287827297C7D00686D91 /* LeagueViewModel.swift in Sources */,
 				272F31522715C44F00C467DA /* TeamViewModelDelegate.swift in Sources */,
+				27A2287A27297CB500686D91 /* LeagueRepositable.swift in Sources */,
+				27A2287927297C8600686D91 /* LeagueModel.swift in Sources */,
+				279100CA272A77FA007546F5 /* SingleVenueViewModelTests.swift in Sources */,
 				272F31512715C44500C467DA /* TeamRepositable.swift in Sources */,
 				272F31502715C42C00C467DA /* SoccerTeamResponseModel.swift in Sources */,
 				272F31532715C45D00C467DA /* Endpoints.swift in Sources */,
 				272F314A2714291800C467DA /* TeamViewModelTests.swift in Sources */,
+				27A2287B27297CE200686D91 /* LeagueViewModelDelegate.swift in Sources */,
+				27A22876272973BD00686D91 /* LeagueViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,6 +812,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Kick-Starter/Single Venue/Single Venue View Controller/Kick-Starter-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -830,6 +843,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Kick-Starter/Single Venue/Single Venue View Controller/Kick-Starter-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -853,6 +867,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-StarterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kick-Starter/Single Venue/Single Venue View Controller/Kick-Starter-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kick-Starter.app/Kick-Starter";
@@ -877,6 +893,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-StarterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kick-Starter/Single Venue/Single Venue View Controller/Kick-Starter-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kick-Starter.app/Kick-Starter";
