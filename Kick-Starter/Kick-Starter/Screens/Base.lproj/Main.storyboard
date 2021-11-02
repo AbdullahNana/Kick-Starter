@@ -205,7 +205,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMq-Mt-1ec">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMq-Mt-1ec">
                                 <rect key="frame" x="32" y="64" width="350" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="PDQ-nG-aYN"/>
@@ -274,7 +274,7 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HA6-t8-8gT">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HA6-t8-8gT">
                                 <rect key="frame" x="10" y="44" width="107" height="28"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -294,7 +294,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sck-Vf-Zr1">
-                                <rect key="frame" x="319.5" y="44" width="84.5" height="28"/>
+                                <rect key="frame" x="267" y="44" width="137" height="28"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted">
@@ -324,6 +324,7 @@
                             <constraint firstItem="Y5D-lW-ii6" firstAttribute="trailing" secondItem="Knt-c2-KFh" secondAttribute="trailing" id="Kwe-Id-FA6"/>
                             <constraint firstItem="Uox-QA-5U8" firstAttribute="leading" secondItem="Y5D-lW-ii6" secondAttribute="leading" id="WJF-aU-g0w"/>
                             <constraint firstItem="Knt-c2-KFh" firstAttribute="top" secondItem="HA6-t8-8gT" secondAttribute="bottom" constant="10" id="ZEj-aa-F9f"/>
+                            <constraint firstItem="sck-Vf-Zr1" firstAttribute="leading" secondItem="HA6-t8-8gT" secondAttribute="trailing" constant="150" id="fy8-tm-7rb"/>
                             <constraint firstItem="Knt-c2-KFh" firstAttribute="top" secondItem="sck-Vf-Zr1" secondAttribute="bottom" constant="10" id="gyH-t7-5P6"/>
                             <constraint firstItem="HA6-t8-8gT" firstAttribute="leading" secondItem="Y5D-lW-ii6" secondAttribute="leading" constant="10" id="lXS-dL-907"/>
                             <constraint firstItem="sck-Vf-Zr1" firstAttribute="top" secondItem="Y5D-lW-ii6" secondAttribute="top" id="qJK-RP-mNI"/>
