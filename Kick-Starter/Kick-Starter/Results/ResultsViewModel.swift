@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class LiveScoreViewModel {
-    func liveScoreURL() -> URLRequest {
-        let localFilePath = Bundle.main.url(forResource: "livescore", withExtension: "html")
+final class ResultsViewModel {
+    func resultsURL(result: String) -> URLRequest {
+        let localFilePath = Bundle.main.url(forResource: result, withExtension: "html")
         return URLRequest(url: localFilePath!)
     }
 }
