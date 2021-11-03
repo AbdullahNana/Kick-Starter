@@ -8,8 +8,8 @@
 import Foundation
 
 final class ResultsViewModel {
-    func resultsURL(result: String) -> URLRequest {
-        let localFilePath = Bundle.main.url(forResource: result, withExtension: "html")
-        return URLRequest(url: localFilePath!)
+    func resultsURL(result: String) -> URL? {
+        return Bundle.main.url(forResource: result, withExtension: "html")
+//        return URLRequest(url: localFilePath)
     }
 }
