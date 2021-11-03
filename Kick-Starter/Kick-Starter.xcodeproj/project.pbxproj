@@ -23,11 +23,11 @@
 		272F31542715C48B00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
 		272F31552716C22E00C467DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
 		279100CA272A77FA007546F5 /* SingleVenueViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */; };
-		279100E02731150E007546F5 /* fixtures.html in Resources */ = {isa = PBXBuildFile; fileRef = 279100DE2731150E007546F5 /* fixtures.html */; };
-		279100E12731150E007546F5 /* livescore.html in Resources */ = {isa = PBXBuildFile; fileRef = 279100DF2731150E007546F5 /* livescore.html */; };
-		279100E327311585007546F5 /* single fixture.html in Resources */ = {isa = PBXBuildFile; fileRef = 279100E227311585007546F5 /* single fixture.html */; };
 		279100E6273115F6007546F5 /* SingleFixtureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279100E5273115F6007546F5 /* SingleFixtureViewController.swift */; };
 		279100E827311610007546F5 /* SingleFixtureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279100E727311610007546F5 /* SingleFixtureViewModel.swift */; };
+		279100F12732BBF0007546F5 /* livescore.html in Resources */ = {isa = PBXBuildFile; fileRef = 279100EE2732BBEF007546F5 /* livescore.html */; };
+		279100F22732BBF0007546F5 /* fixtures.html in Resources */ = {isa = PBXBuildFile; fileRef = 279100EF2732BBEF007546F5 /* fixtures.html */; };
+		279100F32732BBF0007546F5 /* single fixture.html in Resources */ = {isa = PBXBuildFile; fileRef = 279100F02732BBF0007546F5 /* single fixture.html */; };
 		27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22842271D930A00686D91 /* SingleVenueViewController.m */; };
 		27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */; };
 		27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22849271F325900686D91 /* LeagueTableViewController.swift */; };
@@ -90,11 +90,11 @@
 		272F3143270F873300C467DA /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		272F31492714291800C467DA /* TeamViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelTests.swift; sourceTree = "<group>"; };
 		279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVenueViewModelTests.swift; sourceTree = "<group>"; };
-		279100DE2731150E007546F5 /* fixtures.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fixtures.html; sourceTree = "<group>"; };
-		279100DF2731150E007546F5 /* livescore.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = livescore.html; sourceTree = "<group>"; };
-		279100E227311585007546F5 /* single fixture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "single fixture.html"; sourceTree = "<group>"; };
 		279100E5273115F6007546F5 /* SingleFixtureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFixtureViewController.swift; sourceTree = "<group>"; };
 		279100E727311610007546F5 /* SingleFixtureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFixtureViewModel.swift; sourceTree = "<group>"; };
+		279100EE2732BBEF007546F5 /* livescore.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = livescore.html; sourceTree = "<group>"; };
+		279100EF2732BBEF007546F5 /* fixtures.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fixtures.html; sourceTree = "<group>"; };
+		279100F02732BBF0007546F5 /* single fixture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "single fixture.html"; sourceTree = "<group>"; };
 		27A22840271D930A00686D91 /* Kick-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kick-Starter-Bridging-Header.h"; sourceTree = "<group>"; };
 		27A22841271D930A00686D91 /* SingleVenueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewController.h; sourceTree = "<group>"; };
 		27A22842271D930A00686D91 /* SingleVenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewController.m; sourceTree = "<group>"; };
@@ -220,16 +220,6 @@
 			path = Styling;
 			sourceTree = "<group>";
 		};
-		279100DC2730FABC007546F5 /* HTML Files */ = {
-			isa = PBXGroup;
-			children = (
-				279100E227311585007546F5 /* single fixture.html */,
-				279100DE2731150E007546F5 /* fixtures.html */,
-				279100DF2731150E007546F5 /* livescore.html */,
-			);
-			path = "HTML Files";
-			sourceTree = "<group>";
-		};
 		279100E4273115AD007546F5 /* Display Single Fixture */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +227,16 @@
 				279100E727311610007546F5 /* SingleFixtureViewModel.swift */,
 			);
 			path = "Display Single Fixture";
+			sourceTree = "<group>";
+		};
+		279100ED2732BBBE007546F5 /* HTML Files */ = {
+			isa = PBXGroup;
+			children = (
+				279100EF2732BBEF007546F5 /* fixtures.html */,
+				279100EE2732BBEF007546F5 /* livescore.html */,
+				279100F02732BBF0007546F5 /* single fixture.html */,
+			);
+			path = "HTML Files";
 			sourceTree = "<group>";
 		};
 		27A2283C271D924700686D91 /* Single Venue */ = {
@@ -360,12 +360,12 @@
 		27C9016F270AED4300FAE650 /* Kick-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				279100ED2732BBBE007546F5 /* HTML Files */,
 				279100E4273115AD007546F5 /* Display Single Fixture */,
 				27A2286E27217F2B00686D91 /* Display Results */,
 				27A22848271F323D00686D91 /* Display Leagues */,
 				27A2283C271D924700686D91 /* Single Venue */,
 				272F312C270D7D8A00C467DA /* Display Teams */,
-				279100DC2730FABC007546F5 /* HTML Files */,
 				272F3142270F871E00C467DA /* Styling */,
 				272F3135270DBB9E00C467DA /* Extensions */,
 				272F312E270D7EE500C467DA /* Screens */,
@@ -557,13 +557,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C901A6270B46D100FAE650 /* .swiftlint.yml in Resources */,
-				279100E02731150E007546F5 /* fixtures.html in Resources */,
+				279100F12732BBF0007546F5 /* livescore.html in Resources */,
 				27C9017D270AED4700FAE650 /* LaunchScreen.storyboard in Resources */,
+				279100F22732BBF0007546F5 /* fixtures.html in Resources */,
 				27C9017A270AED4700FAE650 /* Assets.xcassets in Resources */,
 				27C90178270AED4300FAE650 /* Main.storyboard in Resources */,
-				279100E12731150E007546F5 /* livescore.html in Resources */,
 				27A2285927201BF400686D91 /* GoogleService-Info.plist in Resources */,
-				279100E327311585007546F5 /* single fixture.html in Resources */,
+				279100F32732BBF0007546F5 /* single fixture.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
