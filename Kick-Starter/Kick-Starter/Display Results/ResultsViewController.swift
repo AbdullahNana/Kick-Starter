@@ -19,12 +19,16 @@ class ResultsViewController: UIViewController, UIWebViewDelegate {
     }
 
     @IBAction func didTapFixturesButton(_ sender: Any) {
-        let request = resultsViewModel.resultsURL(result: "fixtures")
-        liveScoreWebView.load(request)
+        if let result = resultsViewModel.resultsURL(result: "fixtures") {
+            let request = URLRequest(url: result)
+            liveScoreWebView.load(request)
+        }
     }
     
     @IBAction func didTapLiveScoresButton(_ sender: Any) {
-        let request = resultsViewModel.resultsURL(result: "livescores")
-        liveScoreWebView.load(request)
+        if let result = resultsViewModel.resultsURL(result: "livescores") {
+            let request = URLRequest(url: result)
+            liveScoreWebView.load(request)
+        }
     }
 }
