@@ -21,7 +21,9 @@ class SingleFixtureViewController: UIViewController {
     }
     
     private func displaySingleFixture() {
-        let request = singleFixtureViewModel.fixtureURL()
-        singleFixtureWebView.load(request)
+        if let result = singleFixtureViewModel.fixtureURL() {
+            let request = URLRequest(url: result)
+            singleFixtureWebView.load(request)
+        }
     }
 }
