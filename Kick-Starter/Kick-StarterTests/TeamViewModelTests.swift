@@ -68,8 +68,7 @@ class TeamViewModelTests: XCTestCase {
     }
     final class MockTeamRepository: TeamRepositable {
         var teamApiResponse: Result<SoccerTeamResponseModel, Error> = .failure(URLError(.badServerResponse))
-        func fetchTeamData(method: HTTPMethod, endpoint: String,
-                           completionHandler: @escaping TeamRepositoryResultBlock) {
+        func fetchTeamData(method: HTTPMethod, endpoint: String, completionHandler: @escaping TeamRepositoryResultBlock) {
             completionHandler(teamApiResponse)
         }
     }
