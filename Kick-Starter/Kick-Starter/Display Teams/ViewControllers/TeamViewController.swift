@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import DisplayTeamsFramework
 
 final class TeamViewController: UIViewController {
     private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
@@ -30,7 +31,7 @@ final class TeamViewController: UIViewController {
         // swiftlint:disable force_cast
         let destination = segue.destination as! SingleVenueViewController
         // swiftlint:enable force_cast
-        
+
         guard let selectedVenue = teamViewModel.selectedVenue else { return }
         destination.set(selectedVenue)
     }

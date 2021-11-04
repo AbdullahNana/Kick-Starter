@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <DisplayTeamsFramework/DisplayTeamsFramework.h>
+
 @class Venue;
 
 NS_ASSUME_NONNULL_BEGIN

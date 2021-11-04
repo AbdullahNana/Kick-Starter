@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class Venue;
 
 NS_ASSUME_NONNULL_BEGIN

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DisplayTeamsFramework
 
 final class LeagueRepository: LeagueRepositable {
     func fetchLeagueData(completionHandler: @escaping LeagueRepositoryResultBlock) {

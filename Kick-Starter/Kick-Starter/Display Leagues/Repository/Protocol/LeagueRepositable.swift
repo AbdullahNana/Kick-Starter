@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DisplayTeamsFramework
 
 typealias LeagueRepositoryResultBlock = (Result<[LeagueModel], Error>) -> Void
 

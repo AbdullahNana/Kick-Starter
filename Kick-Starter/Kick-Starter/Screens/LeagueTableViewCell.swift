@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DisplayTeamsFramework
 
 class LeagueTableViewCell: UITableViewCell {
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DisplayTeamsFramework
 
 class LeagueTableViewController: UITableViewController {
     private lazy var leagueViewModel = LeagueViewModel(repository: LeagueRepository(), delegate: self)

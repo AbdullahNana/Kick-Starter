@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DisplayTeamsFramework
 
 final class LeagueViewModel {
     private(set) var leagueResponse: [LeagueModel]?

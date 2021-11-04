@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DisplayTeamsFramework
 
 class TeamCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var teamYearFoundedLabel: UILabel!
