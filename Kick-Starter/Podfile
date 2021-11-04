@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Kick-Starter' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Kick-Starter
+
+  # pod 'DisplayTeamsFramework', :git => 'https://github.com/AbdullahNanaDVT/DisplayTeamsFramework.git' 
+  pod 'DisplayTeamsFramework', :path => '/Users/anana/Desktop/DisplayTeamsFramework/DisplayTeamsFramework' 
+
+  target 'Kick-StarterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Kick-StarterUITests' do
+    # Pods for testing
+  end
+
+end
