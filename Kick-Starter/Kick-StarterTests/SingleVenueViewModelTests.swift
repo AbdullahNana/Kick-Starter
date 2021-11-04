@@ -4,7 +4,6 @@
 //
 //  Created by Abdullah Nana on 2021/10/28.
 //
-
 import XCTest
 
 class SingleVenueViewModelTests: XCTestCase {
