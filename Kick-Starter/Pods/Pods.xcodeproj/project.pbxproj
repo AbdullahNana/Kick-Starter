@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		076CC9BAE505FC74ABD1B20E7E226A7D /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD6F9489DE6EF19762AF4F0FC1C4445 /* UIImageView+Extensions.swift */; };
-		0A2802960A726793B91115BA7AACEDAE /* ResultsViewModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F3416D87630F9237B9A8990D92ECA /* ResultsViewModelHelper.swift */; };
-		15CBE81486DEDF61BD096643144FBE5F /* SoccerTeamResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C1695F9621A4F95BD5C54EE2D26DF /* SoccerTeamResponseModel.swift */; };
-		1D1737F14AB1BD454F0CE1D9F5D398F8 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322F2244E87290DAC50136F1EE3C7789 /* Endpoints.swift */; };
-		2059931FC8D7EEA7F34C4C7313D14EC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1F6C08723D267EF612FAF535E85C9 /* Constants.swift */; };
+		11806D6A9FBDB972F7F33CA93BBDF0AD /* TeamViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C838E5CD882EE8F568795341B85EB3 /* TeamViewModelDelegate.swift */; };
+		168849C5C52208D7B58702E82B30FA72 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D990D7032697DC58CEB2525393B55 /* UIViewController+Extension.swift */; };
 		32626707768A458289EB5D51E9E0E3F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		34B88C2A6D2E1CE6D94E51353355BBD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3DC241CFF81F1D4AE19A443976F16A44 /* TeamViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EFACDCABB7ED5DFA2F175AA96AE22 /* TeamViewModelDelegate.swift */; };
 		40847D4CC139B61BE246DC0CEDC3C6C7 /* Pods-Kick-StarterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12EB1C52DC272E7458027E630B8F0 /* Pods-Kick-StarterTests-dummy.m */; };
-		45C231C52C1A87AA41C554575C8D1AFB /* TeamRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E41C0D10B3183ABB7FC40E49322051 /* TeamRepositable.swift */; };
-		49F4593746F2022B66CEDE5134BBBD84 /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7043C965A39DD5A2C69D22FC4BD79 /* TeamRepository.swift */; };
-		4BE98F885DDA884722582F897099C9EB /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C3402779AAD23A6E16F9623571BF3 /* TeamViewModel.swift */; };
+		43CA0F67EB4DD12110C1F79C4E0A2EB6 /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7043C965A39DD5A2C69D22FC4BD79 /* TeamRepository.swift */; };
 		50C9B41C512C8FF6F4633D333CACB17E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		552281A109988352D4A4D24C69D02477 /* Pods-Kick-StarterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C61BB2EBAC8B9F397A077FEA97CD61C /* Pods-Kick-StarterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B55E7D64C3FD6AA2293888104BE787D /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322F2244E87290DAC50136F1EE3C7789 /* Endpoints.swift */; };
+		77CA0B03CF236754C9A70AC9599D1505 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD6F9489DE6EF19762AF4F0FC1C4445 /* UIImageView+Extensions.swift */; };
+		7D51AF0AB819C5D3A402649F25E9F650 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1F6C08723D267EF612FAF535E85C9 /* Constants.swift */; };
+		881C7EEC276D74690B166CF9FEA9AC2F /* DisplayTeamsFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2F4B0B96CADFF2C460D7B94C7E7F0 /* DisplayTeamsFramework-dummy.m */; };
+		9BD56A0A7CD1D2B60FAD2C644428F715 /* TeamRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E41C0D10B3183ABB7FC40E49322051 /* TeamRepositable.swift */; };
+		9CDC9FCADDA26D04AAAA28E0EB1A71FB /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAEF90D0E9D535F36B48F09511360B /* Array+Extension.swift */; };
 		9FB83E6BED76CE6DDDE3B4B411F660B9 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF655D50324320700FB82AF3299217 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m */; };
-		A7F66A5DF28E37C7D36A9608E6924175 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D7D4AB4074DB2F44B539C0B2733A5 /* LeagueModel.swift */; };
 		AF588C6E70ECAD0DF5214071A980B1E4 /* Pods-Kick-Starter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7769B6EE6D64E445252DE61E25C563FC /* Pods-Kick-Starter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40200F7789B5D14301A8FC2B05EE2B4 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB25B6747646B6E96814C158FC8D50D2 /* TeamViewModel.swift */; };
+		BAC488F5C2ACA53B9CA631C9563C8A19 /* SoccerTeamResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C1695F9621A4F95BD5C54EE2D26DF /* SoccerTeamResponseModel.swift */; };
 		CBE2EF40FCB765346611058AA0071237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E19D60D99EDF08F20986A4701EBF6626 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAEF90D0E9D535F36B48F09511360B /* Array+Extension.swift */; };
-		EBB13A4585CCA11545DB53C61348F534 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D990D7032697DC58CEB2525393B55 /* UIViewController+Extension.swift */; };
-		F39134A91DE390B83F81B1E59032ACC8 /* DisplayTeamsFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2F4B0B96CADFF2C460D7B94C7E7F0 /* DisplayTeamsFramework-dummy.m */; };
+		EAFF4D7306D504A4BF72F7F4F7A102CE /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D7D4AB4074DB2F44B539C0B2733A5 /* LeagueModel.swift */; };
 		F48744ACB9F260B756AFBD9B768EA774 /* DisplayTeamsFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C86E2B3571F5599CC842AD3393656A /* DisplayTeamsFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6651670FAF868B6BC85BCD44E1E404F /* DisplayTeamsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F935E4E5825D94EFF87A9E6A823294FE /* DisplayTeamsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAB057B9AEC056C10AD7C91089125DF2 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 145E714BE79499D3B3594368137C08A5 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD4A6A674C93B09C9EBAE0069B8BA480 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9371357E5503F4F30F17F83B73508D /* ResultsViewModel.swift */; };
 		FFABCA2C42C0D1B0AF83DCAE7B1DA1CD /* Pods-Kick-Starter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAAA860C54C4276BF5C2B5C702E3D5 /* Pods-Kick-Starter-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +65,6 @@
 		145E714BE79499D3B3594368137C08A5 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kick-Starter-Kick-StarterUITests-umbrella.h"; sourceTree = "<group>"; };
 		1C61BB2EBAC8B9F397A077FEA97CD61C /* Pods-Kick-StarterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kick-StarterTests-umbrella.h"; sourceTree = "<group>"; };
 		1F051607881D7A1F812C34DEDF3E612D /* Pods-Kick-Starter-Kick-StarterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kick-Starter-Kick-StarterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		229C3402779AAD23A6E16F9623571BF3 /* TeamViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		23F12EB1C52DC272E7458027E630B8F0 /* Pods-Kick-StarterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kick-StarterTests-dummy.m"; sourceTree = "<group>"; };
 		27EAAA860C54C4276BF5C2B5C702E3D5 /* Pods-Kick-Starter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kick-Starter-dummy.m"; sourceTree = "<group>"; };
 		2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Kick-Starter"; path = Pods_Kick_Starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +88,7 @@
 		7BFAEF90D0E9D535F36B48F09511360B /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		7EB4E499BAAC4CB6294500F66FCB89AD /* DisplayTeamsFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplayTeamsFramework-prefix.pch"; sourceTree = "<group>"; };
 		810E8D55C81F15052A10CFD527B21729 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83C838E5CD882EE8F568795341B85EB3 /* TeamViewModelDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModelDelegate.swift; sourceTree = "<group>"; };
 		850B5A59920CF10EB7247EDA3630C559 /* Pods-Kick-Starter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kick-Starter.modulemap"; sourceTree = "<group>"; };
 		972FB07A17971B010067C6DD598ED3CA /* Pods-Kick-Starter-Kick-StarterUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-Starter-Kick-StarterUITests-Info.plist"; sourceTree = "<group>"; };
 		9D644CEA31DE7CE9816DABDE8A7FCD7E /* DisplayTeamsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplayTeamsFramework.debug.xcconfig; sourceTree = "<group>"; };
@@ -100,17 +100,17 @@
 		AB93A490A1216BC52BAEE421AB517AAA /* DisplayTeamsFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DisplayTeamsFramework-Info.plist"; sourceTree = "<group>"; };
 		ABDE832DB4C03FC506F3F63D3FC91775 /* DisplayTeamsFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DisplayTeamsFramework.modulemap; sourceTree = "<group>"; };
 		B425594F9230E752173B13ADBE66C283 /* Pods-Kick-StarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-StarterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BD4EFACDCABB7ED5DFA2F175AA96AE22 /* TeamViewModelDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModelDelegate.swift; sourceTree = "<group>"; };
 		C3747C769E3251D3C02E5E4A2BC0BCA0 /* Pods-Kick-Starter-Kick-StarterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kick-Starter-Kick-StarterUITests-frameworks.sh"; sourceTree = "<group>"; };
 		C8776E62F1906B4ECFB1743B034BC242 /* Pods-Kick-StarterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kick-StarterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CA7C1695F9621A4F95BD5C54EE2D26DF /* SoccerTeamResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoccerTeamResponseModel.swift; sourceTree = "<group>"; };
-		CC0F3416D87630F9237B9A8990D92ECA /* ResultsViewModelHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResultsViewModelHelper.swift; sourceTree = "<group>"; };
+		CA9371357E5503F4F30F17F83B73508D /* ResultsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
 		DCD6F9489DE6EF19762AF4F0FC1C4445 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		E20FB8CE13CCD93F035D155547A1517D /* Pods-Kick-StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-StarterTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5DC9589B962AEEF90CA7998C92CBF44 /* DisplayTeamsFramework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DisplayTeamsFramework; path = DisplayTeamsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75929B5504A34DD891702C4EA1BE76E /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F255A527493B283AD6D0A0079A9FCA09 /* Pods-Kick-StarterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-StarterTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F935E4E5825D94EFF87A9E6A823294FE /* DisplayTeamsFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DisplayTeamsFramework.h; path = DisplayTeamsFramework/DisplayTeamsFramework.h; sourceTree = "<group>"; };
+		FB25B6747646B6E96814C158FC8D50D2 /* TeamViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		FD55D8673C79302BD22E82E6D4B37960 /* Pods-Kick-Starter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kick-Starter-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,17 +254,6 @@
 			path = "Target Support Files/Pods-Kick-Starter";
 			sourceTree = "<group>";
 		};
-		58398B168EBEB74DCAA5EFA6025109B4 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				CC0F3416D87630F9237B9A8990D92ECA /* ResultsViewModelHelper.swift */,
-				229C3402779AAD23A6E16F9623571BF3 /* TeamViewModel.swift */,
-				BD4EFACDCABB7ED5DFA2F175AA96AE22 /* TeamViewModelDelegate.swift */,
-			);
-			name = "View Models";
-			path = "DisplayTeamsFramework/View Models";
-			sourceTree = "<group>";
-		};
 		7B9779664B2BC32FED7D6DA09D411ADB /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +288,17 @@
 			);
 			name = Protocol;
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B5F7CAD1B28F9E907480ABC80C23DB68 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA9371357E5503F4F30F17F83B73508D /* ResultsViewModel.swift */,
+				FB25B6747646B6E96814C158FC8D50D2 /* TeamViewModel.swift */,
+				83C838E5CD882EE8F568795341B85EB3 /* TeamViewModelDelegate.swift */,
+			);
+			name = "View Models";
+			path = "DisplayTeamsFramework/View Models";
 			sourceTree = "<group>";
 		};
 		B8424E685607CAD3D13DF4909BBB8E3A /* Products */ = {
@@ -350,7 +350,7 @@
 				A5BC9F830512EB91832D29BEE36153B3 /* Pod */,
 				16CBADE5335A4AFC7E5F89AC1DB2DA16 /* Repository */,
 				4FB4C1DF299289F9FF92E9C42113AE3C /* Support Files */,
-				58398B168EBEB74DCAA5EFA6025109B4 /* View Models */,
+				B5F7CAD1B28F9E907480ABC80C23DB68 /* View Models */,
 			);
 			name = DisplayTeamsFramework;
 			path = /Users/anana/Desktop/DisplayTeamsFramework/DisplayTeamsFramework;
@@ -457,7 +457,7 @@
 			buildConfigurationList = 607BB65F9FE0181D19E00892C78E3ADA /* Build configuration list for PBXNativeTarget "DisplayTeamsFramework" */;
 			buildPhases = (
 				6DBF78B10011F058A763A144508EF127 /* Headers */,
-				0118691D381A5EACF5DD22CA950CF2E3 /* Sources */,
+				E4A8BFA4F58DC57051715C4A97C4863F /* Sources */,
 				8F74C6899D481BCDB20B9638035E95C3 /* Frameworks */,
 				22DB0962CA063E107309868CC63217E2 /* Resources */,
 			);
@@ -532,26 +532,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0118691D381A5EACF5DD22CA950CF2E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E19D60D99EDF08F20986A4701EBF6626 /* Array+Extension.swift in Sources */,
-				2059931FC8D7EEA7F34C4C7313D14EC7 /* Constants.swift in Sources */,
-				F39134A91DE390B83F81B1E59032ACC8 /* DisplayTeamsFramework-dummy.m in Sources */,
-				1D1737F14AB1BD454F0CE1D9F5D398F8 /* Endpoints.swift in Sources */,
-				A7F66A5DF28E37C7D36A9608E6924175 /* LeagueModel.swift in Sources */,
-				0A2802960A726793B91115BA7AACEDAE /* ResultsViewModelHelper.swift in Sources */,
-				15CBE81486DEDF61BD096643144FBE5F /* SoccerTeamResponseModel.swift in Sources */,
-				45C231C52C1A87AA41C554575C8D1AFB /* TeamRepositable.swift in Sources */,
-				49F4593746F2022B66CEDE5134BBBD84 /* TeamRepository.swift in Sources */,
-				4BE98F885DDA884722582F897099C9EB /* TeamViewModel.swift in Sources */,
-				3DC241CFF81F1D4AE19A443976F16A44 /* TeamViewModelDelegate.swift in Sources */,
-				076CC9BAE505FC74ABD1B20E7E226A7D /* UIImageView+Extensions.swift in Sources */,
-				EBB13A4585CCA11545DB53C61348F534 /* UIViewController+Extension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6E4C40B64FA89AE610B29B89DC382182 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +553,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFABCA2C42C0D1B0AF83DCAE7B1DA1CD /* Pods-Kick-Starter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4A8BFA4F58DC57051715C4A97C4863F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDC9FCADDA26D04AAAA28E0EB1A71FB /* Array+Extension.swift in Sources */,
+				7D51AF0AB819C5D3A402649F25E9F650 /* Constants.swift in Sources */,
+				881C7EEC276D74690B166CF9FEA9AC2F /* DisplayTeamsFramework-dummy.m in Sources */,
+				6B55E7D64C3FD6AA2293888104BE787D /* Endpoints.swift in Sources */,
+				EAFF4D7306D504A4BF72F7F4F7A102CE /* LeagueModel.swift in Sources */,
+				FD4A6A674C93B09C9EBAE0069B8BA480 /* ResultsViewModel.swift in Sources */,
+				BAC488F5C2ACA53B9CA631C9563C8A19 /* SoccerTeamResponseModel.swift in Sources */,
+				9BD56A0A7CD1D2B60FAD2C644428F715 /* TeamRepositable.swift in Sources */,
+				43CA0F67EB4DD12110C1F79C4E0A2EB6 /* TeamRepository.swift in Sources */,
+				B40200F7789B5D14301A8FC2B05EE2B4 /* TeamViewModel.swift in Sources */,
+				11806D6A9FBDB972F7F33CA93BBDF0AD /* TeamViewModelDelegate.swift in Sources */,
+				77CA0B03CF236754C9A70AC9599D1505 /* UIImageView+Extensions.swift in Sources */,
+				168849C5C52208D7B58702E82B30FA72 /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
