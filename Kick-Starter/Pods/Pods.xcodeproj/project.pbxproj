@@ -68,7 +68,7 @@
 		1FFED3EB7A12EFAB795EC1DB9BD6CEF2 /* TeamViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		23F12EB1C52DC272E7458027E630B8F0 /* Pods-Kick-StarterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kick-StarterTests-dummy.m"; sourceTree = "<group>"; };
 		27EAAA860C54C4276BF5C2B5C702E3D5 /* Pods-Kick-Starter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kick-Starter-dummy.m"; sourceTree = "<group>"; };
-		2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Kick-Starter"; path = Pods_Kick_Starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods_Kick_Starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kick_Starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3229EC643896C11BC0F2142334D1660D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		342A6EF27B78384B647C18CC73CD3511 /* Pods-Kick-Starter-Kick-StarterUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Kick-Starter-Kick-StarterUITests"; path = Pods_Kick_Starter_Kick_StarterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37839C8F6261E600149439FC49AF1137 /* DisplayTeamsFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DisplayTeamsFramework-Info.plist"; sourceTree = "<group>"; };
@@ -91,14 +91,14 @@
 		89E5FCEE96913199D32CCF7EA5526197 /* SoccerTeamResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoccerTeamResponseModel.swift; sourceTree = "<group>"; };
 		972FB07A17971B010067C6DD598ED3CA /* Pods-Kick-Starter-Kick-StarterUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-Starter-Kick-StarterUITests-Info.plist"; sourceTree = "<group>"; };
 		98D71EDD48A6E409291D63EA98A22882 /* DisplayTeamsFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplayTeamsFramework-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A57242FEBC6FAE5879159CC907DB8F76 /* Pods-Kick-Starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-Starter.debug.xcconfig"; sourceTree = "<group>"; };
 		A7135D93C5FC68BCA31B419C8EB77768 /* Pods-Kick-Starter-Kick-StarterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kick-Starter-Kick-StarterUITests.modulemap"; sourceTree = "<group>"; };
 		A852E87D6A0EE774AEE60E6E19BEE1CE /* Pods-Kick-Starter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-Starter-acknowledgements.plist"; sourceTree = "<group>"; };
 		A8F070A28B72FC2B711D2EB653131F7B /* Pods-Kick-StarterTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-StarterTests-Info.plist"; sourceTree = "<group>"; };
 		B2B35A8BC0A68D31F6E4BB3FAB84C02A /* DisplayTeamsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplayTeamsFramework.release.xcconfig; sourceTree = "<group>"; };
 		B425594F9230E752173B13ADBE66C283 /* Pods-Kick-StarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-StarterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B825C1BD93B41A11B2D558175E5F2BE7 /* DisplayTeamsFramework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DisplayTeamsFramework.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B825C1BD93B41A11B2D558175E5F2BE7 /* DisplayTeamsFramework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DisplayTeamsFramework.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C3747C769E3251D3C02E5E4A2BC0BCA0 /* Pods-Kick-Starter-Kick-StarterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kick-Starter-Kick-StarterUITests-frameworks.sh"; sourceTree = "<group>"; };
 		C8776E62F1906B4ECFB1743B034BC242 /* Pods-Kick-StarterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kick-StarterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D18637D58BAD74084FD4914FFE193FEE /* DisplayTeamsFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DisplayTeamsFramework.h; path = DisplayTeamsFramework/DisplayTeamsFramework.h; sourceTree = "<group>"; };
@@ -275,7 +275,6 @@
 			children = (
 				74E0A5A7F5C73347A6195CFECF95BE0B /* TeamRepositable.swift */,
 			);
-			name = Protocol;
 			path = Protocol;
 			sourceTree = "<group>";
 		};
@@ -300,7 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				E5DC9589B962AEEF90CA7998C92CBF44 /* DisplayTeamsFramework */,
-				2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */,
+				2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods_Kick_Starter.framework */,
 				342A6EF27B78384B647C18CC73CD3511 /* Pods-Kick-Starter-Kick-StarterUITests */,
 				3D02A928203B0D0CEC9C977F91095F18 /* Pods-Kick-StarterTests */,
 			);
@@ -446,7 +445,7 @@
 			);
 			name = "Pods-Kick-Starter";
 			productName = Pods_Kick_Starter;
-			productReference = 2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */;
+			productReference = 2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods_Kick_Starter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FC39A8069FAB30E069D420A1D3744CAC /* DisplayTeamsFramework */ = {
