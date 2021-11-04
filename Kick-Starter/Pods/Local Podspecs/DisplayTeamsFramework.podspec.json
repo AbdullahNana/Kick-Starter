@@ -1,0 +1,23 @@
+{
+  "name": "DisplayTeamsFramework",
+  "version": "0.0.1",
+  "summary": "A framework for displaying teams for the Kick-Starter project.",
+  "description": "\"A framework for displaying teams for the Kick-Starter project.\"",
+  "homepage": "https://github.com/AbdullahNanaDVT/DisplayTeamsFramework.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AbdullahNanaDVT": "anana@jhb.dvt.co.za"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/AbdullahNanaDVT/DisplayTeamsFramework.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "DisplayTeamsFramework/**/*.{h,m,swift}",
+  "public_header_files": "Classes/**/*.h"
+}
