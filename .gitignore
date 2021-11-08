@@ -5,11 +5,13 @@
 
 Constants.swift
 
-#HTML Files
-*.html
-
 #Cocoapods
+
 Pods/
+
+#HTML Files
+
+*.html
 
 ## User settings
 xcuserdata/
