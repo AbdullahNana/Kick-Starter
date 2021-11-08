@@ -284,7 +284,7 @@
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -301,8 +301,9 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Fixtures">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -355,11 +356,51 @@
                     <connections>
                         <segue destination="WYV-y9-XSA" kind="relationship" relationship="viewControllers" id="2e8-LI-qUk"/>
                         <segue destination="NC5-ND-yer" kind="relationship" relationship="viewControllers" id="Aok-BT-3S1"/>
+                        <segue destination="wtQ-S7-Dyv" kind="relationship" relationship="viewControllers" id="Cms-JJ-869"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wWs-tr-gyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1973" y="-189"/>
+        </scene>
+        <!--Fixture-->
+        <scene sceneID="zfC-kD-iMi">
+            <objects>
+                <viewController id="wtQ-S7-Dyv" customClass="SingleFixtureViewController" customModule="Kick_Starter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qMp-7a-civ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="02g-0P-LRI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-4s-Dvc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ygc-RD-E9K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Emb-4s-Dvc" firstAttribute="top" secondItem="ygc-RD-E9K" secondAttribute="top" id="7wC-aa-K0z"/>
+                            <constraint firstItem="Emb-4s-Dvc" firstAttribute="leading" secondItem="ygc-RD-E9K" secondAttribute="leading" id="GHv-vl-5xZ"/>
+                            <constraint firstItem="ygc-RD-E9K" firstAttribute="bottom" secondItem="Emb-4s-Dvc" secondAttribute="bottom" id="hKw-GZ-mWo"/>
+                            <constraint firstItem="ygc-RD-E9K" firstAttribute="trailing" secondItem="Emb-4s-Dvc" secondAttribute="trailing" id="sB7-ZH-MXS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fixture" image="rectangle.stack.badge.play.fill" catalog="system" selectedImage="rectangle.stack.badge.play.fill" id="T5o-nt-aVm"/>
+                    <connections>
+                        <outlet property="singleFixtureWebView" destination="Emb-4s-Dvc" id="YzD-fl-YFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buG-v8-QVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1975.36231884058" y="533.70535714285711"/>
         </scene>
         <!--Leagues-->
         <scene sceneID="KLA-C7-uwv">
@@ -384,6 +425,7 @@
     <resources>
         <image name="globe.europe.africa.fill" catalog="system" width="128" height="121"/>
         <image name="play.square" catalog="system" width="128" height="114"/>
+        <image name="rectangle.stack.badge.play.fill" catalog="system" width="128" height="117"/>
         <image name="sky" width="640" height="1280"/>
         <image name="view" width="1000" height="1500"/>
         <namedColor name="AccentColor">
