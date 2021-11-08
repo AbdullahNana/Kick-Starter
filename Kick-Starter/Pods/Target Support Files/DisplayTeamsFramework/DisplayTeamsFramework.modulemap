@@ -1,6 +1,0 @@
-framework module DisplayTeamsFramework {
-  umbrella header "DisplayTeamsFramework-umbrella.h"
-
-  export *
-  module * { export * }
-}
