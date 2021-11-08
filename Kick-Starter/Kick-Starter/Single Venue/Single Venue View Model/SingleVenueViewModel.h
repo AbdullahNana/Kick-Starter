@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Kick_Starter-Swift.h"
+@class Venue;
 
 NS_ASSUME_NONNULL_BEGIN
 
