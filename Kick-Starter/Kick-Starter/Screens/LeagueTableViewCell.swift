@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import DisplayTeamsFramework
+import KickStarterFramework
 
 class LeagueTableViewCell: UITableViewCell {
 

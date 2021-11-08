@@ -7,7 +7,7 @@
 
 import UIKit
 import Foundation
-import DisplayTeamsFramework
+import KickStarterFramework
 
 final class TeamViewController: UIViewController {
     private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)

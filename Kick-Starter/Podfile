@@ -7,8 +7,8 @@ target 'Kick-Starter' do
 
   # Pods for Kick-Starter
 
-  # pod 'DisplayTeamsFramework', :git => 'https://github.com/AbdullahNanaDVT/DisplayTeamsFramework.git' 
-  pod 'DisplayTeamsFramework', :path => '/Users/anana/Desktop/DisplayTeamsFramework/DisplayTeamsFramework' 
+  # pod 'KickStarterFramework', :git => 'https://github.com/AbdullahNanaDVT/KickStarterFramework.git' 
+  pod 'KickStarterFramework', :path => '/Users/anana/Desktop/KickStarterFramework/KickStarterFramework' 
 
   target 'Kick-StarterTests' do
     inherit! :search_paths

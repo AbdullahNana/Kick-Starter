@@ -7,47 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11806D6A9FBDB972F7F33CA93BBDF0AD /* TeamViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C838E5CD882EE8F568795341B85EB3 /* TeamViewModelDelegate.swift */; };
-		168849C5C52208D7B58702E82B30FA72 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D990D7032697DC58CEB2525393B55 /* UIViewController+Extension.swift */; };
-		32626707768A458289EB5D51E9E0E3F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		34B88C2A6D2E1CE6D94E51353355BBD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		01AB5EC298EAE75B69F2F3F6C330A90E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8545D02518A0E1F628BEFB563F0C2077 /* UIViewController+Extension.swift */; };
+		08491119C5E5C9A3CB54ED7572C27159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		18B7B79709D38ECD7DD34D610E35B74C /* KickStarterFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 978D5DB4F4CCE17A82078172B266E7B5 /* KickStarterFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D49497B7681D9ACE2CB895415413D9 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351294319FA2F16C9FD6F645910326F0 /* UIImageView+Extensions.swift */; };
+		3CE05DF429A45C3193650115FF190055 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 145E714BE79499D3B3594368137C08A5 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40847D4CC139B61BE246DC0CEDC3C6C7 /* Pods-Kick-StarterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F12EB1C52DC272E7458027E630B8F0 /* Pods-Kick-StarterTests-dummy.m */; };
-		43CA0F67EB4DD12110C1F79C4E0A2EB6 /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7043C965A39DD5A2C69D22FC4BD79 /* TeamRepository.swift */; };
-		50C9B41C512C8FF6F4633D333CACB17E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4997552F892EF1EFAE2CBDCAE36FCC8D /* Pods-Kick-Starter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAAA860C54C4276BF5C2B5C702E3D5 /* Pods-Kick-Starter-dummy.m */; };
+		49AD56C157F56A736C9F47239004A99F /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E1229174E74F24447C112CE8CF869B /* TeamRepository.swift */; };
 		552281A109988352D4A4D24C69D02477 /* Pods-Kick-StarterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C61BB2EBAC8B9F397A077FEA97CD61C /* Pods-Kick-StarterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B55E7D64C3FD6AA2293888104BE787D /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322F2244E87290DAC50136F1EE3C7789 /* Endpoints.swift */; };
-		77CA0B03CF236754C9A70AC9599D1505 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD6F9489DE6EF19762AF4F0FC1C4445 /* UIImageView+Extensions.swift */; };
-		7D51AF0AB819C5D3A402649F25E9F650 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1F6C08723D267EF612FAF535E85C9 /* Constants.swift */; };
-		881C7EEC276D74690B166CF9FEA9AC2F /* DisplayTeamsFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2F4B0B96CADFF2C460D7B94C7E7F0 /* DisplayTeamsFramework-dummy.m */; };
-		9BD56A0A7CD1D2B60FAD2C644428F715 /* TeamRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E41C0D10B3183ABB7FC40E49322051 /* TeamRepositable.swift */; };
-		9CDC9FCADDA26D04AAAA28E0EB1A71FB /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAEF90D0E9D535F36B48F09511360B /* Array+Extension.swift */; };
-		9FB83E6BED76CE6DDDE3B4B411F660B9 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF655D50324320700FB82AF3299217 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m */; };
-		AF588C6E70ECAD0DF5214071A980B1E4 /* Pods-Kick-Starter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7769B6EE6D64E445252DE61E25C563FC /* Pods-Kick-Starter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B40200F7789B5D14301A8FC2B05EE2B4 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB25B6747646B6E96814C158FC8D50D2 /* TeamViewModel.swift */; };
-		BAC488F5C2ACA53B9CA631C9563C8A19 /* SoccerTeamResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C1695F9621A4F95BD5C54EE2D26DF /* SoccerTeamResponseModel.swift */; };
+		5784B531D8671D901E9A572D8EE443B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053B0E1092A2A62EAEBEFDDBF93CD2EB /* Constants.swift */; };
+		7A3D4D6E995842FF263B0B5FA19C20D3 /* KickStarterFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA692265E4EAA496EFC043A64AA1A5D9 /* KickStarterFramework-dummy.m */; };
+		855DF0F4ED343C81E7E12105EEA2C634 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF655D50324320700FB82AF3299217 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m */; };
+		8E4FADDA8C196314DCAB21EA1ED96C2B /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CB03FAD06BAE52ECD1093A8FA2457 /* TeamViewModel.swift */; };
+		B7EC3F8BCAE37FFAD88F1C2FAAC8BBDC /* Pods-Kick-Starter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7769B6EE6D64E445252DE61E25C563FC /* Pods-Kick-Starter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB8461CA55FF4A2694AF8467E8627D8E /* TeamViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF06546C89149FA5AC9BCC090AC5DF4 /* TeamViewModelDelegate.swift */; };
+		CBD68214D7CAA9AFF68D16157E550980 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67F45C7B01F3A21896F1038922A0074 /* ResultsViewModel.swift */; };
 		CBE2EF40FCB765346611058AA0071237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EAFF4D7306D504A4BF72F7F4F7A102CE /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D7D4AB4074DB2F44B539C0B2733A5 /* LeagueModel.swift */; };
-		F48744ACB9F260B756AFBD9B768EA774 /* DisplayTeamsFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C86E2B3571F5599CC842AD3393656A /* DisplayTeamsFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6651670FAF868B6BC85BCD44E1E404F /* DisplayTeamsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F935E4E5825D94EFF87A9E6A823294FE /* DisplayTeamsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAB057B9AEC056C10AD7C91089125DF2 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 145E714BE79499D3B3594368137C08A5 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD4A6A674C93B09C9EBAE0069B8BA480 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9371357E5503F4F30F17F83B73508D /* ResultsViewModel.swift */; };
-		FFABCA2C42C0D1B0AF83DCAE7B1DA1CD /* Pods-Kick-Starter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAAA860C54C4276BF5C2B5C702E3D5 /* Pods-Kick-Starter-dummy.m */; };
+		D4C22BB6FB514213B9D01E3C41FCE559 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E13FF1BD32505E7C5CD351398584D /* LeagueModel.swift */; };
+		D9AD91873F492BAD1C9A72E2692B1BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DEC3FDFDF585F4513E4442469871EE2F /* TeamRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F03DF76843696195A8711CE7C9BB9A /* TeamRepositable.swift */; };
+		E580512D93D1AAD08F726584AC3723F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E7ECD57B423784169AF14EDFA42F421E /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D99CE8359005E68F099180E75DEE4BE /* Array+Extension.swift */; };
+		EFAEBBA9CCEA328B92C965A5312352B4 /* KickStarterFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A51428EC4F110CB292E7A34A6DA6A7 /* KickStarterFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F02E9DF5DE02A05126F0125A8FCF56CD /* SoccerTeamResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB00FBF2EBF1D48A800CB7C834E642 /* SoccerTeamResponseModel.swift */; };
+		F351D06E7E94731E26B03AE158655169 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAAB5D1C68A0F12E8067120FE36556 /* Endpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B88AFBC781D66F9570738981A6F4DBF /* PBXContainerItemProxy */ = {
+		1182B4201C45CEC9B6A07ACC95FED30F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FC39A8069FAB30E069D420A1D3744CAC;
-			remoteInfo = DisplayTeamsFramework;
-		};
-		48214787CBE85B63AEA32900328F10D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FC39A8069FAB30E069D420A1D3744CAC;
-			remoteInfo = DisplayTeamsFramework;
+			remoteGlobalIDString = 1494F6FFA6DE471C9B33B93C6BD1FA9A;
+			remoteInfo = KickStarterFramework;
 		};
 		7CA79FB9594A35FC9A93926BDE6AB330 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -56,78 +49,85 @@
 			remoteGlobalIDString = A2671FA88B30E072779B02E2DB231D5D;
 			remoteInfo = "Pods-Kick-Starter";
 		};
+		EE9F43F6F31E8602D2ED6AFC39E7BD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1494F6FFA6DE471C9B33B93C6BD1FA9A;
+			remoteInfo = KickStarterFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053B0E1092A2A62EAEBEFDDBF93CD2EB /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0578CD70897809B2552EE758EBFC2F79 /* Pods-Kick-Starter-Kick-StarterUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-Starter-Kick-StarterUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		06E44F93CAF5947ACE3DA928A7ED3600 /* Pods-Kick-StarterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kick-StarterTests.modulemap"; sourceTree = "<group>"; };
-		114B14B69FED4643EC25359F10B5F123 /* DisplayTeamsFramework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DisplayTeamsFramework.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1106850BCA0027A2299FA51C06AA6EC6 /* KickStarterFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KickStarterFramework-prefix.pch"; sourceTree = "<group>"; };
 		145E714BE79499D3B3594368137C08A5 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kick-Starter-Kick-StarterUITests-umbrella.h"; sourceTree = "<group>"; };
+		15CAAB5D1C68A0F12E8067120FE36556 /* Endpoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoints.swift; path = KickStarterFramework/Endpoints.swift; sourceTree = "<group>"; };
 		1C61BB2EBAC8B9F397A077FEA97CD61C /* Pods-Kick-StarterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kick-StarterTests-umbrella.h"; sourceTree = "<group>"; };
 		1F051607881D7A1F812C34DEDF3E612D /* Pods-Kick-Starter-Kick-StarterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kick-Starter-Kick-StarterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F8581E148C17ED0C2C3D40EFE7F656F /* KickStarterFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KickStarterFramework.release.xcconfig; sourceTree = "<group>"; };
 		23F12EB1C52DC272E7458027E630B8F0 /* Pods-Kick-StarterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kick-StarterTests-dummy.m"; sourceTree = "<group>"; };
 		27EAAA860C54C4276BF5C2B5C702E3D5 /* Pods-Kick-Starter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kick-Starter-dummy.m"; sourceTree = "<group>"; };
 		2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Kick-Starter"; path = Pods_Kick_Starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		322F2244E87290DAC50136F1EE3C7789 /* Endpoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoints.swift; path = DisplayTeamsFramework/Endpoints.swift; sourceTree = "<group>"; };
 		342A6EF27B78384B647C18CC73CD3511 /* Pods-Kick-Starter-Kick-StarterUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Kick-Starter-Kick-StarterUITests"; path = Pods_Kick_Starter_Kick_StarterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E41C0D10B3183ABB7FC40E49322051 /* TeamRepositable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamRepositable.swift; sourceTree = "<group>"; };
-		36C86E2B3571F5599CC842AD3393656A /* DisplayTeamsFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplayTeamsFramework-umbrella.h"; sourceTree = "<group>"; };
-		3A5B575A37CCABA0BE2278EC17AB1E83 /* DisplayTeamsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplayTeamsFramework.release.xcconfig; sourceTree = "<group>"; };
+		351294319FA2F16C9FD6F645910326F0 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		35A51428EC4F110CB292E7A34A6DA6A7 /* KickStarterFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KickStarterFramework-umbrella.h"; sourceTree = "<group>"; };
+		38A90ECFCEE9D85FD47005C5189B3BDB /* KickStarterFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KickStarterFramework-Info.plist"; sourceTree = "<group>"; };
 		3D02A928203B0D0CEC9C977F91095F18 /* Pods-Kick-StarterTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Kick-StarterTests"; path = Pods_Kick_StarterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E8D7D4AB4074DB2F44B539C0B2733A5 /* LeagueModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		3F90CFC346343F2A0CD58F7A96288EA7 /* Pods-Kick-Starter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-Starter-Info.plist"; sourceTree = "<group>"; };
-		4CB2F4B0B96CADFF2C460D7B94C7E7F0 /* DisplayTeamsFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplayTeamsFramework-dummy.m"; sourceTree = "<group>"; };
-		4CB7043C965A39DD5A2C69D22FC4BD79 /* TeamRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
 		576D790D87B34D3D9CFEE8491961057A /* Pods-Kick-Starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-Starter.release.xcconfig"; sourceTree = "<group>"; };
-		5D9D990D7032697DC58CEB2525393B55 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		68C1F6C08723D267EF612FAF535E85C9 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5EB3AA1FBF42B52B73D22187F668F84C /* KickStarterFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KickStarterFramework.debug.xcconfig; sourceTree = "<group>"; };
+		6D99CE8359005E68F099180E75DEE4BE /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		6DAF655D50324320700FB82AF3299217 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kick-Starter-Kick-StarterUITests-dummy.m"; sourceTree = "<group>"; };
 		6DE286810C9452B3AEF9194A6807CC48 /* Pods-Kick-Starter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kick-Starter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		70F03DF76843696195A8711CE7C9BB9A /* TeamRepositable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamRepositable.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7769B6EE6D64E445252DE61E25C563FC /* Pods-Kick-Starter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kick-Starter-umbrella.h"; sourceTree = "<group>"; };
-		7BFAEF90D0E9D535F36B48F09511360B /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
-		7EB4E499BAAC4CB6294500F66FCB89AD /* DisplayTeamsFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplayTeamsFramework-prefix.pch"; sourceTree = "<group>"; };
 		810E8D55C81F15052A10CFD527B21729 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig"; sourceTree = "<group>"; };
-		83C838E5CD882EE8F568795341B85EB3 /* TeamViewModelDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModelDelegate.swift; sourceTree = "<group>"; };
 		850B5A59920CF10EB7247EDA3630C559 /* Pods-Kick-Starter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kick-Starter.modulemap"; sourceTree = "<group>"; };
+		8545D02518A0E1F628BEFB563F0C2077 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		96E1229174E74F24447C112CE8CF869B /* TeamRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
 		972FB07A17971B010067C6DD598ED3CA /* Pods-Kick-Starter-Kick-StarterUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-Starter-Kick-StarterUITests-Info.plist"; sourceTree = "<group>"; };
-		9D644CEA31DE7CE9816DABDE8A7FCD7E /* DisplayTeamsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplayTeamsFramework.debug.xcconfig; sourceTree = "<group>"; };
+		978D5DB4F4CCE17A82078172B266E7B5 /* KickStarterFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KickStarterFramework.h; path = KickStarterFramework/KickStarterFramework.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A09B93258F83F14A569B0C855AED05D5 /* KickStarterFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KickStarterFramework.modulemap; sourceTree = "<group>"; };
 		A57242FEBC6FAE5879159CC907DB8F76 /* Pods-Kick-Starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-Starter.debug.xcconfig"; sourceTree = "<group>"; };
 		A7135D93C5FC68BCA31B419C8EB77768 /* Pods-Kick-Starter-Kick-StarterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kick-Starter-Kick-StarterUITests.modulemap"; sourceTree = "<group>"; };
 		A852E87D6A0EE774AEE60E6E19BEE1CE /* Pods-Kick-Starter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-Starter-acknowledgements.plist"; sourceTree = "<group>"; };
 		A8F070A28B72FC2B711D2EB653131F7B /* Pods-Kick-StarterTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-StarterTests-Info.plist"; sourceTree = "<group>"; };
-		AB93A490A1216BC52BAEE421AB517AAA /* DisplayTeamsFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DisplayTeamsFramework-Info.plist"; sourceTree = "<group>"; };
-		ABDE832DB4C03FC506F3F63D3FC91775 /* DisplayTeamsFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DisplayTeamsFramework.modulemap; sourceTree = "<group>"; };
+		AA692265E4EAA496EFC043A64AA1A5D9 /* KickStarterFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KickStarterFramework-dummy.m"; sourceTree = "<group>"; };
 		B425594F9230E752173B13ADBE66C283 /* Pods-Kick-StarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-StarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFCB00FBF2EBF1D48A800CB7C834E642 /* SoccerTeamResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoccerTeamResponseModel.swift; sourceTree = "<group>"; };
 		C3747C769E3251D3C02E5E4A2BC0BCA0 /* Pods-Kick-Starter-Kick-StarterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kick-Starter-Kick-StarterUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C86E13FF1BD32505E7C5CD351398584D /* LeagueModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		C8776E62F1906B4ECFB1743B034BC242 /* Pods-Kick-StarterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kick-StarterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CA7C1695F9621A4F95BD5C54EE2D26DF /* SoccerTeamResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SoccerTeamResponseModel.swift; sourceTree = "<group>"; };
-		CA9371357E5503F4F30F17F83B73508D /* ResultsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
-		DCD6F9489DE6EF19762AF4F0FC1C4445 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		D67F45C7B01F3A21896F1038922A0074 /* ResultsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
 		E20FB8CE13CCD93F035D155547A1517D /* Pods-Kick-StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-StarterTests.release.xcconfig"; sourceTree = "<group>"; };
-		E5DC9589B962AEEF90CA7998C92CBF44 /* DisplayTeamsFramework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DisplayTeamsFramework; path = DisplayTeamsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2899EC02E2370F64303743386FA813B /* KickStarterFramework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KickStarterFramework.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E75929B5504A34DD891702C4EA1BE76E /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF06546C89149FA5AC9BCC090AC5DF4 /* TeamViewModelDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModelDelegate.swift; sourceTree = "<group>"; };
 		F255A527493B283AD6D0A0079A9FCA09 /* Pods-Kick-StarterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kick-StarterTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F935E4E5825D94EFF87A9E6A823294FE /* DisplayTeamsFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DisplayTeamsFramework.h; path = DisplayTeamsFramework/DisplayTeamsFramework.h; sourceTree = "<group>"; };
-		FB25B6747646B6E96814C158FC8D50D2 /* TeamViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		FD55D8673C79302BD22E82E6D4B37960 /* Pods-Kick-Starter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kick-Starter-frameworks.sh"; sourceTree = "<group>"; };
+		FDDE4DE848A47021F95EF1FF829D1C3B /* KickStarterFramework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KickStarterFramework; path = KickStarterFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7CB03FAD06BAE52ECD1093A8FA2457 /* TeamViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E93B51744257AB9A2D2676B930CD0E2 /* Frameworks */ = {
+		3D72894A167A159AC93F7D1F3573B161 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32626707768A458289EB5D51E9E0E3F9 /* Foundation.framework in Frameworks */,
+				E580512D93D1AAD08F726584AC3723F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F74C6899D481BCDB20B9638035E95C3 /* Frameworks */ = {
+		87840F543C82B44F64038669E2F51FB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C9B41C512C8FF6F4633D333CACB17E /* Foundation.framework in Frameworks */,
+				D9AD91873F492BAD1C9A72E2692B1BCC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,25 +139,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F746A1A72837DBB2EBDEA3C4CB7A72B7 /* Frameworks */ = {
+		F826AE8657FC9D1E5E956F9E90165D2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34B88C2A6D2E1CE6D94E51353355BBD4 /* Foundation.framework in Frameworks */,
+				08491119C5E5C9A3CB54ED7572C27159 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16CBADE5335A4AFC7E5F89AC1DB2DA16 /* Repository */ = {
+		13F8FBB949039E939FD7508CDB2F7883 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4CB7043C965A39DD5A2C69D22FC4BD79 /* TeamRepository.swift */,
-				B1E41A7BCB4957C2C61AB58DB0BF2E5F /* Protocol */,
+				6D99CE8359005E68F099180E75DEE4BE /* Array+Extension.swift */,
+				351294319FA2F16C9FD6F645910326F0 /* UIImageView+Extensions.swift */,
+				8545D02518A0E1F628BEFB563F0C2077 /* UIViewController+Extension.swift */,
 			);
-			name = Repository;
-			path = DisplayTeamsFramework/Repository;
+			name = Extensions;
+			path = KickStarterFramework/Extensions;
+			sourceTree = "<group>";
+		};
+		19F38E935715ECF7A3E92ACB2EF832B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE4DE848A47021F95EF1FF829D1C3B /* KickStarterFramework */,
+				2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */,
+				342A6EF27B78384B647C18CC73CD3511 /* Pods-Kick-Starter-Kick-StarterUITests */,
+				3D02A928203B0D0CEC9C977F91095F18 /* Pods-Kick-StarterTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29F786BA1B596CFD7F6950992180C012 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A09B93258F83F14A569B0C855AED05D5 /* KickStarterFramework.modulemap */,
+				AA692265E4EAA496EFC043A64AA1A5D9 /* KickStarterFramework-dummy.m */,
+				38A90ECFCEE9D85FD47005C5189B3BDB /* KickStarterFramework-Info.plist */,
+				1106850BCA0027A2299FA51C06AA6EC6 /* KickStarterFramework-prefix.pch */,
+				35A51428EC4F110CB292E7A34A6DA6A7 /* KickStarterFramework-umbrella.h */,
+				5EB3AA1FBF42B52B73D22187F668F84C /* KickStarterFramework.debug.xcconfig */,
+				1F8581E148C17ED0C2C3D40EFE7F656F /* KickStarterFramework.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Kick-Starter/Kick-Starter/Pods/Target Support Files/KickStarterFramework";
 			sourceTree = "<group>";
 		};
 		3043B06B4909D2397A11DC378ED8B18B /* Targets Support Files */ = {
@@ -170,15 +197,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3673E4AA5888551FC6827C639AC80965 /* Extensions */ = {
+		32C211CA9BAAA09D9E2F68D8A3ADF5EE /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				7BFAEF90D0E9D535F36B48F09511360B /* Array+Extension.swift */,
-				DCD6F9489DE6EF19762AF4F0FC1C4445 /* UIImageView+Extensions.swift */,
-				5D9D990D7032697DC58CEB2525393B55 /* UIViewController+Extension.swift */,
+				96E1229174E74F24447C112CE8CF869B /* TeamRepository.swift */,
+				DE9950C20EE843AD393BE86F4339A90D /* Protocol */,
 			);
-			name = Extensions;
-			path = DisplayTeamsFramework/Extensions;
+			name = Repository;
+			path = KickStarterFramework/Repository;
 			sourceTree = "<group>";
 		};
 		38FCB6680F77207FC406A890430BB2D5 /* Pods-Kick-Starter-Kick-StarterUITests */ = {
@@ -214,19 +240,12 @@
 			path = "Target Support Files/Pods-Kick-StarterTests";
 			sourceTree = "<group>";
 		};
-		4FB4C1DF299289F9FF92E9C42113AE3C /* Support Files */ = {
+		52F8F342FC8A22FB152148213F873BDC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				ABDE832DB4C03FC506F3F63D3FC91775 /* DisplayTeamsFramework.modulemap */,
-				4CB2F4B0B96CADFF2C460D7B94C7E7F0 /* DisplayTeamsFramework-dummy.m */,
-				AB93A490A1216BC52BAEE421AB517AAA /* DisplayTeamsFramework-Info.plist */,
-				7EB4E499BAAC4CB6294500F66FCB89AD /* DisplayTeamsFramework-prefix.pch */,
-				36C86E2B3571F5599CC842AD3393656A /* DisplayTeamsFramework-umbrella.h */,
-				9D644CEA31DE7CE9816DABDE8A7FCD7E /* DisplayTeamsFramework.debug.xcconfig */,
-				3A5B575A37CCABA0BE2278EC17AB1E83 /* DisplayTeamsFramework.release.xcconfig */,
+				E2899EC02E2370F64303743386FA813B /* KickStarterFramework.podspec */,
 			);
-			name = "Support Files";
-			path = "../../Kick-Starter/Kick-Starter/Pods/Target Support Files/DisplayTeamsFramework";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -235,6 +254,16 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		57AD1994B7DE7D4E34E75F327F506F64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C86E13FF1BD32505E7C5CD351398584D /* LeagueModel.swift */,
+				BFCB00FBF2EBF1D48A800CB7C834E642 /* SoccerTeamResponseModel.swift */,
+			);
+			name = Models;
+			path = KickStarterFramework/Models;
 			sourceTree = "<group>";
 		};
 		58058C8CB62696A54397CE20141B738C /* Pods-Kick-Starter */ = {
@@ -254,68 +283,30 @@
 			path = "Target Support Files/Pods-Kick-Starter";
 			sourceTree = "<group>";
 		};
-		7B9779664B2BC32FED7D6DA09D411ADB /* Constants */ = {
+		8C36D10ECBDFBF14E8A643E28007B031 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				68C1F6C08723D267EF612FAF535E85C9 /* Constants.swift */,
+				053B0E1092A2A62EAEBEFDDBF93CD2EB /* Constants.swift */,
 			);
 			name = Constants;
-			path = DisplayTeamsFramework/Constants;
+			path = KickStarterFramework/Constants;
 			sourceTree = "<group>";
 		};
-		920F661E9072123C762BE7FDEADF9AB8 /* Models */ = {
+		9476FF1BA23AA5D8A7D95067097F379E /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				3E8D7D4AB4074DB2F44B539C0B2733A5 /* LeagueModel.swift */,
-				CA7C1695F9621A4F95BD5C54EE2D26DF /* SoccerTeamResponseModel.swift */,
-			);
-			name = Models;
-			path = DisplayTeamsFramework/Models;
-			sourceTree = "<group>";
-		};
-		A5BC9F830512EB91832D29BEE36153B3 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				114B14B69FED4643EC25359F10B5F123 /* DisplayTeamsFramework.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B1E41A7BCB4957C2C61AB58DB0BF2E5F /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				35E41C0D10B3183ABB7FC40E49322051 /* TeamRepositable.swift */,
-			);
-			name = Protocol;
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		B5F7CAD1B28F9E907480ABC80C23DB68 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				CA9371357E5503F4F30F17F83B73508D /* ResultsViewModel.swift */,
-				FB25B6747646B6E96814C158FC8D50D2 /* TeamViewModel.swift */,
-				83C838E5CD882EE8F568795341B85EB3 /* TeamViewModelDelegate.swift */,
+				D67F45C7B01F3A21896F1038922A0074 /* ResultsViewModel.swift */,
+				FE7CB03FAD06BAE52ECD1093A8FA2457 /* TeamViewModel.swift */,
+				EBF06546C89149FA5AC9BCC090AC5DF4 /* TeamViewModelDelegate.swift */,
 			);
 			name = "View Models";
-			path = "DisplayTeamsFramework/View Models";
+			path = "KickStarterFramework/View Models";
 			sourceTree = "<group>";
 		};
-		B8424E685607CAD3D13DF4909BBB8E3A /* Products */ = {
+		BC6B0F20418FFE03DF93BBB4696106EF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E5DC9589B962AEEF90CA7998C92CBF44 /* DisplayTeamsFramework */,
-				2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */,
-				342A6EF27B78384B647C18CC73CD3511 /* Pods-Kick-Starter-Kick-StarterUITests */,
-				3D02A928203B0D0CEC9C977F91095F18 /* Pods-Kick-StarterTests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAAF98207858214B2568A4418DAD0DC3 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E68696EEB56EFFF42271E8FC0642E7D8 /* DisplayTeamsFramework */,
+				D2B8B774715B6EDE886EB4639326A232 /* KickStarterFramework */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -324,9 +315,9 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CAAF98207858214B2568A4418DAD0DC3 /* Development Pods */,
+				BC6B0F20418FFE03DF93BBB4696106EF /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				B8424E685607CAD3D13DF4909BBB8E3A /* Products */,
+				19F38E935715ECF7A3E92ACB2EF832B3 /* Products */,
 				3043B06B4909D2397A11DC378ED8B18B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -339,48 +330,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E68696EEB56EFFF42271E8FC0642E7D8 /* DisplayTeamsFramework */ = {
+		D2B8B774715B6EDE886EB4639326A232 /* KickStarterFramework */ = {
 			isa = PBXGroup;
 			children = (
-				F935E4E5825D94EFF87A9E6A823294FE /* DisplayTeamsFramework.h */,
-				322F2244E87290DAC50136F1EE3C7789 /* Endpoints.swift */,
-				7B9779664B2BC32FED7D6DA09D411ADB /* Constants */,
-				3673E4AA5888551FC6827C639AC80965 /* Extensions */,
-				920F661E9072123C762BE7FDEADF9AB8 /* Models */,
-				A5BC9F830512EB91832D29BEE36153B3 /* Pod */,
-				16CBADE5335A4AFC7E5F89AC1DB2DA16 /* Repository */,
-				4FB4C1DF299289F9FF92E9C42113AE3C /* Support Files */,
-				B5F7CAD1B28F9E907480ABC80C23DB68 /* View Models */,
+				15CAAB5D1C68A0F12E8067120FE36556 /* Endpoints.swift */,
+				978D5DB4F4CCE17A82078172B266E7B5 /* KickStarterFramework.h */,
+				8C36D10ECBDFBF14E8A643E28007B031 /* Constants */,
+				13F8FBB949039E939FD7508CDB2F7883 /* Extensions */,
+				57AD1994B7DE7D4E34E75F327F506F64 /* Models */,
+				52F8F342FC8A22FB152148213F873BDC /* Pod */,
+				32C211CA9BAAA09D9E2F68D8A3ADF5EE /* Repository */,
+				29F786BA1B596CFD7F6950992180C012 /* Support Files */,
+				9476FF1BA23AA5D8A7D95067097F379E /* View Models */,
 			);
-			name = DisplayTeamsFramework;
-			path = /Users/anana/Desktop/DisplayTeamsFramework/DisplayTeamsFramework;
+			name = KickStarterFramework;
+			path = /Users/anana/Desktop/KickStarterFramework/KickStarterFramework;
 			sourceTree = "<absolute>";
+		};
+		DE9950C20EE843AD393BE86F4339A90D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				70F03DF76843696195A8711CE7C9BB9A /* TeamRepositable.swift */,
+			);
+			name = Protocol;
+			path = Protocol;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		348A157F7DD3DB04FA360DFCB843932B /* Headers */ = {
+		590CB5F69EF3E554422367B30D6AF4E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF588C6E70ECAD0DF5214071A980B1E4 /* Pods-Kick-Starter-umbrella.h in Headers */,
+				3CE05DF429A45C3193650115FF190055 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DBF78B10011F058A763A144508EF127 /* Headers */ = {
+		83783E405D97E1852417EC5ED55585BA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6651670FAF868B6BC85BCD44E1E404F /* DisplayTeamsFramework.h in Headers */,
-				F48744ACB9F260B756AFBD9B768EA774 /* DisplayTeamsFramework-umbrella.h in Headers */,
+				B7EC3F8BCAE37FFAD88F1C2FAAC8BBDC /* Pods-Kick-Starter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98961D2FB6B6C7E281B988112A9BE3DB /* Headers */ = {
+		D0C05DEE43E22542A19CF8D493072D04 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB057B9AEC056C10AD7C91089125DF2 /* Pods-Kick-Starter-Kick-StarterUITests-umbrella.h in Headers */,
+				18B7B79709D38ECD7DD34D610E35B74C /* KickStarterFramework.h in Headers */,
+				EFAEBBA9CCEA328B92C965A5312352B4 /* KickStarterFramework-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,21 +397,39 @@
 /* Begin PBXNativeTarget section */
 		0DEBCFAF1010D1DABEED8F07D9ADAFF0 /* Pods-Kick-Starter-Kick-StarterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5415CF3988D32354F5DAFC08104677EB /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter-Kick-StarterUITests" */;
+			buildConfigurationList = 9724032C332A7CE022FC3E5083E9BEA7 /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter-Kick-StarterUITests" */;
 			buildPhases = (
-				98961D2FB6B6C7E281B988112A9BE3DB /* Headers */,
-				7D341A974C3E84C93EFCD6F83278A26B /* Sources */,
-				6E93B51744257AB9A2D2676B930CD0E2 /* Frameworks */,
-				D772550290F4D01478FD2058CBF4DAC0 /* Resources */,
+				590CB5F69EF3E554422367B30D6AF4E0 /* Headers */,
+				535A4073395F3099ACC99467406ECC7E /* Sources */,
+				87840F543C82B44F64038669E2F51FB2 /* Frameworks */,
+				7D26717D748CD5744D74BFCF0DF58EDC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9BC4EE694A4853BFBEA888726622437C /* PBXTargetDependency */,
+				8A520CE0E2C40F80B4E3B2A80C0AB51B /* PBXTargetDependency */,
 			);
 			name = "Pods-Kick-Starter-Kick-StarterUITests";
 			productName = Pods_Kick_Starter_Kick_StarterUITests;
 			productReference = 342A6EF27B78384B647C18CC73CD3511 /* Pods-Kick-Starter-Kick-StarterUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		1494F6FFA6DE471C9B33B93C6BD1FA9A /* KickStarterFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F7A311FA1796AA304B3C3C2564BF99 /* Build configuration list for PBXNativeTarget "KickStarterFramework" */;
+			buildPhases = (
+				D0C05DEE43E22542A19CF8D493072D04 /* Headers */,
+				D0E2E4F200160C4368301137291C2583 /* Sources */,
+				3D72894A167A159AC93F7D1F3573B161 /* Frameworks */,
+				9838748D9ED9B9627448CB863A36BAD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KickStarterFramework;
+			productName = KickStarterFramework;
+			productReference = FDDE4DE848A47021F95EF1FF829D1C3B /* KickStarterFramework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9F12B31FFD158E9E783FEDFD11F08A73 /* Pods-Kick-StarterTests */ = {
@@ -435,39 +453,21 @@
 		};
 		A2671FA88B30E072779B02E2DB231D5D /* Pods-Kick-Starter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA01B2DE30CC182D160298155063C477 /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter" */;
+			buildConfigurationList = A24D8E62640F5B887C0D61500EB0F65E /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter" */;
 			buildPhases = (
-				348A157F7DD3DB04FA360DFCB843932B /* Headers */,
-				B2395AE47FA59745CBD812ACA01C89FE /* Sources */,
-				F746A1A72837DBB2EBDEA3C4CB7A72B7 /* Frameworks */,
-				F012DA9B85AE71FE976CC5A996CA21D0 /* Resources */,
+				83783E405D97E1852417EC5ED55585BA /* Headers */,
+				2D7EC84CD60B919277E1F9CA5864FCF7 /* Sources */,
+				F826AE8657FC9D1E5E956F9E90165D2F /* Frameworks */,
+				704F9635A606BE45763FDD756A4C1D40 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				23405AD4D664C6FD532447D3312240C8 /* PBXTargetDependency */,
+				D45A938063675D9F5FA65A4470973D05 /* PBXTargetDependency */,
 			);
 			name = "Pods-Kick-Starter";
 			productName = Pods_Kick_Starter;
 			productReference = 2DB886EB3BDEEB8BEA140EBA8545A236 /* Pods-Kick-Starter */;
-			productType = "com.apple.product-type.framework";
-		};
-		FC39A8069FAB30E069D420A1D3744CAC /* DisplayTeamsFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607BB65F9FE0181D19E00892C78E3ADA /* Build configuration list for PBXNativeTarget "DisplayTeamsFramework" */;
-			buildPhases = (
-				6DBF78B10011F058A763A144508EF127 /* Headers */,
-				E4A8BFA4F58DC57051715C4A97C4863F /* Sources */,
-				8F74C6899D481BCDB20B9638035E95C3 /* Frameworks */,
-				22DB0962CA063E107309868CC63217E2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DisplayTeamsFramework;
-			productName = DisplayTeamsFramework;
-			productReference = E5DC9589B962AEEF90CA7998C92CBF44 /* DisplayTeamsFramework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -488,11 +488,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B8424E685607CAD3D13DF4909BBB8E3A /* Products */;
+			productRefGroup = 19F38E935715ECF7A3E92ACB2EF832B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC39A8069FAB30E069D420A1D3744CAC /* DisplayTeamsFramework */,
+				1494F6FFA6DE471C9B33B93C6BD1FA9A /* KickStarterFramework */,
 				A2671FA88B30E072779B02E2DB231D5D /* Pods-Kick-Starter */,
 				0DEBCFAF1010D1DABEED8F07D9ADAFF0 /* Pods-Kick-Starter-Kick-StarterUITests */,
 				9F12B31FFD158E9E783FEDFD11F08A73 /* Pods-Kick-StarterTests */,
@@ -508,21 +508,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22DB0962CA063E107309868CC63217E2 /* Resources */ = {
+		704F9635A606BE45763FDD756A4C1D40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D772550290F4D01478FD2058CBF4DAC0 /* Resources */ = {
+		7D26717D748CD5744D74BFCF0DF58EDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F012DA9B85AE71FE976CC5A996CA21D0 /* Resources */ = {
+		9838748D9ED9B9627448CB863A36BAD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -532,6 +532,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D7EC84CD60B919277E1F9CA5864FCF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4997552F892EF1EFAE2CBDCAE36FCC8D /* Pods-Kick-Starter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535A4073395F3099ACC99467406ECC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855DF0F4ED343C81E7E12105EEA2C634 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E4C40B64FA89AE610B29B89DC382182 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,62 +556,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D341A974C3E84C93EFCD6F83278A26B /* Sources */ = {
+		D0E2E4F200160C4368301137291C2583 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB83E6BED76CE6DDDE3B4B411F660B9 /* Pods-Kick-Starter-Kick-StarterUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2395AE47FA59745CBD812ACA01C89FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFABCA2C42C0D1B0AF83DCAE7B1DA1CD /* Pods-Kick-Starter-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4A8BFA4F58DC57051715C4A97C4863F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CDC9FCADDA26D04AAAA28E0EB1A71FB /* Array+Extension.swift in Sources */,
-				7D51AF0AB819C5D3A402649F25E9F650 /* Constants.swift in Sources */,
-				881C7EEC276D74690B166CF9FEA9AC2F /* DisplayTeamsFramework-dummy.m in Sources */,
-				6B55E7D64C3FD6AA2293888104BE787D /* Endpoints.swift in Sources */,
-				EAFF4D7306D504A4BF72F7F4F7A102CE /* LeagueModel.swift in Sources */,
-				FD4A6A674C93B09C9EBAE0069B8BA480 /* ResultsViewModel.swift in Sources */,
-				BAC488F5C2ACA53B9CA631C9563C8A19 /* SoccerTeamResponseModel.swift in Sources */,
-				9BD56A0A7CD1D2B60FAD2C644428F715 /* TeamRepositable.swift in Sources */,
-				43CA0F67EB4DD12110C1F79C4E0A2EB6 /* TeamRepository.swift in Sources */,
-				B40200F7789B5D14301A8FC2B05EE2B4 /* TeamViewModel.swift in Sources */,
-				11806D6A9FBDB972F7F33CA93BBDF0AD /* TeamViewModelDelegate.swift in Sources */,
-				77CA0B03CF236754C9A70AC9599D1505 /* UIImageView+Extensions.swift in Sources */,
-				168849C5C52208D7B58702E82B30FA72 /* UIViewController+Extension.swift in Sources */,
+				E7ECD57B423784169AF14EDFA42F421E /* Array+Extension.swift in Sources */,
+				5784B531D8671D901E9A572D8EE443B9 /* Constants.swift in Sources */,
+				F351D06E7E94731E26B03AE158655169 /* Endpoints.swift in Sources */,
+				7A3D4D6E995842FF263B0B5FA19C20D3 /* KickStarterFramework-dummy.m in Sources */,
+				D4C22BB6FB514213B9D01E3C41FCE559 /* LeagueModel.swift in Sources */,
+				CBD68214D7CAA9AFF68D16157E550980 /* ResultsViewModel.swift in Sources */,
+				F02E9DF5DE02A05126F0125A8FCF56CD /* SoccerTeamResponseModel.swift in Sources */,
+				DEC3FDFDF585F4513E4442469871EE2F /* TeamRepositable.swift in Sources */,
+				49AD56C157F56A736C9F47239004A99F /* TeamRepository.swift in Sources */,
+				8E4FADDA8C196314DCAB21EA1ED96C2B /* TeamViewModel.swift in Sources */,
+				CB8461CA55FF4A2694AF8467E8627D8E /* TeamViewModelDelegate.swift in Sources */,
+				30D49497B7681D9ACE2CB895415413D9 /* UIImageView+Extensions.swift in Sources */,
+				01AB5EC298EAE75B69F2F3F6C330A90E /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23405AD4D664C6FD532447D3312240C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DisplayTeamsFramework;
-			target = FC39A8069FAB30E069D420A1D3744CAC /* DisplayTeamsFramework */;
-			targetProxy = 48214787CBE85B63AEA32900328F10D7 /* PBXContainerItemProxy */;
-		};
 		6398A5B2DC96896A0D92763F635ED8AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Kick-Starter";
 			target = A2671FA88B30E072779B02E2DB231D5D /* Pods-Kick-Starter */;
 			targetProxy = 7CA79FB9594A35FC9A93926BDE6AB330 /* PBXContainerItemProxy */;
 		};
-		9BC4EE694A4853BFBEA888726622437C /* PBXTargetDependency */ = {
+		8A520CE0E2C40F80B4E3B2A80C0AB51B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DisplayTeamsFramework;
-			target = FC39A8069FAB30E069D420A1D3744CAC /* DisplayTeamsFramework */;
-			targetProxy = 1B88AFBC781D66F9570738981A6F4DBF /* PBXContainerItemProxy */;
+			name = KickStarterFramework;
+			target = 1494F6FFA6DE471C9B33B93C6BD1FA9A /* KickStarterFramework */;
+			targetProxy = 1182B4201C45CEC9B6A07ACC95FED30F /* PBXContainerItemProxy */;
+		};
+		D45A938063675D9F5FA65A4470973D05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KickStarterFramework;
+			target = 1494F6FFA6DE471C9B33B93C6BD1FA9A /* KickStarterFramework */;
+			targetProxy = EE9F43F6F31E8602D2ED6AFC39E7BD84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -637,41 +637,7 @@
 			};
 			name = Debug;
 		};
-		68BC183DCE874755A8C1B3311ED31CCC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D644CEA31DE7CE9816DABDE8A7FCD7E /* DisplayTeamsFramework.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DisplayTeamsFramework/DisplayTeamsFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DisplayTeamsFramework/DisplayTeamsFramework-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DisplayTeamsFramework/DisplayTeamsFramework.modulemap";
-				PRODUCT_MODULE_NAME = DisplayTeamsFramework;
-				PRODUCT_NAME = DisplayTeamsFramework;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8384363A2BAB3A5F9FA97473ED59DE61 /* Debug */ = {
+		23C743C3BC1FC502B556BC92FEA2D0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A57242FEBC6FAE5879159CC907DB8F76 /* Pods-Kick-Starter.debug.xcconfig */;
 			buildSettings = {
@@ -708,9 +674,122 @@
 			};
 			name = Debug;
 		};
-		891A3DBB454C71B0FFE84F04EB458B78 /* Release */ = {
+		312FF0D59505E071AB5CE1346DBFE564 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A5B575A37CCABA0BE2278EC17AB1E83 /* DisplayTeamsFramework.release.xcconfig */;
+			baseConfigurationReference = 810E8D55C81F15052A10CFD527B21729 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D3A4127DFFA4019D1399EA970324EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75929B5504A34DD891702C4EA1BE76E /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A4E65763D4718074CA94F86A61231C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 576D790D87B34D3D9CFEE8491961057A /* Pods-Kick-Starter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88FC9BC914A8557D52E326AC5ECDC95C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8581E148C17ED0C2C3D40EFE7F656F /* KickStarterFramework.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -720,8 +799,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DisplayTeamsFramework/DisplayTeamsFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DisplayTeamsFramework/DisplayTeamsFramework-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KickStarterFramework/KickStarterFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KickStarterFramework/KickStarterFramework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -729,9 +808,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/DisplayTeamsFramework/DisplayTeamsFramework.modulemap";
-				PRODUCT_MODULE_NAME = DisplayTeamsFramework;
-				PRODUCT_NAME = DisplayTeamsFramework;
+				MODULEMAP_FILE = "Target Support Files/KickStarterFramework/KickStarterFramework.modulemap";
+				PRODUCT_MODULE_NAME = KickStarterFramework;
+				PRODUCT_NAME = KickStarterFramework;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -909,12 +988,10 @@
 			};
 			name = Release;
 		};
-		A013873F4A07EF08CCEDC4FB41C1E26E /* Release */ = {
+		B7B92E81A8569A849999B6953C72CDB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 810E8D55C81F15052A10CFD527B21729 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */;
+			baseConfigurationReference = 5EB3AA1FBF42B52B73D22187F668F84C /* KickStarterFramework.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -923,99 +1000,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KickStarterFramework/KickStarterFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KickStarterFramework/KickStarterFramework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/KickStarterFramework/KickStarterFramework.modulemap";
+				PRODUCT_MODULE_NAME = KickStarterFramework;
+				PRODUCT_NAME = KickStarterFramework;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FA63589874D4DD2831775B95DEED7E49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 576D790D87B34D3D9CFEE8491961057A /* Pods-Kick-Starter.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FF86A4AD5877C939D277FB1F506323F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E75929B5504A34DD891702C4EA1BE76E /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1034,24 +1034,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5415CF3988D32354F5DAFC08104677EB /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter-Kick-StarterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF86A4AD5877C939D277FB1F506323F3 /* Debug */,
-				A013873F4A07EF08CCEDC4FB41C1E26E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607BB65F9FE0181D19E00892C78E3ADA /* Build configuration list for PBXNativeTarget "DisplayTeamsFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68BC183DCE874755A8C1B3311ED31CCC /* Debug */,
-				891A3DBB454C71B0FFE84F04EB458B78 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6C38A777E3C38C15765C6105145766E1 /* Build configuration list for PBXNativeTarget "Pods-Kick-StarterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1061,11 +1043,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA01B2DE30CC182D160298155063C477 /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter" */ = {
+		9724032C332A7CE022FC3E5083E9BEA7 /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter-Kick-StarterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8384363A2BAB3A5F9FA97473ED59DE61 /* Debug */,
-				FA63589874D4DD2831775B95DEED7E49 /* Release */,
+				3D3A4127DFFA4019D1399EA970324EDE /* Debug */,
+				312FF0D59505E071AB5CE1346DBFE564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24D8E62640F5B887C0D61500EB0F65E /* Build configuration list for PBXNativeTarget "Pods-Kick-Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C743C3BC1FC502B556BC92FEA2D0A0 /* Debug */,
+				6A4E65763D4718074CA94F86A61231C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F7A311FA1796AA304B3C3C2564BF99 /* Build configuration list for PBXNativeTarget "KickStarterFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B92E81A8569A849999B6953C72CDB2 /* Debug */,
+				88FC9BC914A8557D52E326AC5ECDC95C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

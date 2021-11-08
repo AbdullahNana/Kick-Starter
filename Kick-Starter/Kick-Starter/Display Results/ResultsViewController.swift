@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 import WebKit
-import DisplayTeamsFramework
+import KickStarterFramework
 
 class ResultsViewController: UIViewController, UIWebViewDelegate {
     private lazy var resultsViewModel = ResultsViewModel()

@@ -5,6 +5,10 @@
 
 Constants.swift
 
+*.html
+
+Pods/
+
 ## User settings
 xcuserdata/
 

@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <DisplayTeamsFramework/DisplayTeamsFramework.h>
+#import <KickStarterFramework/KickStarterFramework.h>
 
 @class Venue;
 

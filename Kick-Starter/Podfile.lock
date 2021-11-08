@@ -1,16 +1,16 @@
 PODS:
-  - DisplayTeamsFramework (0.0.1)
+  - KickStarterFramework (0.0.1)
 
 DEPENDENCIES:
-  - DisplayTeamsFramework (from `/Users/anana/Desktop/DisplayTeamsFramework/DisplayTeamsFramework`)
+  - KickStarterFramework (from `/Users/anana/Desktop/KickStarterFramework/KickStarterFramework`)
 
 EXTERNAL SOURCES:
-  DisplayTeamsFramework:
-    :path: "/Users/anana/Desktop/DisplayTeamsFramework/DisplayTeamsFramework"
+  KickStarterFramework:
+    :path: "/Users/anana/Desktop/KickStarterFramework/KickStarterFramework"
 
 SPEC CHECKSUMS:
-  DisplayTeamsFramework: 8d1ec7cabd3b59085d0abf01312453d36c5e8c81
+  KickStarterFramework: 6f2382ae91a4e81cd9e23d49dc14ce1db5278ce1
 
-PODFILE CHECKSUM: ac9b022393a8ade89ce507a75a402906a0b39ea2
+PODFILE CHECKSUM: efa7aa19c3eb571e32672e91f5af46bb14716b47
 
 COCOAPODS: 1.11.2

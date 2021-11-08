@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import DisplayTeamsFramework
+import KickStarterFramework
 
 final class LeagueRepository: LeagueRepositable {
     func fetchLeagueData(completionHandler: @escaping LeagueRepositoryResultBlock) {

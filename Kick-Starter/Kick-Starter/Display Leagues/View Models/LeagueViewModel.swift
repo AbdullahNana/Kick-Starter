@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import DisplayTeamsFramework
+import KickStarterFramework
 
 final class LeagueViewModel {
     private(set) var leagueResponse: [LeagueModel]?
