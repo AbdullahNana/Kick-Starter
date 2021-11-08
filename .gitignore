@@ -5,8 +5,10 @@
 
 Constants.swift
 
+#HTML Files
 *.html
 
+#Cocoapods
 Pods/
 
 ## User settings
