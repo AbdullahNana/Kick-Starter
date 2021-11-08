@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <KickStarterFramework/KickStarterFramework.h>
+
 @class Venue;
 
 NS_ASSUME_NONNULL_BEGIN

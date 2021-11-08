@@ -7,6 +7,8 @@
 
 #import "SingleVenueViewModel.h"
 #import "Kick-Starter-Swift.h"
+#import <KickStarterFramework/KickStarterFramework.h>
+@import KickStarterFramework;
 
 @implementation SingleVenueViewModel {
     Venue * _singleVenue;

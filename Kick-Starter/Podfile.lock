@@ -1,0 +1,16 @@
+PODS:
+  - KickStarterFramework (0.0.1)
+
+DEPENDENCIES:
+  - KickStarterFramework (from `/Users/anana/Desktop/KickStarterFramework/KickStarterFramework`)
+
+EXTERNAL SOURCES:
+  KickStarterFramework:
+    :path: "/Users/anana/Desktop/KickStarterFramework/KickStarterFramework"
+
+SPEC CHECKSUMS:
+  KickStarterFramework: 6f2382ae91a4e81cd9e23d49dc14ce1db5278ce1
+
+PODFILE CHECKSUM: efa7aa19c3eb571e32672e91f5af46bb14716b47
+
+COCOAPODS: 1.11.2
