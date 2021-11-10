@@ -342,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="42" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="Oul-EZ-Gm3">
             <objects>
-                <viewController id="IF8-pR-LEJ" sceneMemberID="viewController">
+                <viewController id="IF8-pR-LEJ" customClass="StartViewController" customModule="Kick_Starter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sLh-Oo-uHV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,8 +403,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="kum-pX-79r"/>
                     <connections>
-                        <segue destination="IlJ-F9-AcA" kind="show" id="V46-G5-Aie"/>
-                        <segue destination="QSr-TD-rHR" kind="show" id="mcI-95-TQU"/>
+                        <outlet property="logInButton" destination="out-z7-U7o" id="FjJ-h4-Qe9"/>
+                        <outlet property="signUpButton" destination="5Sm-x7-ZBe" id="nvx-Dw-x6V"/>
+                        <segue destination="IlJ-F9-AcA" kind="show" identifier="LoginSegue" id="V46-G5-Aie"/>
+                        <segue destination="QSr-TD-rHR" kind="show" identifier="SignUpSegue" id="mcI-95-TQU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SW8-4R-mdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -491,10 +493,10 @@
             </objects>
             <point key="canvasLocation" x="43" y="-512"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="t0t-oQ-GqK">
             <objects>
-                <viewController id="IlJ-F9-AcA" sceneMemberID="viewController">
+                <viewController id="IlJ-F9-AcA" customClass="LoginViewController" customModule="Kick_Starter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UjT-QX-azI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -566,6 +568,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="8dC-mq-lai"/>
                     <connections>
+                        <outlet property="emailLabel" destination="WSm-2a-7RO" id="W9h-y1-VMd"/>
+                        <outlet property="logInButton" destination="sbL-S6-rMZ" id="xVf-kw-P0v"/>
+                        <outlet property="passwordLabel" destination="ikc-8i-7x4" id="58H-XC-85z"/>
                         <segue destination="DRM-Om-Wqu" kind="show" id="FvJ-iB-LWY"/>
                     </connections>
                 </viewController>
@@ -573,10 +578,10 @@
             </objects>
             <point key="canvasLocation" x="-2568.1159420289855" y="583.92857142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="5Ti-bG-pGK">
             <objects>
-                <viewController id="QSr-TD-rHR" sceneMemberID="viewController">
+                <viewController id="QSr-TD-rHR" customClass="SignUpViewController" customModule="Kick_Starter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mNe-Fr-MZz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -648,6 +653,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Bas-P3-lxc"/>
                     <connections>
+                        <outlet property="emailLabel" destination="vbq-VM-Xo2" id="Ba9-SB-1bT"/>
+                        <outlet property="passwordLabel" destination="OEX-CZ-Vtn" id="Zd5-yu-uVY"/>
+                        <outlet property="signUpButton" destination="goI-Xu-J2R" id="GPt-qN-WcZ"/>
                         <segue destination="DRM-Om-Wqu" kind="show" id="C3q-Ze-C6E"/>
                     </connections>
                 </viewController>

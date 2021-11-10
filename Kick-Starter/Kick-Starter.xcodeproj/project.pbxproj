@@ -23,6 +23,9 @@
 		279100CA272A77FA007546F5 /* SingleVenueViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */; };
 		279100E6273115F6007546F5 /* SingleFixtureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279100E5273115F6007546F5 /* SingleFixtureViewController.swift */; };
 		279100E827311610007546F5 /* SingleFixtureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279100E727311610007546F5 /* SingleFixtureViewModel.swift */; };
+		279B2B49273B7B5E00FDA2B2 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B48273B7B5E00FDA2B2 /* StartViewController.swift */; };
+		279B2B4C273B7B9D00FDA2B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B4B273B7B9D00FDA2B2 /* SignUpViewController.swift */; };
+		279B2B4E273B7BB600FDA2B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B4D273B7BB600FDA2B2 /* LoginViewController.swift */; };
 		27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22842271D930A00686D91 /* SingleVenueViewController.m */; };
 		27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */; };
 		27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22849271F325900686D91 /* LeagueTableViewController.swift */; };
@@ -87,6 +90,9 @@
 		279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVenueViewModelTests.swift; sourceTree = "<group>"; };
 		279100E5273115F6007546F5 /* SingleFixtureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFixtureViewController.swift; sourceTree = "<group>"; };
 		279100E727311610007546F5 /* SingleFixtureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFixtureViewModel.swift; sourceTree = "<group>"; };
+		279B2B48273B7B5E00FDA2B2 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		279B2B4B273B7B9D00FDA2B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		279B2B4D273B7BB600FDA2B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		27A22840271D930A00686D91 /* Kick-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kick-Starter-Bridging-Header.h"; sourceTree = "<group>"; };
 		27A22841271D930A00686D91 /* SingleVenueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewController.h; sourceTree = "<group>"; };
 		27A22842271D930A00686D91 /* SingleVenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewController.m; sourceTree = "<group>"; };
@@ -219,8 +225,19 @@
 		279B2B47273B7A6800FDA2B2 /* Registration And Login */ = {
 			isa = PBXGroup;
 			children = (
+				279B2B4A273B7B8300FDA2B2 /* View Controllers */,
 			);
 			path = "Registration And Login";
+			sourceTree = "<group>";
+		};
+		279B2B4A273B7B8300FDA2B2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				279B2B48273B7B5E00FDA2B2 /* StartViewController.swift */,
+				279B2B4B273B7B9D00FDA2B2 /* SignUpViewController.swift */,
+				279B2B4D273B7BB600FDA2B2 /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		27A2283C271D924700686D91 /* Single Venue */ = {
@@ -695,11 +712,14 @@
 				272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */,
 				27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */,
 				272F3137270DBBB000C467DA /* UIImageView+Extensions.swift in Sources */,
+				279B2B49273B7B5E00FDA2B2 /* StartViewController.swift in Sources */,
+				279B2B4C273B7B9D00FDA2B2 /* SignUpViewController.swift in Sources */,
 				27A2287027217F4500686D91 /* ResultsViewController.swift in Sources */,
 				27A2286727215B4700686D91 /* LeagueRepositable.swift in Sources */,
 				27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */,
 				27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */,
 				27A2284C271F329A00686D91 /* LeagueTableViewCell.swift in Sources */,
+				279B2B4E273B7BB600FDA2B2 /* LoginViewController.swift in Sources */,
 				27A2286527215B1600686D91 /* LeagueRepository.swift in Sources */,
 				27C901B9270C5CCB00FAE650 /* Constants.swift in Sources */,
 				27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */,
