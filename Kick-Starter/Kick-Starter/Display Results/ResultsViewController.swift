@@ -13,10 +13,20 @@ import KickStarterFramework
 class ResultsViewController: UIViewController, UIWebViewDelegate {
     private lazy var resultsViewModel = ResultsViewModel()
     @IBOutlet private weak var liveScoreWebView: WKWebView!
+    @IBOutlet private weak var fixturesButton: UIButton!
+    @IBOutlet private weak var liveScoresButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         didTapFixturesButton((Any).self)
+        applyButtonStyling()
+    }
+    
+    private func applyButtonStyling() {
+        fixturesButton.titleLabel?.font = .labelFontStyle
+        liveScoresButton.titleLabel?.font = .labelFontStyle
+        fixturesButton.titleLabel?.textColor = .whiteColor
+        liveScoresButton.titleLabel?.textColor = .whiteColor
     }
 
     @IBAction func didTapFixturesButton(_ sender: Any) {

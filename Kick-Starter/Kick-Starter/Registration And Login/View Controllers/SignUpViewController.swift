@@ -13,6 +13,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var signUpButton: UIButton!
+    private let loader = LoaderViewController()
     private lazy var signUpViewModel = SignUpViewModel(authenticationRepository: AuthenticationRepository(authentication: Auth.auth()),
                                                    delegate: self)
     
@@ -20,7 +21,6 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setupTextFields()
         applyButtonStyling()
-        
     }
     
     private func applyButtonStyling() {
@@ -29,14 +29,13 @@ class SignUpViewController: UIViewController {
     }
     
     private func setupTextFields() {
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
         passwordTextField.isSecureTextEntry = true
     }
     
     @IBAction private func didTapSinUpButton(_ sender: Any) {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
+            loader.start(container: self)
             signUpViewModel.registerUser(email, password)
         }
     }
@@ -45,22 +44,10 @@ class SignUpViewController: UIViewController {
 extension SignUpViewController: ViewModelDelegate {
     func refreshViewContents() {
         self.performSegue(withIdentifier: "SignUpToLogInSegue", sender: self)
+        loader.stop()
     }
     
     func showErrorMessage(error: Error) {
         showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
-    }
-}
-
-extension SignUpViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == emailTextField {
-            passwordTextField.becomeFirstResponder()
-        }
-        
-        if textField == passwordTextField {
-            textField.resignFirstResponder()
-        }
-        return true
     }
 }

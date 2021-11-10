@@ -335,7 +335,9 @@
                     <tabBarItem key="tabBarItem" title="Results" image="play.square" catalog="system" selectedImage="play.square" id="Wet-1q-flY"/>
                     <toolbarItems/>
                     <connections>
+                        <outlet property="fixturesButton" destination="sck-Vf-Zr1" id="Hb6-IQ-yRL"/>
                         <outlet property="liveScoreWebView" destination="Knt-c2-KFh" id="ibc-0X-ZWj"/>
+                        <outlet property="liveScoresButton" destination="HA6-t8-8gT" id="fm1-Ws-cPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7e-wM-aRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

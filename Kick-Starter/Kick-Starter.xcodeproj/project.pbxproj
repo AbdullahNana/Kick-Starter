@@ -30,6 +30,7 @@
 		279B2B57273B849C00FDA2B2 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B56273B849C00FDA2B2 /* SignUpViewModel.swift */; };
 		279B2B59273B84A800FDA2B2 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B58273B84A800FDA2B2 /* LogInViewModel.swift */; };
 		279B2B5B273BA1D400FDA2B2 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B5A273BA1D400FDA2B2 /* UIFont+Extensions.swift */; };
+		279B2B5D273BB0F000FDA2B2 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B5C273BB0F000FDA2B2 /* LoaderViewController.swift */; };
 		27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22842271D930A00686D91 /* SingleVenueViewController.m */; };
 		27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */; };
 		27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22849271F325900686D91 /* LeagueTableViewController.swift */; };
@@ -100,6 +101,7 @@
 		279B2B56273B849C00FDA2B2 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		279B2B58273B84A800FDA2B2 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		279B2B5A273BA1D400FDA2B2 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		279B2B5C273BB0F000FDA2B2 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		27A22840271D930A00686D91 /* Kick-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kick-Starter-Bridging-Header.h"; sourceTree = "<group>"; };
 		27A22841271D930A00686D91 /* SingleVenueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewController.h; sourceTree = "<group>"; };
 		27A22842271D930A00686D91 /* SingleVenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewController.m; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				279B2B48273B7B5E00FDA2B2 /* StartViewController.swift */,
 				279B2B4B273B7B9D00FDA2B2 /* SignUpViewController.swift */,
 				279B2B4D273B7BB600FDA2B2 /* LoginViewController.swift */,
+				279B2B5C273BB0F000FDA2B2 /* LoaderViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				279B2B54273B83F300FDA2B2 /* AuthenticationRepository.swift in Sources */,
 				272F3139270EFBBA00C467DA /* TeamCollectionViewCell.swift in Sources */,
 				272F313D270EFF6C00C467DA /* Array+Extension.swift in Sources */,
+				279B2B5D273BB0F000FDA2B2 /* LoaderViewController.swift in Sources */,
 				279100E827311610007546F5 /* SingleFixtureViewModel.swift in Sources */,
 				27C901BB270C837A00FAE650 /* Endpoints.swift in Sources */,
 				27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */,
