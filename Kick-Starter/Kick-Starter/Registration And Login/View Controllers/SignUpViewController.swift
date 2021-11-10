@@ -32,7 +32,7 @@ class SignUpViewController: UIViewController {
         passwordTextField.isSecureTextEntry = true
     }
     
-    @IBAction private func didTapSinUpButton(_ sender: Any) {
+    @IBAction private func didTapSignUpButton(_ sender: Any) {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
             loader.start(container: self)
