@@ -12,7 +12,7 @@
 		272F3139270EFBBA00C467DA /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3138270EFBBA00C467DA /* TeamCollectionViewCell.swift */; };
 		272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313A270EFF5500C467DA /* UIViewController+Extension.swift */; };
 		272F313D270EFF6C00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
-		272F3144270F873300C467DA /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3143270F873300C467DA /* Colours.swift */; };
+		272F3144270F873300C467DA /* Colours+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3143270F873300C467DA /* Colours+Extensions.swift */; };
 		272F31532715C45D00C467DA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901BA270C837A00FAE650 /* Endpoints.swift */; };
 		272F31542715C48B00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
 		272F31552716C22E00C467DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
@@ -29,6 +29,7 @@
 		279B2B54273B83F300FDA2B2 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B53273B83F300FDA2B2 /* AuthenticationRepository.swift */; };
 		279B2B57273B849C00FDA2B2 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B56273B849C00FDA2B2 /* SignUpViewModel.swift */; };
 		279B2B59273B84A800FDA2B2 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B58273B84A800FDA2B2 /* LogInViewModel.swift */; };
+		279B2B5B273BA1D400FDA2B2 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B2B5A273BA1D400FDA2B2 /* UIFont+Extensions.swift */; };
 		27A22843271D930A00686D91 /* SingleVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22842271D930A00686D91 /* SingleVenueViewController.m */; };
 		27A22847271D9B0D00686D91 /* SingleVenueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A22846271D9B0D00686D91 /* SingleVenueViewModel.m */; };
 		27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22849271F325900686D91 /* LeagueTableViewController.swift */; };
@@ -84,7 +85,7 @@
 		272F3138270EFBBA00C467DA /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
 		272F313A270EFF5500C467DA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		272F313C270EFF6C00C467DA /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
-		272F3143270F873300C467DA /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		272F3143270F873300C467DA /* Colours+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colours+Extensions.swift"; sourceTree = "<group>"; };
 		279023E82738D6490086012E /* fixtures.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fixtures.html; sourceTree = "<group>"; };
 		279023E92738D6490086012E /* livescores.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = livescores.html; sourceTree = "<group>"; };
 		279023EA2738D6490086012E /* single fixture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "single fixture.html"; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		279B2B53273B83F300FDA2B2 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		279B2B56273B849C00FDA2B2 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		279B2B58273B84A800FDA2B2 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		279B2B5A273BA1D400FDA2B2 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		27A22840271D930A00686D91 /* Kick-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kick-Starter-Bridging-Header.h"; sourceTree = "<group>"; };
 		27A22841271D930A00686D91 /* SingleVenueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVenueViewController.h; sourceTree = "<group>"; };
 		27A22842271D930A00686D91 /* SingleVenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVenueViewController.m; sourceTree = "<group>"; };
@@ -193,19 +195,13 @@
 		272F3135270DBB9E00C467DA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				272F3143270F873300C467DA /* Colours+Extensions.swift */,
 				272F3136270DBBB000C467DA /* UIImageView+Extensions.swift */,
 				272F313A270EFF5500C467DA /* UIViewController+Extension.swift */,
 				272F313C270EFF6C00C467DA /* Array+Extension.swift */,
+				279B2B5A273BA1D400FDA2B2 /* UIFont+Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		272F3142270F871E00C467DA /* Styling */ = {
-			isa = PBXGroup;
-			children = (
-				272F3143270F873300C467DA /* Colours.swift */,
-			);
-			path = Styling;
 			sourceTree = "<group>";
 		};
 		279100E4273115AD007546F5 /* Display Single Fixture */ = {
@@ -384,7 +380,6 @@
 				27A22848271F323D00686D91 /* Display Leagues */,
 				27A2283C271D924700686D91 /* Single Venue */,
 				272F312C270D7D8A00C467DA /* Display Teams */,
-				272F3142270F871E00C467DA /* Styling */,
 				272F3135270DBB9E00C467DA /* Extensions */,
 				272F312E270D7EE500C467DA /* Screens */,
 				272F312D270D7E3300C467DA /* API Enums */,
@@ -732,11 +727,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				279B2B59273B84A800FDA2B2 /* LogInViewModel.swift in Sources */,
-				272F3144270F873300C467DA /* Colours.swift in Sources */,
+				272F3144270F873300C467DA /* Colours+Extensions.swift in Sources */,
 				27A228692721677E00686D91 /* ViewModelDelegate.swift in Sources */,
 				272F313B270EFF5500C467DA /* UIViewController+Extension.swift in Sources */,
 				27A2284A271F325900686D91 /* LeagueTableViewController.swift in Sources */,
 				272F3137270DBBB000C467DA /* UIImageView+Extensions.swift in Sources */,
+				279B2B5B273BA1D400FDA2B2 /* UIFont+Extensions.swift in Sources */,
 				279B2B49273B7B5E00FDA2B2 /* StartViewController.swift in Sources */,
 				279B2B4C273B7B9D00FDA2B2 /* SignUpViewController.swift in Sources */,
 				27A2287027217F4500686D91 /* ResultsViewController.swift in Sources */,

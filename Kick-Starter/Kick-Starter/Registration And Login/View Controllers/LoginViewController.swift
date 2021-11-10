@@ -23,6 +23,12 @@ class LoginViewController: UIViewController {
         passwordTextField.delegate = self
         
         passwordTextField.isSecureTextEntry = true
+        applyButtonStyling()
+    }
+    
+    private func applyButtonStyling() {
+        logInButton.titleLabel?.font = .labelFontStyle
+        logInButton.titleLabel?.textColor = .whiteColor
     }
     
     @IBAction private func didTapLogInButton(_ sender: Any) {

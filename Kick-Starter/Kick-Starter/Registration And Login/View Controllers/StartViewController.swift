@@ -14,6 +14,19 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        applyButtonStyling()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        applyButtonStyling()
+    }
+    
+    private func applyButtonStyling() {
+        signUpButton.titleLabel?.font = .labelFontStyle
+        logInButton.titleLabel?.textColor = .whiteColor
+        logInButton.titleLabel?.font = .labelFontStyle
+        signUpButton.titleLabel?.textColor = .whiteColor
     }
     
     @IBAction private func didTapSignUpButton(_ sender: Any) {

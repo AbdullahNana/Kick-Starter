@@ -18,9 +18,19 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTextFields()
+        applyButtonStyling()
+        
+    }
+    
+    private func applyButtonStyling() {
+        signUpButton.titleLabel?.font = .labelFontStyle
+        signUpButton.titleLabel?.textColor = .whiteColor
+    }
+    
+    private func setupTextFields() {
         emailTextField.delegate = self
         passwordTextField.delegate = self
-        
         passwordTextField.isSecureTextEntry = true
     }
     
