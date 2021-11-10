@@ -16,7 +16,7 @@ struct AuthenticationRepository: AuthenticationRepositable {
         self.authentication = authentication
     }
     
-    func registerUser(_ email: String, _ password: String, completion: @escaping (Result<Bool, Error>) -> Void) {
+    func registerUser(_ email: String, _ password: String, completion: @escaping AuthenticationRepositoryResultBlock) {
         authentication.createUser(withEmail: email, password: password) { _, error in
             if let err = error {
                 completion(.failure(err))
@@ -26,7 +26,7 @@ struct AuthenticationRepository: AuthenticationRepositable {
         }
     }
     
-    func signInUser(_ email: String, _ password: String, completion: @escaping (Result<Bool, Error>) -> Void) {
+    func signInUser(_ email: String, _ password: String, completion: @escaping AuthenticationRepositoryResultBlock) {
         authentication.signIn(withEmail: email, password: password) { _, error in
             if let error = error {
                 completion(.failure(error))
