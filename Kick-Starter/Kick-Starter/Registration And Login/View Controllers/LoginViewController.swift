@@ -6,16 +6,43 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var logInButton: UIButton!
+    private lazy var logInViewModel = LogInViewModel(authenticationRepository: AuthenticationRepository(authentication: Auth.auth()),
+                                                       delegate: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
+        passwordTextField.isSecureTextEntry = true
     }
+    
     @IBAction private func didTapLogInButton(_ sender: Any) {
+        if let email = self.emailTextField.text,
+           let password = self.passwordTextField.text {
+            logInViewModel.authenticateUser(email, password)
+        }
     }
+}
+
+extension LoginViewController: ViewModelDelegate {
+    func refreshViewContents() {
+        self.performSegue(withIdentifier: "LogInToKickStarterSegue", sender: self)
+    }
+    
+    func showErrorMessage(error: Error) {
+        showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    
 }

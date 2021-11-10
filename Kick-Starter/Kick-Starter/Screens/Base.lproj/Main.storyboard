@@ -526,23 +526,23 @@
                                     <action selector="didTapLogInButton:" destination="IlJ-F9-AcA" eventType="touchUpInside" id="u96-mU-w5s"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFU-Lf-ycG">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NFU-Lf-ycG">
                                 <rect key="frame" x="57" y="188" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pL0-ki-yg4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="rAo-e0-2gd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwU-W1-oo0">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fwU-W1-oo0">
                                 <rect key="frame" x="57" y="278" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OvO-R0-QI8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="wRg-Po-vwY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hNj-db-Fy8"/>
@@ -596,23 +596,23 @@
                                     <action selector="didTapSinUpButton:" destination="QSr-TD-rHR" eventType="touchUpInside" id="6Bx-HT-iL9"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-pH-s3L">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-pH-s3L">
                                 <rect key="frame" x="57" y="188" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="nhr-Mx-hPd"/>
                                     <constraint firstAttribute="height" constant="50" id="ztD-Rm-p8k"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="048-99-PN9">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="048-99-PN9">
                                 <rect key="frame" x="57" y="278" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="D2F-c5-qkP"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="x8p-QL-Cm4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8tN-DR-mdm"/>
@@ -632,7 +632,7 @@
                         <outlet property="emailTextField" destination="NB1-pH-s3L" id="h8J-ja-hIf"/>
                         <outlet property="passwordTextField" destination="048-99-PN9" id="dnV-WJ-pyK"/>
                         <outlet property="signUpButton" destination="goI-Xu-J2R" id="GPt-qN-WcZ"/>
-                        <segue destination="IlJ-F9-AcA" kind="show" identifier="SignUpToLoginSegue" id="1SU-kh-jye"/>
+                        <segue destination="IlJ-F9-AcA" kind="show" identifier="SignUpToLogInSegue" id="1SU-kh-jye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iG3-oy-8D3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
