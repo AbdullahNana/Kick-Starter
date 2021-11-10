@@ -216,6 +216,13 @@
 			path = "HTML Files";
 			sourceTree = "<group>";
 		};
+		279B2B47273B7A6800FDA2B2 /* Registration And Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Registration And Login";
+			sourceTree = "<group>";
+		};
 		27A2283C271D924700686D91 /* Single Venue */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +336,7 @@
 		27C9016F270AED4300FAE650 /* Kick-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				279B2B47273B7A6800FDA2B2 /* Registration And Login */,
 				279100ED2732BBBE007546F5 /* HTML Files */,
 				279100E4273115AD007546F5 /* Display Single Fixture */,
 				27A2286E27217F2B00686D91 /* Display Results */,
