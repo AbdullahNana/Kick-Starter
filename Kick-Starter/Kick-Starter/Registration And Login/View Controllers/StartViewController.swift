@@ -15,4 +15,12 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction private func didTapSignUpButton(_ sender: Any) {
+        performSegue(withIdentifier: "SignUpSegue", sender: self)
+    }
+    
+    @IBAction private func didTapLogInButton(_ sender: Any) {
+        performSegue(withIdentifier: "LogInSegue", sender: self)
+    }
 }

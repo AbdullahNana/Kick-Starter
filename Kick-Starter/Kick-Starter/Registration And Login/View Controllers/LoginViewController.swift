@@ -9,11 +9,13 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet private weak var emailLabel: UILabel!
-    @IBOutlet private weak var passwordLabel: UILabel!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var logInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    @IBAction private func didTapLogInButton(_ sender: Any) {
     }
 }

@@ -7,6 +7,9 @@ target 'Kick-Starter' do
 
   # Pods for Kick-Starter
 
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+
   # pod 'KickStarterFramework', :git => 'https://github.com/AbdullahNanaDVT/KickStarterFramework.git' 
   pod 'KickStarterFramework', :path => '/Users/anana/Desktop/KickStarterFramework/KickStarterFramework' 
 

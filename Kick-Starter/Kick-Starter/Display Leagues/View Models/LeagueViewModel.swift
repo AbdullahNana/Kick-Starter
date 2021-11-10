@@ -12,9 +12,9 @@ final class LeagueViewModel {
     private(set) var leagueResponse: [LeagueModel]?
     private var leagueRepository: LeagueRepositable
     private(set) var selectedLeague: LeagueModel?
-    private weak var delegate: LeagueViewModelDelegate?
+    private weak var delegate: ViewModelDelegate?
     
-    init(repository: LeagueRepositable, delegate: LeagueViewModelDelegate) {
+    init(repository: LeagueRepositable, delegate: ViewModelDelegate) {
         self.leagueRepository =  repository
         self.delegate = delegate
     }
