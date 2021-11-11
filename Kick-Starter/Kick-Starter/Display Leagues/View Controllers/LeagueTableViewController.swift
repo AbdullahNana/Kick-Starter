@@ -10,6 +10,7 @@ import KickStarterFramework
 
 class LeagueTableViewController: UITableViewController {
     private lazy var leagueViewModel = LeagueViewModel(repository: LeagueRepository(), delegate: self)
+    private let loader = LoaderViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +72,9 @@ class LeagueTableViewController: UITableViewController {
 
 extension LeagueTableViewController: ViewModelDelegate {
     func refreshViewContents() {
+        loader.start(container: self)
         self.tableView.reloadData()
+        loader.stop()
     }
     
     func showErrorMessage(error: Error) {

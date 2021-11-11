@@ -14,4 +14,5 @@ extension UIColor {
     static let clearBackgroundColor = UIColor.clear
     static let whiteColor = UIColor.white
     static let loaderColor = UIColor(white: 0, alpha: 0.7)
+    static let blackColor = UIColor.black
 }
