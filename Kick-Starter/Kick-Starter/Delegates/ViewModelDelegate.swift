@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol LeagueViewModelDelegate: AnyObject {
+protocol ViewModelDelegate: AnyObject {
     func refreshViewContents()
     func showErrorMessage(error: Error)
 }

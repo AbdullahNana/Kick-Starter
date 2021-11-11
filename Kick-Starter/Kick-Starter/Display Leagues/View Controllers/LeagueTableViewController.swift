@@ -69,7 +69,7 @@ class LeagueTableViewController: UITableViewController {
     }
 }
 
-extension LeagueTableViewController: LeagueViewModelDelegate {
+extension LeagueTableViewController: ViewModelDelegate {
     func refreshViewContents() {
         self.tableView.reloadData()
     }
