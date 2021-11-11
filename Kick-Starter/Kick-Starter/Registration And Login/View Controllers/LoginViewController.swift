@@ -50,5 +50,6 @@ extension LoginViewController: ViewModelDelegate {
     
     func showErrorMessage(error: Error) {
         showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
+        loader.stop()
     }
 }

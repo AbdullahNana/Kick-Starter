@@ -13,16 +13,12 @@ final class TeamViewController: UIViewController {
     private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var searchBar: UISearchBar!
+    private let loader = LoaderViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionViewSetup()
-        searchBaeSetup()
-        applyStyling()
-    }
-    
-    private func applyStyling() {
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "background") ?? UIImage())
+        searchBarSetup()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,8 +51,8 @@ final class TeamViewController: UIViewController {
         collectionView.backgroundColor = UIColor.clearBackgroundColor
     }
     
-    private func searchBaeSetup() {
-        searchBar.searchTextField.textColor = UIColor.white
+    private func searchBarSetup() {
+        searchBar.searchTextField.textColor = .blackColor
         searchBar.delegate = self
     }
 }
@@ -97,7 +93,9 @@ extension TeamViewController: TeamViewModelDelegate {
     }
     
     func refreshViewContents() {
+        loader.start(container: self)
         self.collectionView.reloadData()
+        loader.stop()
     }
     
     func showErrorMessage(error: Error) {
@@ -110,6 +108,8 @@ extension TeamViewController: UISearchBarDelegate {
         guard let team = searchBar.text else { return }
         searchBar.text = ""
         searchBar.resignFirstResponder()
+        loader.start(container: self)
         updateSearchData(searchString: team)
+        loader.stop()
     }
 }

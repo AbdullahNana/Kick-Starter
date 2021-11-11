@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    static let labelFontStyle = UIFont(name: "Rockwell", size: 14)
+    static let labelFontStyle = UIFont(name: "Rockwell-Bold", size: 14)
 }

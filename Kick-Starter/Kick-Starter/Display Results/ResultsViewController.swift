@@ -27,6 +27,8 @@ class ResultsViewController: UIViewController, UIWebViewDelegate {
         liveScoresButton.titleLabel?.font = .labelFontStyle
         fixturesButton.titleLabel?.textColor = .whiteColor
         liveScoresButton.titleLabel?.textColor = .whiteColor
+        fixturesButton.tintColor = .blackColor
+        liveScoresButton.tintColor = .blackColor
     }
 
     @IBAction func didTapFixturesButton(_ sender: Any) {
