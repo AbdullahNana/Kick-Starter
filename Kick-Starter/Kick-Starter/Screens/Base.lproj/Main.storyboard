@@ -535,7 +535,6 @@
                                     <constraint firstAttribute="height" constant="50" id="OvO-R0-QI8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="wRg-Po-vwY"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
@@ -588,7 +587,7 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="didTapSinUpButton:" destination="QSr-TD-rHR" eventType="touchUpInside" id="6Bx-HT-iL9"/>
+                                    <action selector="didTapSignUpButton:" destination="QSr-TD-rHR" eventType="touchUpInside" id="Ob3-eQ-Uog"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-pH-s3L">
@@ -626,7 +625,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="NB1-pH-s3L" id="h8J-ja-hIf"/>
                         <outlet property="passwordTextField" destination="048-99-PN9" id="dnV-WJ-pyK"/>
-                        <outlet property="signUpButton" destination="goI-Xu-J2R" id="GPt-qN-WcZ"/>
+                        <outlet property="signUpButton" destination="goI-Xu-J2R" id="rza-Yo-Rau"/>
                         <segue destination="IlJ-F9-AcA" kind="show" identifier="SignUpToLogInSegue" id="1SU-kh-jye"/>
                     </connections>
                 </viewController>
