@@ -20,17 +20,6 @@ final class TeamViewController: UIViewController {
         collectionViewSetup()
         searchBarSetup()
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-
-        // swiftlint:disable force_cast
-        let destination = segue.destination as! SingleVenueViewController
-        // swiftlint:enable force_cast
-
-        guard let selectedVenue = teamViewModel.selectedVenue else { return }
-        destination.set(selectedVenue)
-    }
 
     func set(league: League) {
         teamViewModel.set(league: league)
@@ -54,6 +43,18 @@ final class TeamViewController: UIViewController {
     private func searchBarSetup() {
         searchBar.searchTextField.textColor = .blackColor
         searchBar.delegate = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        // swiftlint:disable force_cast
+        let destination = segue.destination as! TeamsInformationViewController
+        let indexPath = collectionView.indexPathsForSelectedItems?.first
+        guard let venue = teamViewModel.selectedVenue else { return }
+        // swiftlint:enable force_cast
+    
+        destination.set(venue: venue)
     }
 }
 
@@ -79,7 +80,7 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         teamViewModel.setSelectedVenue(index: indexPath.item)
-        performSegue(withIdentifier: "singleVenueViewSegue", sender: self )
+        performSegue(withIdentifier: "teamsInformationSegue", sender: indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

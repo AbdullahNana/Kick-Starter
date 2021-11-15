@@ -174,6 +174,7 @@
                         <outlet property="collectionView" destination="coa-9w-4tA" id="uQw-Ph-nWD"/>
                         <outlet property="searchBar" destination="QFW-X0-WVJ" id="Jag-3j-ubL"/>
                         <segue destination="oSj-UC-LPl" kind="show" identifier="singleVenueViewSegue" id="gmg-VR-rbz"/>
+                        <segue destination="EiE-di-ElG" kind="show" identifier="teamsInformationSegue" id="HKo-ih-aOh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -262,6 +263,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BP8-hz-r68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3299" y="-512"/>
+        </scene>
+        <!--Teams Information View Controller-->
+        <scene sceneID="9dP-Yb-kt7">
+            <objects>
+                <viewController id="EiE-di-ElG" customClass="TeamsInformationViewController" customModule="Kick_Starter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QDz-aQ-6kY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Q-dy-hzN">
+                                <rect key="frame" x="175.5" y="432.5" width="63" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="venue"/>
+                                <connections>
+                                    <action selector="didTapVenueButton:" destination="EiE-di-ElG" eventType="touchUpInside" id="zb0-K6-YuV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-34-XgP">
+                                <rect key="frame" x="171.5" y="526" width="71" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Players"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KKG-pr-nCV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z8Q-dy-hzN" firstAttribute="centerY" secondItem="QDz-aQ-6kY" secondAttribute="centerY" id="Bwt-tS-gYG"/>
+                            <constraint firstItem="YCH-34-XgP" firstAttribute="top" secondItem="Z8Q-dy-hzN" secondAttribute="bottom" constant="62.5" id="EeB-vB-QhY"/>
+                            <constraint firstItem="Z8Q-dy-hzN" firstAttribute="centerX" secondItem="QDz-aQ-6kY" secondAttribute="centerX" id="Slo-aN-wUa"/>
+                            <constraint firstItem="YCH-34-XgP" firstAttribute="centerX" secondItem="QDz-aQ-6kY" secondAttribute="centerX" id="fyU-ld-hyL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8jN-Ad-d0t"/>
+                    <connections>
+                        <segue destination="oSj-UC-LPl" kind="show" identifier="displayVenueSegue" id="FeP-zJ-HvD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ub1-1S-LOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3230" y="301"/>
         </scene>
         <!--Results-->
         <scene sceneID="Ug8-nr-Hyx">
@@ -655,6 +696,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="1SU-kh-jye"/>
+        <segue reference="FeP-zJ-HvD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Icon" width="512" height="512"/>
