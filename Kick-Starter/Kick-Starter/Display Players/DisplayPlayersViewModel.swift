@@ -19,7 +19,7 @@ final class DisplayPlayersViewModel {
         self.delegate = delegate
     }
     
-    func endpoint(team: String = "33") -> String {
+    func endpoint(team: String) -> String {
         "https://v3.football.api-sports.io/players/squads?team=\(team)"
     }
     
