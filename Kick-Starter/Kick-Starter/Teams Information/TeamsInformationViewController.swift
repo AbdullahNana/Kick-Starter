@@ -18,18 +18,37 @@ class TeamsInformationViewController: UIViewController {
         performSegue(withIdentifier: "displayVenueSegue", sender: self )
     }
     
+    @IBAction func didTapPlayersButton(_ sender: Any) {
+        performSegue(withIdentifier: "displayPlayersSegue", sender: self )
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
-        // swiftlint:disable force_cast
-        let destination = segue.destination as! SingleVenueViewController
-        // swiftlint:enable force_cast
+        if segue.identifier == "displayVenueSegue" {
+            // swiftlint:disable force_cast
+            let destination = segue.destination as! SingleVenueViewController
+            // swiftlint:enable force_cast
+            
+            guard let selectedVenue = teamsInformationViewModel.selectedVenue else { return }
+            destination.set(selectedVenue)
+        }
         
-        guard let selectedVenue = teamsInformationViewModel.selectedVenue else { return }
-        destination.set(selectedVenue)
+        if segue.identifier == "displayPlayersSegue" {
+            // swiftlint:disable force_cast
+            let destination = segue.destination as! DisplayPlayersViewController
+            // swiftlint:enable force_cast
+            
+            guard let selectedTeam = teamsInformationViewModel.selectedTeam else { return }
+            destination.setTeam(team: selectedTeam)
+        }
     }
     
-    func set(venue: Venue) {
+    func setVenue(venue: Venue) {
         teamsInformationViewModel.setSelectedVenue(venue: venue)
+    }
+    
+    func setTeam(team: Team) {
+        teamsInformationViewModel.setSelectedTeam(team: team)
     }
 }

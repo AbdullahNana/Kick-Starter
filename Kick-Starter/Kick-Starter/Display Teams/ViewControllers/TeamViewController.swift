@@ -50,11 +50,13 @@ final class TeamViewController: UIViewController {
         
         // swiftlint:disable force_cast
         let destination = segue.destination as! TeamsInformationViewController
-        let indexPath = collectionView.indexPathsForSelectedItems?.first
         guard let venue = teamViewModel.selectedVenue else { return }
+        guard let team = teamViewModel.selectedTeam else { return }
         // swiftlint:enable force_cast
     
-        destination.set(venue: venue)
+        destination.setVenue(venue: venue)
+        destination.setTeam(team: team)
+        
     }
 }
 
@@ -80,6 +82,7 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         teamViewModel.setSelectedVenue(index: indexPath.item)
+        teamViewModel.setSelectedTeam(index: indexPath.item)
         performSegue(withIdentifier: "teamsInformationSegue", sender: indexPath)
     }
     
