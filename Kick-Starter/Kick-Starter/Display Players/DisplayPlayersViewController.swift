@@ -19,7 +19,7 @@ class DisplayPlayersViewController: UIViewController {
         updatePlayerData(team: String(playerViewModel.selectedTeam?.id ?? 33))
     }
     
-    func updatePlayerData(team: String) {
+    private func updatePlayerData(team: String) {
         playerViewModel.fetchPlayerData(endpoint: playerViewModel.endpoint(team: team))
     }
     

@@ -272,18 +272,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pitch" translatesAutoresizingMaskIntoConstraints="NO" id="Vp5-b0-DRP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Q-dy-hzN">
-                                <rect key="frame" x="175.5" y="432.5" width="63" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="venue"/>
+                                <rect key="frame" x="123" y="434" width="168.5" height="28"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="View Team Stadium">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapVenueButton:" destination="EiE-di-ElG" eventType="touchUpInside" id="zb0-K6-YuV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-34-XgP">
-                                <rect key="frame" x="171.5" y="526" width="71" height="31"/>
+                                <rect key="frame" x="130.5" y="524.5" width="153.5" height="28"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Players"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="View Team Squad">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapPlayersButton:" destination="EiE-di-ElG" eventType="touchUpInside" id="uHN-ts-Slh"/>
                                 </connections>
@@ -352,7 +361,7 @@
                                                         <constraint firstAttribute="height" constant="150" id="Csy-nW-fg4"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtu-RU-ede">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xtu-RU-ede">
                                                     <rect key="frame" x="78.5" y="200" width="47.5" height="17"/>
                                                     <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -372,8 +381,10 @@
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="top" secondItem="EfC-sI-eW8" secondAttribute="bottom" constant="10" id="3hw-gU-BIv"/>
                                                 <constraint firstItem="Xtu-RU-ede" firstAttribute="top" secondItem="ljw-cy-W5W" secondAttribute="bottom" constant="10" id="BUn-aG-ilR"/>
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="leading" secondItem="pdB-kQ-qhh" secondAttribute="leading" constant="10" id="IrE-87-q6g"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xtu-RU-ede" secondAttribute="trailing" id="K1R-3y-FDF"/>
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="centerY" secondItem="pdB-kQ-qhh" secondAttribute="centerY" id="KVG-wD-SY3"/>
                                                 <constraint firstItem="kmS-Ci-tOL" firstAttribute="centerX" secondItem="pdB-kQ-qhh" secondAttribute="centerX" id="VZ0-ym-NVs"/>
+                                                <constraint firstItem="Xtu-RU-ede" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pdB-kQ-qhh" secondAttribute="leading" id="WKk-JY-7xh"/>
                                                 <constraint firstItem="kmS-Ci-tOL" firstAttribute="top" secondItem="Xtu-RU-ede" secondAttribute="bottom" constant="10" id="e3a-hS-FbW"/>
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="centerX" secondItem="pdB-kQ-qhh" secondAttribute="centerX" id="iCv-Np-ZXv"/>
                                                 <constraint firstItem="Xtu-RU-ede" firstAttribute="centerX" secondItem="pdB-kQ-qhh" secondAttribute="centerX" id="rK3-ns-yok"/>
