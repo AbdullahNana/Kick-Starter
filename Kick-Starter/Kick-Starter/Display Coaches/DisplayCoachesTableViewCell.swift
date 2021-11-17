@@ -21,7 +21,10 @@ class DisplayCoachesTableViewCell: UITableViewCell {
     }
     
     private func applyCellStyling() {
-        backgroundColor = UIColor.clearBackgroundColor
+        layer.borderColor = UIColor.whiteColor.cgColor
+        layer.borderWidth = 2
+        
+        backgroundColor = .clearBackgroundColor
         selectionStyle = .none
         
         coachPhotoImageView.layer.cornerRadius = 20
@@ -39,7 +42,7 @@ class DisplayCoachesTableViewCell: UITableViewCell {
     }
 
     func configure(coach: Coach?) {
-        coachNameLabel.text = coach?.name
+        coachNameLabel.text = "\(coach?.firstname ?? "") \(coach?.lastname ?? "")"
         coachPhotoImageView.loadImage(urlString: coach?.photo ?? "")
         coachNationalityLabel.text = "Nationality: \(coach?.nationality ?? "")"
         coachAgeLabel.text = "Age: " + String(coach?.age ?? 0)

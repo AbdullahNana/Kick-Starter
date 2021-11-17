@@ -15,6 +15,8 @@ struct CoachResponseModel: Decodable {
 struct Coach: Decodable {
     let id: Int?
     let name: String?
+    let firstname: String?
+    let lastname: String?
     let age: Int?
     let nationality: String?
     let photo: String?

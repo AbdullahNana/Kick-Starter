@@ -9,7 +9,7 @@ import UIKit
 import KickStarterFramework
 
 class TeamsInformationViewController: UIViewController {
-    private lazy var teamsInformationViewModel = TeamsInformationViewModel()
+    private var teamsInformationViewModel = TeamsInformationViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
     }

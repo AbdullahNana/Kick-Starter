@@ -49,10 +49,6 @@ extension DisplayCoachesViewController: UITableViewDelegate, UITableViewDataSour
         coachViewModel.numberOfCoachResults
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        300
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DisplayCoachesTableViewCell",
                                                        for: indexPath as IndexPath) as? DisplayCoachesTableViewCell

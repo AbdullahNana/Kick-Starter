@@ -278,8 +278,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Q-dy-hzN">
                                 <rect key="frame" x="30" y="425" width="354.5" height="46"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="View Team Stadium">
+                                <buttonConfiguration key="configuration" style="filled" title="View Team Stadium">
                                     <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapVenueButton:" destination="EiE-di-ElG" eventType="touchUpInside" id="zb0-K6-YuV"/>
@@ -289,8 +291,10 @@
                                 <rect key="frame" x="47.5" y="531" width="319.5" height="46"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="View Team Squad">
+                                <buttonConfiguration key="configuration" style="filled" title="View Team Squad">
                                     <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapPlayersButton:" destination="EiE-di-ElG" eventType="touchUpInside" id="uHN-ts-Slh"/>
@@ -299,8 +303,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lve-wh-bP3">
                                 <rect key="frame" x="27.5" y="319" width="359.5" height="46"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="View Team Coaches">
+                                <buttonConfiguration key="configuration" style="filled" title="View Team Coaches">
                                     <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapCoachesButton:" destination="EiE-di-ElG" eventType="touchUpInside" id="eSt-BL-tlx"/>
@@ -393,10 +399,10 @@
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="top" secondItem="EfC-sI-eW8" secondAttribute="bottom" constant="10" id="3hw-gU-BIv"/>
                                                 <constraint firstItem="Xtu-RU-ede" firstAttribute="top" secondItem="ljw-cy-W5W" secondAttribute="bottom" constant="10" id="BUn-aG-ilR"/>
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="leading" secondItem="pdB-kQ-qhh" secondAttribute="leading" constant="10" id="IrE-87-q6g"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xtu-RU-ede" secondAttribute="trailing" id="K1R-3y-FDF"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xtu-RU-ede" secondAttribute="trailing" constant="10" id="K1R-3y-FDF"/>
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="centerY" secondItem="pdB-kQ-qhh" secondAttribute="centerY" id="KVG-wD-SY3"/>
                                                 <constraint firstItem="kmS-Ci-tOL" firstAttribute="centerX" secondItem="pdB-kQ-qhh" secondAttribute="centerX" id="VZ0-ym-NVs"/>
-                                                <constraint firstItem="Xtu-RU-ede" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pdB-kQ-qhh" secondAttribute="leading" id="WKk-JY-7xh"/>
+                                                <constraint firstItem="Xtu-RU-ede" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pdB-kQ-qhh" secondAttribute="leading" constant="10" id="WKk-JY-7xh"/>
                                                 <constraint firstItem="kmS-Ci-tOL" firstAttribute="top" secondItem="Xtu-RU-ede" secondAttribute="bottom" constant="10" id="e3a-hS-FbW"/>
                                                 <constraint firstItem="ljw-cy-W5W" firstAttribute="centerX" secondItem="pdB-kQ-qhh" secondAttribute="centerX" id="iCv-Np-ZXv"/>
                                                 <constraint firstItem="Xtu-RU-ede" firstAttribute="centerX" secondItem="pdB-kQ-qhh" secondAttribute="centerX" id="rK3-ns-yok"/>
@@ -457,42 +463,46 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7h-WE-chO">
-                                                    <rect key="frame" x="186.5" y="248" width="41.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="174.5" y="279" width="65.5" height="0.0"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuO-ZP-9T0">
-                                                    <rect key="frame" x="186.5" y="278.5" width="41.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="174.5" y="299" width="65.5" height="0.0"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MmC-WL-hTx">
-                                                    <rect key="frame" x="10" y="51.5" width="394" height="186.5"/>
+                                                    <rect key="frame" x="10" y="41" width="394" height="218"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-a1-Wl7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="186.5"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-a1-Wl7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="218"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="300" id="ME6-tq-LEN"/>
+                                                                <constraint firstAttribute="width" constant="350" id="eXh-bw-2wo"/>
+                                                            </constraints>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-ZA-LR9">
-                                                    <rect key="frame" x="186.5" y="21" width="41.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-ZA-LR9">
+                                                    <rect key="frame" x="162.5" y="31" width="89.5" height="0.0"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Q7h-WE-chO" firstAttribute="top" secondItem="MmC-WL-hTx" secondAttribute="bottom" constant="10" id="3FN-Pu-wHn"/>
-                                                <constraint firstItem="EuO-ZP-9T0" firstAttribute="top" secondItem="Q7h-WE-chO" secondAttribute="bottom" constant="10" id="Dyv-rU-wQT"/>
+                                                <constraint firstItem="Q7h-WE-chO" firstAttribute="top" secondItem="MmC-WL-hTx" secondAttribute="bottom" constant="20" id="3FN-Pu-wHn"/>
+                                                <constraint firstItem="EuO-ZP-9T0" firstAttribute="top" secondItem="Q7h-WE-chO" secondAttribute="bottom" constant="20" id="Dyv-rU-wQT"/>
                                                 <constraint firstItem="MmC-WL-hTx" firstAttribute="top" secondItem="N9P-ZA-LR9" secondAttribute="bottom" constant="10" id="IKU-V2-AoD"/>
                                                 <constraint firstItem="MmC-WL-hTx" firstAttribute="leading" secondItem="rkH-x1-OKp" secondAttribute="leading" constant="10" id="OHa-h3-R3Z"/>
                                                 <constraint firstItem="N9P-ZA-LR9" firstAttribute="centerX" secondItem="rkH-x1-OKp" secondAttribute="centerX" id="PA6-K7-9HW"/>
                                                 <constraint firstItem="Q7h-WE-chO" firstAttribute="centerX" secondItem="rkH-x1-OKp" secondAttribute="centerX" id="Uml-6t-Kkx"/>
                                                 <constraint firstAttribute="trailing" secondItem="MmC-WL-hTx" secondAttribute="trailing" constant="10" id="daz-tV-nFt"/>
                                                 <constraint firstItem="EuO-ZP-9T0" firstAttribute="bottom" secondItem="rkH-x1-OKp" secondAttribute="bottomMargin" constant="10" id="fId-tr-8RU"/>
-                                                <constraint firstItem="N9P-ZA-LR9" firstAttribute="top" secondItem="rkH-x1-OKp" secondAttribute="topMargin" constant="10" id="llt-eE-7Kf"/>
+                                                <constraint firstItem="N9P-ZA-LR9" firstAttribute="top" secondItem="rkH-x1-OKp" secondAttribute="topMargin" constant="20" id="llt-eE-7Kf"/>
                                                 <constraint firstItem="EuO-ZP-9T0" firstAttribute="centerX" secondItem="rkH-x1-OKp" secondAttribute="centerX" id="wIU-o6-jwh"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -539,45 +549,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
                             <wkWebView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Knt-c2-KFh">
-                                <rect key="frame" x="0.0" y="126" width="414" height="687"/>
+                                <rect key="frame" x="0.0" y="130" width="414" height="683"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HA6-t8-8gT">
-                                <rect key="frame" x="10" y="88" width="107" height="28"/>
+                                <rect key="frame" x="10" y="88" width="131" height="32"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Live Scores">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="Live Scores">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapLiveScoresButton:" destination="NC5-ND-yer" eventType="touchUpInside" id="3rP-65-8dE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sck-Vf-Zr1">
-                                <rect key="frame" x="267" y="88" width="137" height="28"/>
+                                <rect key="frame" x="291" y="88" width="113" height="32"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Fixtures">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="Fixtures">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapFixturesButton:" destination="NC5-ND-yer" eventType="touchUpInside" id="KCh-HX-2Ks"/>
@@ -637,38 +631,31 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="out-z7-U7o">
-                                <rect key="frame" x="171" y="716" width="72" height="28"/>
+                                <rect key="frame" x="107" y="722" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="9QQ-2Y-Pbc"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Log In">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="Log In">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapLogInButton:" destination="IF8-pR-LEJ" eventType="touchUpInside" id="Dix-Sw-Ktt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sm-x7-ZBe">
-                                <rect key="frame" x="167.5" y="668" width="79" height="28"/>
+                                <rect key="frame" x="107" y="668" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="8gd-y8-Oql"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Sign Up">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapSignUpButton:" destination="IF8-pR-LEJ" eventType="touchUpInside" id="kmE-cq-GSA"/>
@@ -774,19 +761,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbL-S6-rMZ">
-                                <rect key="frame" x="171" y="358" width="72" height="28"/>
+                                <rect key="frame" x="107" y="358" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4he-Tl-c5b"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Log In">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="Log In">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapLogInButton:" destination="IlJ-F9-AcA" eventType="touchUpInside" id="u96-mU-w5s"/>
@@ -848,19 +832,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goI-Xu-J2R">
-                                <rect key="frame" x="167.5" y="358" width="79" height="28"/>
+                                <rect key="frame" x="107" y="358" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="2oG-m4-OCJ"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Sign Up">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="14" name="Rockwell-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapSignUpButton:" destination="QSr-TD-rHR" eventType="touchUpInside" id="Ob3-eQ-Uog"/>

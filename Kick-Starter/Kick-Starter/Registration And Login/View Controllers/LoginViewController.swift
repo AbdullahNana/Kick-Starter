@@ -19,18 +19,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.performSegue(withIdentifier: "LogInToKickStarterSegue", sender: self)
         
         setupTextFields()
-        applyButtonStyling()
     }
     
     private func setupTextFields() {
         passwordTextField.isSecureTextEntry = true
-    }
-    
-    private func applyButtonStyling() {
-        logInButton.titleLabel?.font = .labelFontStyle
-        logInButton.titleLabel?.textColor = .whiteColor
     }
     
     @IBAction private func didTapLogInButton(_ sender: Any) {
