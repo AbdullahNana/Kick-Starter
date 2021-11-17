@@ -9,7 +9,7 @@ import Foundation
 import KickStarterFramework
 
 final class DisplayPlayersViewModel {
-    private(set) var playerResponse: PlayerResponseModel?
+    private var playerResponse: PlayerResponseModel?
     private(set) var selectedTeam: Team?
     private var playerRepository: PlayerRepositable
     private weak var delegate: ViewModelDelegate?
