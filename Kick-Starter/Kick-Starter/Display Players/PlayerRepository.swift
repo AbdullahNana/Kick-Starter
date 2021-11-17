@@ -8,6 +8,7 @@
 import Foundation
 
 final class PlayerRepository: PlayerRepositable {
+    
     func fetchPlayerData(method: HTTPMethod, endpoint: String, completionHandler: @escaping PlayerRepositoryResultBlock ) {
         let urlString = endpoint
         guard let url = URL(string: urlString) else { return }
