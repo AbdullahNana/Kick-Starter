@@ -14,12 +14,16 @@ class TeamsInformationViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func didTapVenueButton(_ sender: Any) {
+    @IBAction private func didTapVenueButton(_ sender: Any) {
         performSegue(withIdentifier: "displayVenueSegue", sender: self )
     }
     
-    @IBAction func didTapPlayersButton(_ sender: Any) {
+    @IBAction private func didTapPlayersButton(_ sender: Any) {
         performSegue(withIdentifier: "displayPlayersSegue", sender: self )
+    }
+    
+    @IBAction private func didTapCoachesButton(_ sender: Any) {
+        performSegue(withIdentifier: "displayCoachesSegue", sender: self )
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,11 +36,18 @@ class TeamsInformationViewController: UIViewController {
             
             guard let selectedVenue = teamsInformationViewModel.selectedVenue else { return }
             destination.set(selectedVenue)
-        }
-        
-        if segue.identifier == "displayPlayersSegue" {
+        } else if segue.identifier == "displayPlayersSegue" {
+            
             // swiftlint:disable force_cast
             let destination = segue.destination as! DisplayPlayersViewController
+            // swiftlint:enable force_cast
+            
+            guard let selectedTeam = teamsInformationViewModel.selectedTeam else { return }
+            destination.setTeam(team: selectedTeam)
+        } else if segue.identifier == "displayCoachesSegue" {
+            
+            // swiftlint:disable force_cast
+            let destination = segue.destination as! DisplayCoachesViewController
             // swiftlint:enable force_cast
             
             guard let selectedTeam = teamsInformationViewModel.selectedTeam else { return }
