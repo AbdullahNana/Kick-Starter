@@ -17,6 +17,7 @@ class DisplayCoachesViewController: UIViewController {
         tableViewSetup()
         applyTableViewStyling()
         updateCoachData(team: String(coachViewModel.selectedTeam?.id ?? 33))
+        self.title = "\(coachViewModel.selectedTeam?.name ?? "") Coaches"
     }
     
     func setTeam(team: Team) {

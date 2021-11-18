@@ -17,6 +17,7 @@ class DisplayPlayersViewController: UIViewController {
         super.viewDidLoad()
         collectionViewSetup()
         updatePlayerData(team: String(playerViewModel.selectedTeam?.id ?? 33))
+        self.title = "\(playerViewModel.selectedTeam?.name ?? "") Squad"
     }
     
     private func updatePlayerData(team: String) {

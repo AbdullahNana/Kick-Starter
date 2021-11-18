@@ -21,20 +21,19 @@ class DisplayCoachesTableViewCell: UITableViewCell {
     }
     
     private func applyCellStyling() {
-        layer.borderColor = UIColor.whiteColor.cgColor
-        layer.borderWidth = 2
-        
         backgroundColor = .clearBackgroundColor
         selectionStyle = .none
         
-        coachPhotoImageView.layer.cornerRadius = 20
-        coachPhotoImageView.clipsToBounds = true
+        imageStackView.layer.cornerRadius = 20
+        imageStackView.clipsToBounds = true
+        imageStackView.layer.borderWidth = 4
+        imageStackView.layer.borderColor = UIColor.blackBorderColour
         
         imageStackView.backgroundColor = .clear
-        imageStackView.layer.shadowColor = UIColor.black.cgColor
-        imageStackView.layer.shadowOffset = CGSize(width: 5, height: 5)
-        imageStackView.layer.shadowOpacity = 0.98
-        imageStackView.layer.shadowRadius = 9.0
+        coachPhotoImageView.layer.shadowColor = UIColor.black.cgColor
+        coachPhotoImageView.layer.shadowOffset = CGSize(width: 5, height: 5)
+        coachPhotoImageView.layer.shadowOpacity = 0.98
+        coachPhotoImageView.layer.shadowRadius = 9.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

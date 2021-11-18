@@ -56,6 +56,6 @@
     venueNameLabel.text = _viewModel.venueName;
     venueCityLabel.text = _viewModel.venueCity;
     venueCapacityLabel.text = _viewModel.venueCapacity;
-    
+    self.title = @"Stadium";
 }
 @end
