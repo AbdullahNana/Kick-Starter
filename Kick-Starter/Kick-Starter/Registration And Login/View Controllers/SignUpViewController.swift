@@ -46,3 +46,13 @@ extension SignUpViewController: ViewModelDelegate {
         loader.stop()
     }
 }
+
+extension SignUpViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.becomeFirstResponder()
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textView.text = ""
+    }
+}

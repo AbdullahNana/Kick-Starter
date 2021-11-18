@@ -46,3 +46,13 @@ extension LoginViewController: ViewModelDelegate {
         loader.stop()
     }
 }
+
+extension LoginViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.becomeFirstResponder()
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textView.text = ""
+    }
+}
