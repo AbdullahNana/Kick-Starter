@@ -67,8 +67,8 @@ extension DisplayCoachesViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DisplayCoachesTableViewCell",
-                                                       for: indexPath as IndexPath) as? DisplayCoachesTableViewCell
-        else {return UITableViewCell()}
+                        for: indexPath as IndexPath) as? DisplayCoachesTableViewCell
+                        else { return UITableViewCell() }
         
         guard let coach = coachViewModel.coachData(at: indexPath.row) else { return UITableViewCell() }
         cell.configure(coach: coach)
