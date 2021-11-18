@@ -15,19 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="YIN-Hs-1UK">
-                                <rect key="frame" x="7" y="248" width="400" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="Tl5-Mi-viE"/>
-                                    <constraint firstAttribute="height" constant="400" id="lkn-Xp-RHi"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="mYq-wH-Xfd">
+                                <rect key="frame" x="12" y="244" width="390" height="408"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.44899046419999999" green="0.29956060649999999" blue="0.62350422139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.63036155699999996" green="0.66658425330000004" blue="0.67930179830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YIN-Hs-1UK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Zcz-lQ-6fk"/>
-                            <constraint firstItem="YIN-Hs-1UK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uwv-EO-hZW"/>
+                            <constraint firstItem="mYq-wH-Xfd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="B2e-6I-usJ"/>
+                            <constraint firstItem="mYq-wH-Xfd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="R5M-aJ-WjQ"/>
+                            <constraint firstItem="mYq-wH-Xfd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="gEA-0y-Agb"/>
+                            <constraint firstItem="mYq-wH-Xfd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nmo-4m-clr"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="512" height="512"/>
+        <image name="Icon-1" width="500" height="500"/>
     </resources>
 </document>

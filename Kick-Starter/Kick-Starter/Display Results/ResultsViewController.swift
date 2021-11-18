@@ -25,10 +25,6 @@ class ResultsViewController: UIViewController, UIWebViewDelegate {
     private func applyButtonStyling() {
         fixturesButton.titleLabel?.font = .labelFontStyle
         liveScoresButton.titleLabel?.font = .labelFontStyle
-        fixturesButton.titleLabel?.textColor = .whiteColor
-        liveScoresButton.titleLabel?.textColor = .whiteColor
-        fixturesButton.tintColor = .blackColor
-        liveScoresButton.tintColor = .blackColor
     }
 
    private func loadWidget(type: String) {

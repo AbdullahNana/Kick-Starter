@@ -19,18 +19,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupTextFields()
-        applyButtonStyling()
     }
     
     private func setupTextFields() {
         passwordTextField.isSecureTextEntry = true
-    }
-    
-    private func applyButtonStyling() {
-        logInButton.titleLabel?.font = .labelFontStyle
-        logInButton.titleLabel?.textColor = .whiteColor
     }
     
     @IBAction private func didTapLogInButton(_ sender: Any) {
@@ -51,5 +44,15 @@ extension LoginViewController: ViewModelDelegate {
     func showErrorMessage(error: Error) {
         showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
         loader.stop()
+    }
+}
+
+extension LoginViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.becomeFirstResponder()
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textView.text = ""
     }
 }

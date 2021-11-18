@@ -9,6 +9,7 @@ import Foundation
 import KickStarterFramework
 
 final class DisplayPlayersViewModel {
+    
     private var playerResponse: PlayerResponseModel?
     private(set) var selectedTeam: Team?
     private var playerRepository: PlayerRepositable

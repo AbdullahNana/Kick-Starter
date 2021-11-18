@@ -9,7 +9,7 @@ import UIKit
 import KickStarterFramework
 
 class TeamsInformationViewController: UIViewController {
-    private lazy var teamsInformationViewModel = TeamsInformationViewModel()
+    private var teamsInformationViewModel = TeamsInformationViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,6 +20,10 @@ class TeamsInformationViewController: UIViewController {
     
     @IBAction private func didTapPlayersButton(_ sender: Any) {
         performSegue(withIdentifier: "displayPlayersSegue", sender: self )
+    }
+    
+    @IBAction private func didTapCoachesButton(_ sender: Any) {
+        performSegue(withIdentifier: "displayCoachesSegue", sender: self )
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,6 +40,14 @@ class TeamsInformationViewController: UIViewController {
             
             // swiftlint:disable force_cast
             let destination = segue.destination as! DisplayPlayersViewController
+            // swiftlint:enable force_cast
+            
+            guard let selectedTeam = teamsInformationViewModel.selectedTeam else { return }
+            destination.setTeam(team: selectedTeam)
+        } else if segue.identifier == "displayCoachesSegue" {
+            
+            // swiftlint:disable force_cast
+            let destination = segue.destination as! DisplayCoachesViewController
             // swiftlint:enable force_cast
             
             guard let selectedTeam = teamsInformationViewModel.selectedTeam else { return }

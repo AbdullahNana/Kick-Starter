@@ -17,10 +17,15 @@ class DisplayPlayersViewController: UIViewController {
         super.viewDidLoad()
         collectionViewSetup()
         updatePlayerData(team: String(playerViewModel.selectedTeam?.id ?? 33))
+        setTitle()
     }
     
     private func updatePlayerData(team: String) {
         playerViewModel.fetchPlayerData(endpoint: playerViewModel.endpoint(team: team))
+    }
+    
+    private func setTitle() {
+        self.title = "\(playerViewModel.selectedTeam?.name ?? "") Squad"
     }
     
     private func collectionViewSetup() {

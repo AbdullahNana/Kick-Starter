@@ -20,10 +20,10 @@ class LeagueTableViewController: UITableViewController {
     }
     
     private func applyTableViewStyling() {
-        tableView.backgroundColor = UIColor.clearBackgroundColor
+        tableView.backgroundColor = .clearBackgroundColor
         tableView.backgroundView = UIImageView(image: UIImage(named: "pitch"))
         tableView.separatorStyle = .singleLine
-        tableView.separatorColor = UIColor.clearBackgroundColor
+        tableView.separatorColor = .clearBackgroundColor
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

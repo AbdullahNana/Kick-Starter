@@ -20,12 +20,6 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextFields()
-        applyButtonStyling()
-    }
-    
-    private func applyButtonStyling() {
-        signUpButton.titleLabel?.font = .labelFontStyle
-        signUpButton.titleLabel?.textColor = .whiteColor
     }
     
     private func setupTextFields() {
@@ -50,5 +44,15 @@ extension SignUpViewController: ViewModelDelegate {
     func showErrorMessage(error: Error) {
         showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
         loader.stop()
+    }
+}
+
+extension SignUpViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.becomeFirstResponder()
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textView.text = ""
     }
 }

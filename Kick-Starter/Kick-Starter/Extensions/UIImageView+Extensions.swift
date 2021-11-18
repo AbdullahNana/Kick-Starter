@@ -26,4 +26,21 @@ import UIKit
             }
         }
     }
+    
+    func applyImageStyling() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 5, height: 5)
+        layer.shadowOpacity = 0.98
+        layer.shadowRadius = 9.0
+    }
+}
+
+extension UIStackView {
+    func applyStackViewStyling() {
+        layer.cornerRadius = 20
+        clipsToBounds = true
+        layer.borderWidth = 4
+        layer.borderColor = UIColor.blackBorderColour
+        backgroundColor = .clear
+    }
 }
