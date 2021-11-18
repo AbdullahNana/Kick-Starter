@@ -31,17 +31,18 @@ class ResultsViewController: UIViewController, UIWebViewDelegate {
         liveScoresButton.tintColor = .blackColor
     }
 
-    @IBAction func didTapFixturesButton(_ sender: Any) {
-        if let result = resultsViewModel.resultsURL(result: "fixtures") {
+   private func loadWidget(type: String) {
+        if let result = resultsViewModel.resultsURL(result: type) {
             let request = URLRequest(url: result)
             liveScoreWebView.load(request)
         }
     }
     
+    @IBAction func didTapFixturesButton(_ sender: Any) {
+        loadWidget(type: "fixtures")
+    }
+    
     @IBAction func didTapLiveScoresButton(_ sender: Any) {
-        if let result = resultsViewModel.resultsURL(result: "livescores") {
-            let request = URLRequest(url: result)
-            liveScoreWebView.load(request)
-        }
+        loadWidget(type: "livescores")
     }
 }
