@@ -19,8 +19,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.performSegue(withIdentifier: "LogInToKickStarterSegue", sender: self)
-        
         setupTextFields()
     }
     

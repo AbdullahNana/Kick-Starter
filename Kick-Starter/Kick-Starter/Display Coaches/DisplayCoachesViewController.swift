@@ -17,11 +17,15 @@ class DisplayCoachesViewController: UIViewController {
         tableViewSetup()
         applyTableViewStyling()
         updateCoachData(team: String(coachViewModel.selectedTeam?.id ?? 33))
-        self.title = "\(coachViewModel.selectedTeam?.name ?? "") Coaches"
+        setTitle()
     }
     
     func setTeam(team: Team) {
         coachViewModel.setTeam(selectedTeam: team)
+    }
+    
+    private func setTitle() {
+        self.title = "\(coachViewModel.selectedTeam?.name ?? "") Coaches"
     }
     
     private func updateCoachData(team: String) {
@@ -35,7 +39,6 @@ class DisplayCoachesViewController: UIViewController {
     
     private func applyTableViewStyling() {
         tableView.backgroundColor = .clearBackgroundColor
-        tableView.backgroundView = UIImageView(image: UIImage(named: "pitch"))
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = .clearBackgroundColor
     }
