@@ -84,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pitch" id="sGH-Wd-LTr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="coa-9w-4tA">
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2205.7971014492755" y="-512.27678571428567"/>
+            <point key="canvasLocation" x="2205.1401869158876" y="-512.52699784017284"/>
         </scene>
         <!--Single Venue View Controller-->
         <scene sceneID="AVK-Zv-Zvd">
@@ -458,7 +458,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kM7-WP-uBd">
-                                <rect key="frame" x="0.0" y="44" width="428" height="799"/>
+                                <rect key="frame" x="0.0" y="110" width="428" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -494,7 +494,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-ZA-LR9">
-                                                    <rect key="frame" x="169.33333333333334" y="31" width="89.333333333333343" height="0.0"/>
+                                                    <rect key="frame" x="5" y="31" width="418" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -507,7 +507,9 @@
                                                 <constraint firstItem="MmC-WL-hTx" firstAttribute="leading" secondItem="rkH-x1-OKp" secondAttribute="leading" constant="10" id="OHa-h3-R3Z"/>
                                                 <constraint firstItem="N9P-ZA-LR9" firstAttribute="centerX" secondItem="rkH-x1-OKp" secondAttribute="centerX" id="PA6-K7-9HW"/>
                                                 <constraint firstItem="Q7h-WE-chO" firstAttribute="centerX" secondItem="rkH-x1-OKp" secondAttribute="centerX" id="Uml-6t-Kkx"/>
+                                                <constraint firstAttribute="trailing" secondItem="N9P-ZA-LR9" secondAttribute="trailing" constant="5" id="c03-gB-0JR"/>
                                                 <constraint firstAttribute="trailing" secondItem="MmC-WL-hTx" secondAttribute="trailing" constant="10" id="daz-tV-nFt"/>
+                                                <constraint firstItem="N9P-ZA-LR9" firstAttribute="leading" secondItem="rkH-x1-OKp" secondAttribute="leading" constant="5" id="ecU-HE-3sv"/>
                                                 <constraint firstItem="EuO-ZP-9T0" firstAttribute="bottom" secondItem="rkH-x1-OKp" secondAttribute="bottomMargin" constant="10" id="fId-tr-8RU"/>
                                                 <constraint firstItem="N9P-ZA-LR9" firstAttribute="top" secondItem="rkH-x1-OKp" secondAttribute="topMargin" constant="20" id="llt-eE-7Kf"/>
                                                 <constraint firstItem="EuO-ZP-9T0" firstAttribute="centerX" secondItem="rkH-x1-OKp" secondAttribute="centerX" id="wIU-o6-jwh"/>
@@ -525,18 +527,29 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar alpha="0.55000001192092896" contentMode="redraw" placeholder="Search Team" translatesAutoresizingMaskIntoConstraints="NO" id="7BJ-Rd-K4a">
+                                <rect key="frame" x="0.0" y="54" width="428" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AVo-LA-uw3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="AVo-LA-uw3" firstAttribute="trailing" secondItem="7BJ-Rd-K4a" secondAttribute="trailing" id="4qm-PP-eq2"/>
+                            <constraint firstItem="kM7-WP-uBd" firstAttribute="top" secondItem="7BJ-Rd-K4a" secondAttribute="bottom" constant="5" id="Dar-4B-j9g"/>
+                            <constraint firstItem="7BJ-Rd-K4a" firstAttribute="leading" secondItem="AVo-LA-uw3" secondAttribute="leading" id="Hzp-oV-qFT"/>
+                            <constraint firstItem="7BJ-Rd-K4a" firstAttribute="top" secondItem="AVo-LA-uw3" secondAttribute="top" constant="10" id="Joo-ZB-ELb"/>
                             <constraint firstItem="AVo-LA-uw3" firstAttribute="bottom" secondItem="kM7-WP-uBd" secondAttribute="bottom" id="frD-Wd-31i"/>
                             <constraint firstItem="kM7-WP-uBd" firstAttribute="leading" secondItem="AVo-LA-uw3" secondAttribute="leading" id="jsS-1S-SKG"/>
                             <constraint firstItem="AVo-LA-uw3" firstAttribute="trailing" secondItem="kM7-WP-uBd" secondAttribute="trailing" id="x0z-W8-s6I"/>
-                            <constraint firstItem="kM7-WP-uBd" firstAttribute="top" secondItem="AVo-LA-uw3" secondAttribute="top" id="zbF-XD-Fdn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="7BJ-Rd-K4a" id="Or2-0F-0vX"/>
                         <outlet property="tableView" destination="kM7-WP-uBd" id="QEq-qj-J7J"/>
                     </connections>
                 </viewController>

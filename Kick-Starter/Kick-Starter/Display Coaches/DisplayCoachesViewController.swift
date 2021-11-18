@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import KickStarterFramework
 
 class DisplayCoachesViewController: UIViewController {
     private let loader = LoaderViewController()
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var searchBar: UISearchBar!
     private lazy var coachViewModel = DisplayCoachesViewModel(repository: CoachRepository(), delegate: self)
 
     override func viewDidLoad() {
@@ -18,6 +20,7 @@ class DisplayCoachesViewController: UIViewController {
         applyTableViewStyling()
         updateCoachData(team: String(coachViewModel.selectedTeam?.id ?? 33))
         setTitle()
+        searchBarSetup()
     }
     
     func setTeam(team: Team) {
@@ -32,6 +35,10 @@ class DisplayCoachesViewController: UIViewController {
         coachViewModel.fetchCoachData(endpoint: coachViewModel.endpoint(team: team))
     }
     
+    private func updateCoachSearchData(coach: String) {
+        coachViewModel.fetchCoachData(endpoint: coachViewModel.searchEndpoint(coach: coach))
+    }
+    
     private func tableViewSetup() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -41,6 +48,11 @@ class DisplayCoachesViewController: UIViewController {
         tableView.backgroundColor = .clearBackgroundColor
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = .clearBackgroundColor
+    }
+    
+    private func searchBarSetup() {
+        searchBar.searchTextField.textColor = .blackColor
+        searchBar.delegate = self
     }
 }
 
@@ -68,7 +80,11 @@ extension DisplayCoachesViewController: UITableViewDelegate, UITableViewDataSour
     }
 }
 
-extension DisplayCoachesViewController: ViewModelDelegate {
+extension DisplayCoachesViewController: TeamViewModelDelegate {
+    func showSearchError() {
+        showAlert(alertTitle: "Error", alertMessage: "Please search for another coach.", actionTitle: "Okay")
+    }
+    
     func refreshViewContents() {
         loader.start(container: self)
         self.tableView.reloadData()
@@ -77,5 +93,16 @@ extension DisplayCoachesViewController: ViewModelDelegate {
     
     func showErrorMessage(error: Error) {
         showAlert(alertTitle: "Error", alertMessage: error.localizedDescription, actionTitle: "Okay")
+    }
+}
+
+extension DisplayCoachesViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let coach = searchBar.text else { return }
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        loader.start(container: self)
+        updateCoachSearchData(coach: coach)
+        loader.stop()
     }
 }

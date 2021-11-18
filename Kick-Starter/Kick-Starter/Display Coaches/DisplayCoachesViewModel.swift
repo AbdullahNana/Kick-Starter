@@ -12,9 +12,9 @@ final class DisplayCoachesViewModel {
     private var coachResponse: CoachResponseModel?
     private(set) var selectedTeam: Team?
     private var caochRepository: CoachRepositable
-    private weak var delegate: ViewModelDelegate?
+    private weak var delegate: TeamViewModelDelegate?
     
-    init(repository: CoachRepositable, delegate: ViewModelDelegate) {
+    init(repository: CoachRepositable, delegate: TeamViewModelDelegate) {
         self.caochRepository =  repository
         self.delegate = delegate
     }
@@ -23,12 +23,19 @@ final class DisplayCoachesViewModel {
         "https://v3.football.api-sports.io/coachs?team=\(team)"
     }
     
+    func searchEndpoint(coach: String) -> String {
+        "https://v3.football.api-sports.io/coachs?search=\(coach)"
+    }
+    
     func fetchCoachData(endpoint: String) {
         caochRepository.fetchCoachData(method: .GET, endpoint: endpoint) { [weak self] result in
             switch result {
             case .success(let coach):
                 self?.coachResponse = coach
                 self?.delegate?.refreshViewContents()
+                if coach.response.isEmpty {
+                    self?.delegate?.showSearchError()
+                }
             case .failure(let error):
                 self?.delegate?.showErrorMessage(error: error)
             }
