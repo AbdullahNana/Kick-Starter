@@ -2,6 +2,7 @@
 
 An iOS application that displays data about soccer/football.
 
+Please view the 'Develop' branch for the latest working version of the app.
 
 ## About
 
