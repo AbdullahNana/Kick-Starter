@@ -437,6 +437,7 @@
                             <constraint firstItem="3l3-kW-8lS" firstAttribute="leading" secondItem="LSw-Ez-2aX" secondAttribute="leading" id="tqK-NX-1FD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nxO-fY-bTJ"/>
                     <connections>
                         <outlet property="collectionView" destination="3l3-kW-8lS" id="mvY-9s-ZsL"/>
                     </connections>
@@ -548,6 +549,7 @@
                             <constraint firstItem="AVo-LA-uw3" firstAttribute="trailing" secondItem="kM7-WP-uBd" secondAttribute="trailing" id="x0z-W8-s6I"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QHY-pT-JB5"/>
                     <connections>
                         <outlet property="searchBar" destination="7BJ-Rd-K4a" id="Or2-0F-0vX"/>
                         <outlet property="tableView" destination="kM7-WP-uBd" id="QEq-qj-J7J"/>
@@ -793,6 +795,28 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pitch" translatesAutoresizingMaskIntoConstraints="NO" id="SbW-r8-JaC">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-UD-1Jq">
+                                <rect key="frame" x="30" y="188" width="378" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yef-V8-BnT">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jDB-VI-Icb">
+                                        <rect key="frame" x="78" y="0.0" width="300" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NVS-fy-9bR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="nA8-yn-Rrx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbL-S6-rMZ">
                                 <rect key="frame" x="114" y="358" width="200" height="34"/>
                                 <constraints>
@@ -809,48 +833,50 @@
                                     <action selector="didTapLogInButton:" destination="IlJ-F9-AcA" eventType="touchUpInside" id="u96-mU-w5s"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NFU-Lf-ycG">
-                                <rect key="frame" x="64" y="188" width="300" height="50"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="pL0-ki-yg4"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="rAo-e0-2gd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fwU-W1-oo0">
-                                <rect key="frame" x="64" y="278" width="300" height="50"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="OvO-R0-QI8"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="wRg-Po-vwY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cdZ-al-tnC">
+                                <rect key="frame" x="16.333333333333343" y="278" width="391.66666666666663" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-Hb-CQS">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dR3-cl-ZPK">
+                                        <rect key="frame" x="91.666666666666686" y="0.0" width="300" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="3Rg-zM-D79"/>
+                                            <constraint firstAttribute="height" constant="50" id="Pc1-Iv-Qij"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hNj-db-Fy8"/>
                         <color key="backgroundColor" red="0.44899046419999999" green="0.29956060649999999" blue="0.62350422139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SbW-r8-JaC" firstAttribute="top" secondItem="UjT-QX-azI" secondAttribute="top" id="4hh-tu-KQR"/>
-                            <constraint firstItem="sbL-S6-rMZ" firstAttribute="top" secondItem="fwU-W1-oo0" secondAttribute="bottom" constant="30" id="EsK-5x-w5P"/>
-                            <constraint firstItem="fwU-W1-oo0" firstAttribute="top" secondItem="NFU-Lf-ycG" secondAttribute="bottom" constant="40" id="V7P-kx-NBq"/>
-                            <constraint firstItem="fwU-W1-oo0" firstAttribute="centerX" secondItem="UjT-QX-azI" secondAttribute="centerX" id="VVs-or-P55"/>
-                            <constraint firstItem="NFU-Lf-ycG" firstAttribute="top" secondItem="hNj-db-Fy8" secondAttribute="top" constant="100" id="eVb-xj-Hky"/>
+                            <constraint firstItem="sbL-S6-rMZ" firstAttribute="top" secondItem="cdZ-al-tnC" secondAttribute="bottom" constant="30" id="Kh2-0m-rXo"/>
+                            <constraint firstItem="hNj-db-Fy8" firstAttribute="trailing" secondItem="cdZ-al-tnC" secondAttribute="trailing" constant="20" id="Zxh-k6-5rR"/>
                             <constraint firstItem="sbL-S6-rMZ" firstAttribute="centerX" secondItem="UjT-QX-azI" secondAttribute="centerX" id="fzH-sS-S3H"/>
-                            <constraint firstItem="NFU-Lf-ycG" firstAttribute="centerX" secondItem="UjT-QX-azI" secondAttribute="centerX" id="oNA-uI-g3P"/>
                             <constraint firstItem="SbW-r8-JaC" firstAttribute="trailing" secondItem="hNj-db-Fy8" secondAttribute="trailing" id="u4b-Z3-0lc"/>
+                            <constraint firstItem="hNj-db-Fy8" firstAttribute="trailing" secondItem="T0L-UD-1Jq" secondAttribute="trailing" constant="20" id="vPC-Hh-NZm"/>
+                            <constraint firstItem="cdZ-al-tnC" firstAttribute="top" secondItem="T0L-UD-1Jq" secondAttribute="bottom" constant="40" id="wrP-cK-AfV"/>
                             <constraint firstItem="SbW-r8-JaC" firstAttribute="leading" secondItem="hNj-db-Fy8" secondAttribute="leading" id="xbU-KT-IaK"/>
                             <constraint firstAttribute="bottom" secondItem="SbW-r8-JaC" secondAttribute="bottom" id="xgI-eN-yd6"/>
+                            <constraint firstItem="T0L-UD-1Jq" firstAttribute="top" secondItem="hNj-db-Fy8" secondAttribute="top" constant="100" id="yh3-zd-QDO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8dC-mq-lai"/>
                     <connections>
-                        <outlet property="emailTextField" destination="NFU-Lf-ycG" id="Flw-XJ-HH7"/>
+                        <outlet property="emailTextField" destination="jDB-VI-Icb" id="dni-nJ-yUD"/>
                         <outlet property="logInButton" destination="sbL-S6-rMZ" id="xVf-kw-P0v"/>
-                        <outlet property="passwordTextField" destination="fwU-W1-oo0" id="dvp-Pw-brY"/>
+                        <outlet property="passwordTextField" destination="dR3-cl-ZPK" id="n0Q-9M-kzt"/>
                         <segue destination="DRM-Om-Wqu" kind="show" identifier="LogInToKickStarterSegue" id="FvJ-iB-LWY"/>
                     </connections>
                 </viewController>
@@ -884,41 +910,65 @@
                                     <action selector="didTapSignUpButton:" destination="QSr-TD-rHR" eventType="touchUpInside" id="Ob3-eQ-Uog"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-pH-s3L">
-                                <rect key="frame" x="64" y="188" width="300" height="50"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="nhr-Mx-hPd"/>
-                                    <constraint firstAttribute="height" constant="50" id="ztD-Rm-p8k"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="048-99-PN9">
-                                <rect key="frame" x="64" y="278" width="300" height="50"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="D2F-c5-qkP"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="x8p-QL-Cm4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="q2S-J7-vOq">
+                                <rect key="frame" x="30" y="188" width="378" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHt-RN-Vzg">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-pH-s3L">
+                                        <rect key="frame" x="78" y="0.0" width="300" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="nhr-Mx-hPd"/>
+                                            <constraint firstAttribute="height" constant="50" id="ztD-Rm-p8k"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="FSu-Pw-f7o">
+                                <rect key="frame" x="16.333333333333343" y="278" width="391.66666666666663" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkp-15-6vP">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="048-99-PN9">
+                                        <rect key="frame" x="91.666666666666686" y="0.0" width="300" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="D2F-c5-qkP"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="x8p-QL-Cm4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8tN-DR-mdm"/>
                         <color key="backgroundColor" red="0.44899046419999999" green="0.29956060649999999" blue="0.62350422139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UeJ-lV-sZE" firstAttribute="trailing" secondItem="8tN-DR-mdm" secondAttribute="trailing" id="0ZB-Vs-nc9"/>
-                            <constraint firstItem="048-99-PN9" firstAttribute="top" secondItem="NB1-pH-s3L" secondAttribute="bottom" constant="40" id="2Hr-LW-weG"/>
-                            <constraint firstItem="NB1-pH-s3L" firstAttribute="top" secondItem="8tN-DR-mdm" secondAttribute="top" constant="100" id="6cz-TN-Uqn"/>
                             <constraint firstItem="UeJ-lV-sZE" firstAttribute="top" secondItem="mNe-Fr-MZz" secondAttribute="top" id="D74-bx-4DP"/>
-                            <constraint firstItem="NB1-pH-s3L" firstAttribute="centerX" secondItem="mNe-Fr-MZz" secondAttribute="centerX" id="OLa-f9-pjc"/>
+                            <constraint firstItem="8tN-DR-mdm" firstAttribute="trailing" secondItem="FSu-Pw-f7o" secondAttribute="trailing" constant="20" id="J3m-hR-LRp"/>
+                            <constraint firstItem="q2S-J7-vOq" firstAttribute="top" secondItem="8tN-DR-mdm" secondAttribute="top" constant="100" id="ROv-IH-k7X"/>
+                            <constraint firstItem="goI-Xu-J2R" firstAttribute="top" secondItem="FSu-Pw-f7o" secondAttribute="bottom" constant="30" id="Y7D-bQ-nQb"/>
                             <constraint firstItem="goI-Xu-J2R" firstAttribute="centerX" secondItem="mNe-Fr-MZz" secondAttribute="centerX" id="aH9-dA-fVC"/>
                             <constraint firstAttribute="bottom" secondItem="UeJ-lV-sZE" secondAttribute="bottom" id="bX5-o2-80C"/>
+                            <constraint firstItem="8tN-DR-mdm" firstAttribute="trailing" secondItem="q2S-J7-vOq" secondAttribute="trailing" constant="20" id="dZs-Cn-RI1"/>
+                            <constraint firstItem="FSu-Pw-f7o" firstAttribute="top" secondItem="q2S-J7-vOq" secondAttribute="bottom" constant="40" id="hli-lH-2WQ"/>
                             <constraint firstItem="UeJ-lV-sZE" firstAttribute="leading" secondItem="8tN-DR-mdm" secondAttribute="leading" id="p1A-sy-xCz"/>
-                            <constraint firstItem="goI-Xu-J2R" firstAttribute="top" secondItem="048-99-PN9" secondAttribute="bottom" constant="30" id="s1G-wT-LIq"/>
-                            <constraint firstItem="048-99-PN9" firstAttribute="centerX" secondItem="mNe-Fr-MZz" secondAttribute="centerX" id="thn-gp-j7P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bas-P3-lxc"/>
@@ -926,7 +976,7 @@
                         <outlet property="emailTextField" destination="NB1-pH-s3L" id="h8J-ja-hIf"/>
                         <outlet property="passwordTextField" destination="048-99-PN9" id="dnV-WJ-pyK"/>
                         <outlet property="signUpButton" destination="goI-Xu-J2R" id="rza-Yo-Rau"/>
-                        <segue destination="IlJ-F9-AcA" kind="show" identifier="SignUpToLogInSegue" id="1SU-kh-jye"/>
+                        <segue destination="DRM-Om-Wqu" kind="show" identifier="SignUpToKickStarterSegue" id="vri-Ow-vn1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iG3-oy-8D3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -954,7 +1004,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1SU-kh-jye"/>
+        <segue reference="vri-Ow-vn1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Icon" width="500" height="500"/>

@@ -27,9 +27,15 @@ class DisplayPlayersCollectionViewCell: UICollectionViewCell {
     }
     
     func configurePlayerCell(for player: Player?) {
+        let age = String(player?.age ?? 0)
+        
+        if age == "0" {
+            playerAgeLabel.isHidden = true
+        }
+        
         playerNameLabel.text = player?.name
         playerPhotoImageView.loadImage(urlString: player?.photo ?? "")
-        playerAgeLabel.text = "Age: " + String(player?.age ?? 0)
-        playerPositionLabel.text = "Position: \(player?.position ?? "")"
+        playerAgeLabel.text = "Age: " + age
+        playerPositionLabel.text = "Position: \(player?.position ?? "Not specified")"
     }
 }

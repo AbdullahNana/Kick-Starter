@@ -52,6 +52,11 @@
 
 - (void)setupView {
     [self cellStyling];
+    
+    if ([_viewModel.venueCapacity isEqualToString: @"0"]) {
+        venueCapacityLabel.hidden = YES;
+    }
+    
     [venueImageView loadImageWithUrlString: _viewModel.venueImage];
     venueNameLabel.text = _viewModel.venueName;
     venueCityLabel.text = _viewModel.venueCity;

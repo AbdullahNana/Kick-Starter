@@ -33,9 +33,17 @@ class DisplayCoachesTableViewCell: UITableViewCell {
     }
 
     func configure(coach: Coach?) {
-        coachNameLabel.text = "\(coach?.firstname ?? "") \(coach?.lastname ?? "")"
+        let name = "\(coach?.firstname ?? "Not specified") \(coach?.lastname ?? "")"
+        
+        let age = String(coach?.age ?? 0)
+        
+        if age == "0" {
+            coachAgeLabel.isHidden = true
+        }
+        
+        coachNameLabel.text = name
         coachPhotoImageView.loadImage(urlString: coach?.photo ?? "")
-        coachNationalityLabel.text = "Nationality: \(coach?.nationality ?? "")"
-        coachAgeLabel.text = "Age: " + String(coach?.age ?? 0)
+        coachNationalityLabel.text = "Nationality: \(coach?.nationality ?? "Not specified")"
+        coachAgeLabel.text = "Age: " + age
     }
 }
