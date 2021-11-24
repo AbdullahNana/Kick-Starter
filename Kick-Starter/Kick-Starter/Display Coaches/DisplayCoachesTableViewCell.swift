@@ -37,10 +37,7 @@ class DisplayCoachesTableViewCell: UITableViewCell {
         
         let age = String(coach?.age ?? 0)
         
-        if age == "0" {
-            coachAgeLabel.isHidden = true
-        }
-        
+        coachAgeLabel.isHidden = age == "0"
         coachNameLabel.text = name
         coachPhotoImageView.loadImage(urlString: coach?.photo ?? "")
         coachNationalityLabel.text = "Nationality: \(coach?.nationality ?? "Not specified")"

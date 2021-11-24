@@ -29,10 +29,7 @@ class TeamCollectionViewCell: UICollectionViewCell {
     func configureTeamCell(for team: Team?) {
         let founded = String(team?.founded ?? 0)
         
-        if founded == "0" {
-            teamYearFoundedLabel.isHidden = true
-        }
-        
+        teamYearFoundedLabel.isHidden = founded == "0"
         teamNameLabel.text = team?.name
         teamLogoImageView.loadImage(urlString: team?.logo ?? "")
         teamYearFoundedLabel.text = "Founded: " + founded

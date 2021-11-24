@@ -29,9 +29,7 @@ class DisplayPlayersCollectionViewCell: UICollectionViewCell {
     func configurePlayerCell(for player: Player?) {
         let age = String(player?.age ?? 0)
         
-        if age == "0" {
-            playerAgeLabel.isHidden = true
-        }
+        playerAgeLabel.isHidden = age == "0"
         
         playerNameLabel.text = player?.name
         playerPhotoImageView.loadImage(urlString: player?.photo ?? "")
