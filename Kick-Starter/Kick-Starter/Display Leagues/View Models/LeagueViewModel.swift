@@ -9,7 +9,7 @@ import Foundation
 import KickStarterFramework
 
 final class LeagueViewModel {
-    private var leagueResponse: [LeagueModel]?
+    private(set) var leagueResponse: [LeagueModel]?
     private var leagueRepository: LeagueRepositable
     private(set) var selectedLeague: LeagueModel?
     private weak var delegate: ViewModelDelegate?

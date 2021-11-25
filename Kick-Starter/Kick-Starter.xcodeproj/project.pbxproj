@@ -14,7 +14,6 @@
 		272F3144270F873300C467DA /* Colours+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3143270F873300C467DA /* Colours+Extensions.swift */; };
 		272F31532715C45D00C467DA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901BA270C837A00FAE650 /* Endpoints.swift */; };
 		272F31542715C48B00C467DA /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F313C270EFF6C00C467DA /* Array+Extension.swift */; };
-		272F31552716C22E00C467DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
 		273941FA2742ADCC0087315F /* DisplayPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273941F92742ADCC0087315F /* DisplayPlayersViewController.swift */; };
 		273941FC2742B0740087315F /* DisplayPlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273941FB2742B0740087315F /* DisplayPlayersViewModel.swift */; };
 		273941FF2742B69F0087315F /* TeamsInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273941FE2742B69F0087315F /* TeamsInformationViewController.swift */; };
@@ -29,6 +28,11 @@
 		273942142743E68A0087315F /* CoachRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273942132743E68A0087315F /* CoachRepositable.swift */; };
 		273942162743E69C0087315F /* CoachRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273942152743E69C0087315F /* CoachRepository.swift */; };
 		2739421A2743EA140087315F /* DisplayCoachesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273942192743EA140087315F /* DisplayCoachesTableViewCell.swift */; };
+		2776A196274E444B00AE637F /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A228682721677E00686D91 /* ViewModelDelegate.swift */; };
+		2776A198274E5A3D00AE637F /* DisplayCoachesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776A197274E5A3D00AE637F /* DisplayCoachesViewModelTests.swift */; };
+		2776A19D274E7CBC00AE637F /* CoachRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273942132743E68A0087315F /* CoachRepositable.swift */; };
+		2776A19E274E7CBF00AE637F /* DisplayCoachesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739420F2743E66C0087315F /* DisplayCoachesViewModel.swift */; };
+		2776A19F274E7CE700AE637F /* CoachResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273942112743E67E0087315F /* CoachResponseModel.swift */; };
 		279023EB2738D6490086012E /* fixtures.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023E82738D6490086012E /* fixtures.html */; };
 		279023EC2738D6490086012E /* livescores.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023E92738D6490086012E /* livescores.html */; };
 		279023ED2738D6490086012E /* single fixture.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023EA2738D6490086012E /* single fixture.html */; };
@@ -113,6 +117,7 @@
 		273942132743E68A0087315F /* CoachRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachRepositable.swift; sourceTree = "<group>"; };
 		273942152743E69C0087315F /* CoachRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachRepository.swift; sourceTree = "<group>"; };
 		273942192743EA140087315F /* DisplayCoachesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCoachesTableViewCell.swift; sourceTree = "<group>"; };
+		2776A197274E5A3D00AE637F /* DisplayCoachesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCoachesViewModelTests.swift; sourceTree = "<group>"; };
 		279023E82738D6490086012E /* fixtures.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fixtures.html; sourceTree = "<group>"; };
 		279023E92738D6490086012E /* livescores.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = livescores.html; sourceTree = "<group>"; };
 		279023EA2738D6490086012E /* single fixture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "single fixture.html"; sourceTree = "<group>"; };
@@ -467,6 +472,7 @@
 			children = (
 				27A22875272973BD00686D91 /* LeagueViewModelTests.swift */,
 				279100C9272A77FA007546F5 /* SingleVenueViewModelTests.swift */,
+				2776A197274E5A3D00AE637F /* DisplayCoachesViewModelTests.swift */,
 			);
 			path = "Kick-StarterTests";
 			sourceTree = "<group>";
@@ -655,7 +661,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272F31552716C22E00C467DA /* .swiftlint.yml in Resources */,
 				27A2285A27201BF400686D91 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -848,7 +853,12 @@
 			files = (
 				272F31542715C48B00C467DA /* Array+Extension.swift in Sources */,
 				27A2287827297C7D00686D91 /* LeagueViewModel.swift in Sources */,
+				2776A19F274E7CE700AE637F /* CoachResponseModel.swift in Sources */,
 				27A2287A27297CB500686D91 /* LeagueRepositable.swift in Sources */,
+				2776A198274E5A3D00AE637F /* DisplayCoachesViewModelTests.swift in Sources */,
+				2776A19E274E7CBF00AE637F /* DisplayCoachesViewModel.swift in Sources */,
+				2776A196274E444B00AE637F /* ViewModelDelegate.swift in Sources */,
+				2776A19D274E7CBC00AE637F /* CoachRepositable.swift in Sources */,
 				279100CA272A77FA007546F5 /* SingleVenueViewModelTests.swift in Sources */,
 				272F31532715C45D00C467DA /* Endpoints.swift in Sources */,
 				27A22876272973BD00686D91 /* LeagueViewModelTests.swift in Sources */,
