@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import KickStarterFramework
 
 class LeagueViewModelTests: XCTestCase {
 
@@ -62,7 +63,7 @@ class LeagueViewModelTests: XCTestCase {
         viewModelUnderTest.setSelectedLeague(index: 0)
         XCTAssertEqual(viewModelUnderTest.leagueData(at: 0)?.league.leagueName, nil)
     }
-    final class MockDelegate: LeagueViewModelDelegate {
+    final class MockDelegate: ViewModelDelegate {
         var refreshCalled = false
         var showErrorCalled = false
         func refreshViewContents() {
