@@ -37,7 +37,7 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController: ViewModelDelegate {
     func refreshViewContents() {
-        self.performSegue(withIdentifier: "SignUpToLogInSegue", sender: self)
+        self.performSegue(withIdentifier: "SignUpToKickStarterSegue", sender: self)
         loader.stop()
     }
     
