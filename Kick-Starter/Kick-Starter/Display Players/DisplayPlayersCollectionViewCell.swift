@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KickStarterFramework
 
 class DisplayPlayersCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var playerNameLabel: UILabel!

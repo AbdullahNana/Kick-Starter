@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KickStarterFramework
 
 class DisplayCoachesTableViewCell: UITableViewCell {
 
