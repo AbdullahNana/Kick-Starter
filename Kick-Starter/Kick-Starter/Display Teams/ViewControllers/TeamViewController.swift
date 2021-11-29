@@ -8,17 +8,29 @@
 import UIKit
 import Foundation
 import KickStarterFramework
+import WatchConnectivity
 
 final class TeamViewController: UIViewController {
     private lazy var teamViewModel = TeamViewModel(repository: TeamRepository(), delegate: self)
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var searchBar: UISearchBar!
     private let loader = LoaderViewController()
+    private var watchSession: WCSession?
+    
+    private func setupWatchSession() {
+        if WCSession.isSupported() {
+            watchSession = WCSession.default
+            watchSession?.delegate = self
+            watchSession?.activate()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionViewSetup()
         searchBarSetup()
+        
+        setupWatchSession()
     }
 
     func set(league: League) {
@@ -80,9 +92,17 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
+    private func sendTeamMessage(team: Team) {
+        let teamInfo: [String: [Any]] = ["Team": ["\(team.name ?? "")", "\(team.founded ?? 0)", "\(team.logo ?? "")"]]
+        watchSession?.sendMessage(teamInfo, replyHandler: nil, errorHandler: nil)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         teamViewModel.setSelectedVenue(index: indexPath.item)
         teamViewModel.setSelectedTeam(index: indexPath.item)
+        
+        guard let team = teamViewModel.teamData(at: indexPath.item)?.team else { return }
+        sendTeamMessage(team: team)
         performSegue(withIdentifier: "teamsInformationSegue", sender: indexPath)
     }
     
@@ -115,5 +135,23 @@ extension TeamViewController: UISearchBarDelegate {
         loader.start(container: self)
         updateSearchData(searchString: team)
         loader.stop()
+    }
+}
+
+extension TeamViewController: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    private func sendMessage() {
+//        watchSession?.sendMessage(["iPhoneMessage": "Hello"], replyHandler: nil, errorHandler: nil)
     }
 }

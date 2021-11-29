@@ -690,16 +690,6 @@
                                     <action selector="didTapSignUpButton:" destination="IF8-pR-LEJ" eventType="touchUpInside" id="kmE-cq-GSA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ2-lX-fxN">
-                                <rect key="frame" x="180.66666666666666" y="136" width="67" height="31"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="tapButton:" destination="IF8-pR-LEJ" eventType="touchUpInside" id="ADa-qD-cg9"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="368-Nv-4kV"/>
                         <color key="backgroundColor" red="0.44899046419999999" green="0.29956060649999999" blue="0.62350422139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -707,7 +697,6 @@
                             <constraint firstItem="P71-fz-jVi" firstAttribute="centerY" secondItem="sLh-Oo-uHV" secondAttribute="centerY" id="09H-rA-duo"/>
                             <constraint firstItem="Qrq-Fc-QKs" firstAttribute="top" secondItem="sLh-Oo-uHV" secondAttribute="top" id="2R6-zR-15E"/>
                             <constraint firstItem="P71-fz-jVi" firstAttribute="centerX" secondItem="sLh-Oo-uHV" secondAttribute="centerX" id="F0U-LD-rbg"/>
-                            <constraint firstItem="P71-fz-jVi" firstAttribute="top" secondItem="nJ2-lX-fxN" secondAttribute="bottom" constant="96" id="ISQ-l6-d6N"/>
                             <constraint firstItem="5Sm-x7-ZBe" firstAttribute="centerX" secondItem="sLh-Oo-uHV" secondAttribute="centerX" id="Orf-h2-qJo"/>
                             <constraint firstItem="out-z7-U7o" firstAttribute="top" secondItem="5Sm-x7-ZBe" secondAttribute="bottom" constant="20" id="SSS-5q-jCe"/>
                             <constraint firstItem="Qrq-Fc-QKs" firstAttribute="trailing" secondItem="368-Nv-4kV" secondAttribute="trailing" id="V7l-9U-Cjp"/>
@@ -715,12 +704,10 @@
                             <constraint firstItem="Qrq-Fc-QKs" firstAttribute="leading" secondItem="368-Nv-4kV" secondAttribute="leading" id="hD3-9B-U1J"/>
                             <constraint firstItem="5Sm-x7-ZBe" firstAttribute="top" secondItem="P71-fz-jVi" secondAttribute="bottom" constant="20" id="i7O-EL-VxV"/>
                             <constraint firstAttribute="bottom" secondItem="Qrq-Fc-QKs" secondAttribute="bottom" id="qNp-N0-MJ3"/>
-                            <constraint firstItem="nJ2-lX-fxN" firstAttribute="centerX" secondItem="sLh-Oo-uHV" secondAttribute="centerX" id="xK5-ed-lRg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kum-pX-79r"/>
                     <connections>
-                        <outlet property="button" destination="nJ2-lX-fxN" id="Az6-N9-3xj"/>
                         <outlet property="logInButton" destination="out-z7-U7o" id="FjJ-h4-Qe9"/>
                         <outlet property="signUpButton" destination="5Sm-x7-ZBe" id="nvx-Dw-x6V"/>
                         <segue destination="IlJ-F9-AcA" kind="show" identifier="LogInSegue" id="V46-G5-Aie"/>
