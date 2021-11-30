@@ -20,6 +20,7 @@
 		2739420927439A1E0087315F /* DisplayPlayersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739420827439A1E0087315F /* DisplayPlayersCollectionViewCell.swift */; };
 		2739420E2743E6510087315F /* DisplayCoachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739420D2743E6500087315F /* DisplayCoachesViewController.swift */; };
 		2739421A2743EA140087315F /* DisplayCoachesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273942192743EA140087315F /* DisplayCoachesTableViewCell.swift */; };
+		273B364427563DFE004D69D4 /* WKInterfaceImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B364327563DFE004D69D4 /* WKInterfaceImage + Extension.swift */; };
 		279023EB2738D6490086012E /* fixtures.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023E82738D6490086012E /* fixtures.html */; };
 		279023EC2738D6490086012E /* livescores.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023E92738D6490086012E /* livescores.html */; };
 		279023ED2738D6490086012E /* single fixture.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023EA2738D6490086012E /* single fixture.html */; };
@@ -61,11 +62,6 @@
 		27B0767C27541831007CD1CB /* TeamInformationWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0767B27541831007CD1CB /* TeamInformationWatchUITests.swift */; };
 		27B0767E27541831007CD1CB /* TeamInformationWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0767D27541831007CD1CB /* TeamInformationWatchUITestsLaunchTests.swift */; };
 		27B0768127541831007CD1CB /* TeamInformationWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 27B0764D27541828007CD1CB /* TeamInformationWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		27B076902754B80D007CD1CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
-		27B076912754B810007CD1CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
-		27B076922754B811007CD1CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
-		27B076932754B812007CD1CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
-		27B076942754B815007CD1CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -165,6 +161,7 @@
 		2739420827439A1E0087315F /* DisplayPlayersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPlayersCollectionViewCell.swift; sourceTree = "<group>"; };
 		2739420D2743E6500087315F /* DisplayCoachesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCoachesViewController.swift; sourceTree = "<group>"; };
 		273942192743EA140087315F /* DisplayCoachesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCoachesTableViewCell.swift; sourceTree = "<group>"; };
+		273B364327563DFE004D69D4 /* WKInterfaceImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKInterfaceImage + Extension.swift"; sourceTree = "<group>"; };
 		279023E82738D6490086012E /* fixtures.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fixtures.html; sourceTree = "<group>"; };
 		279023E92738D6490086012E /* livescores.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = livescores.html; sourceTree = "<group>"; };
 		279023EA2738D6490086012E /* single fixture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "single fixture.html"; sourceTree = "<group>"; };
@@ -513,6 +510,7 @@
 				27B0766527541831007CD1CB /* Assets.xcassets */,
 				27B0766727541831007CD1CB /* Info.plist */,
 				27B0766827541831007CD1CB /* PushNotificationPayload.apns */,
+				273B364327563DFE004D69D4 /* WKInterfaceImage + Extension.swift */,
 			);
 			path = "TeamInformationWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -857,7 +855,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B076912754B810007CD1CB /* .swiftlint.yml in Resources */,
 				27B076532754182D007CD1CB /* Assets.xcassets in Resources */,
 				27B0765127541828007CD1CB /* Interface.storyboard in Resources */,
 			);
@@ -867,7 +864,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B076922754B811007CD1CB /* .swiftlint.yml in Resources */,
 				27B0766627541831007CD1CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -876,7 +872,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B076932754B812007CD1CB /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,7 +879,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B076942754B815007CD1CB /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,7 +901,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B076902754B80D007CD1CB /* .swiftlint.yml in Resources */,
 				27A2285A27201BF400686D91 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1047,6 +1040,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273B364427563DFE004D69D4 /* WKInterfaceImage + Extension.swift in Sources */,
 				27B076622754182E007CD1CB /* NotificationController.swift in Sources */,
 				27B076642754182E007CD1CB /* ComplicationController.swift in Sources */,
 				27B076602754182E007CD1CB /* ExtensionDelegate.swift in Sources */,

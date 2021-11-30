@@ -12,7 +12,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TeamInformationWatch" customModuleProvider="target">
                     <items>
                         <label width="1" alignment="left" text="Label" textAlignment="center" id="lZc-8S-I3A"/>
-                        <imageView width="1" height="77" alignment="left" image="Icon" id="LuK-sV-ByA"/>
+                        <imageView width="1" height="100" alignment="left" image="Icon" id="LuK-sV-ByA"/>
                         <label width="1" alignment="left" text="Label" textAlignment="center" id="VEd-z2-P4o"/>
                     </items>
                     <connections>
