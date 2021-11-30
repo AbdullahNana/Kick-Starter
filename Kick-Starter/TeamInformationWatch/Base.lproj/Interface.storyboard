@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch45"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
@@ -11,52 +11,48 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TeamInformationWatch" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="left" text="Label" textAlignment="center" id="lZc-8S-I3A"/>
-                        <imageView width="1" height="100" alignment="left" image="Icon" id="LuK-sV-ByA"/>
-                        <label width="1" alignment="left" text="Label" textAlignment="center" id="VEd-z2-P4o"/>
+                        <group width="1" alignment="left" backgroundImage="pitch" layout="vertical" radius="3" spacing="4" id="D9K-JJ-VS2">
+                            <items>
+                                <group width="1" alignment="left" layout="overlap" radius="5" id="X4V-g9-5ji">
+                                    <items>
+                                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="lZc-8S-I3A">
+                                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                                <group width="1" alignment="left" radius="5" id="E8k-wE-1Ht">
+                                    <items>
+                                        <imageView width="1" height="110" alignment="left" image="Icon" id="LuK-sV-ByA"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" radius="5" id="22V-Sa-3Te">
+                                    <items>
+                                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="VEd-z2-P4o">
+                                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                        </group>
                     </items>
                     <connections>
+                        <outlet property="interfaceGroup" destination="D9K-JJ-VS2" id="GDk-T9-dcu"/>
                         <outlet property="teamLogoImageView" destination="LuK-sV-ByA" id="4zE-Wk-0p4"/>
                         <outlet property="teamNameLabel" destination="lZc-8S-I3A" id="I2a-7t-Ewh"/>
                         <outlet property="teamYearFoundedLabel" destination="VEd-z2-P4o" id="Arj-eE-m3m"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
-                    <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
-                    </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
-                    <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
-                    </connections>
-                </notificationController>
-            </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="TeamInformationWatch" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
-            <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="TeamInformationWatch" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="219.79797979797982" y="344.91735537190084"/>
         </scene>
     </scenes>
     <resources>
         <image name="Icon" width="500" height="500"/>
+        <image name="pitch" width="720" height="1280"/>
     </resources>
 </document>

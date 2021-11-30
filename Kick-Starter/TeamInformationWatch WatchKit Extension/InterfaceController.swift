@@ -12,9 +12,10 @@ import UIKit
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet weak var teamNameLabel: WKInterfaceLabel!
-    @IBOutlet weak var teamYearFoundedLabel: WKInterfaceLabel!
-    @IBOutlet weak var teamLogoImageView: WKInterfaceImage!
+    @IBOutlet private weak var teamNameLabel: WKInterfaceLabel!
+    @IBOutlet private weak var teamYearFoundedLabel: WKInterfaceLabel!
+    @IBOutlet private weak var teamLogoImageView: WKInterfaceImage!
+    @IBOutlet private weak var interfaceGroup: WKInterfaceGroup!
     private var watchSession: WCSession?
     
     private func setupWatchSession() {
@@ -42,7 +43,7 @@ extension InterfaceController: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         if let team = message["Team"] as? [String] {
             teamNameLabel.setText(team[0])
-            teamYearFoundedLabel.setText(team[1])
+            teamYearFoundedLabel.setText("Founded: \(team[1])")
             teamLogoImageView.loadImage(urlString: team[2])
         }
     }

@@ -21,6 +21,7 @@ class LeagueTableViewController: UITableViewController {
     
     private func applyTableViewStyling() {
         tableView.backgroundColor = .clearBackgroundColor
+        tableView.backgroundView?.contentMode = .scaleAspectFill
         tableView.backgroundView = UIImageView(image: UIImage(named: "pitch"))
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = .clearBackgroundColor

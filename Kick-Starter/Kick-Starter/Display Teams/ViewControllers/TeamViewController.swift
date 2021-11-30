@@ -70,6 +70,10 @@ final class TeamViewController: UIViewController {
         destination.setTeam(team: team)
         
     }
+    
+    func searchTeamFromWatch(searchString: String) {
+        
+    }
 }
 
 extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -139,19 +143,9 @@ extension TeamViewController: UISearchBarDelegate {
 }
 
 extension TeamViewController: WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
+    func sessionDidBecomeInactive(_ session: WCSession) {}
     
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
-    
-    private func sendMessage() {
-//        watchSession?.sendMessage(["iPhoneMessage": "Hello"], replyHandler: nil, errorHandler: nil)
-    }
+    func sessionDidDeactivate(_ session: WCSession) {}
 }
