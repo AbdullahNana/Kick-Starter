@@ -16,7 +16,9 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet private weak var teamYearFoundedLabel: WKInterfaceLabel!
     @IBOutlet private weak var teamLogoImageView: WKInterfaceImage!
     @IBOutlet private weak var interfaceGroup: WKInterfaceGroup!
+    @IBOutlet weak var teamSearchButton: WKInterfaceButton!
     private var watchSession: WCSession?
+    private var searchString = ""
     
     private func setupWatchSession() {
         if WCSession.isSupported() {
@@ -34,6 +36,14 @@ class InterfaceController: WKInterfaceController {
     
     override func didDeactivate() {}
 
+    @IBAction func didTapTeamSearchButton() {
+        sendSearchMessage()
+    }
+    
+    private func sendSearchMessage() {
+        let teamInfo: [String: String] = ["Search": searchString]
+        watchSession?.sendMessage(teamInfo, replyHandler: nil, errorHandler: nil)
+    }
 }
 
 extension InterfaceController: WCSessionDelegate {
@@ -42,6 +52,8 @@ extension InterfaceController: WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         if let team = message["Team"] as? [String] {
+            searchString = team[0].components(separatedBy: " ").first ?? team[0]
+            teamSearchButton.setTitle("Search \(searchString)")
             teamNameLabel.setText(team[0])
             teamYearFoundedLabel.setText("Founded: \(team[1])")
             teamLogoImageView.loadImage(urlString: team[2])

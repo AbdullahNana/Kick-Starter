@@ -70,10 +70,6 @@ final class TeamViewController: UIViewController {
         destination.setTeam(team: team)
         
     }
-    
-    func searchTeamFromWatch(searchString: String) {
-        
-    }
 }
 
 extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -148,4 +144,12 @@ extension TeamViewController: WCSessionDelegate {
     func sessionDidBecomeInactive(_ session: WCSession) {}
     
     func sessionDidDeactivate(_ session: WCSession) {}
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        DispatchQueue.main.async {
+            if let searchString = message["Search"] as? String {
+                self.updateSearchData(searchString: searchString)
+            }
+        }
+    }
 }
