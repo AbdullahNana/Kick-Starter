@@ -70,6 +70,11 @@ final class TeamViewController: UIViewController {
         destination.setTeam(team: team)
         
     }
+    
+    private func sendTeamMessage(team: Team) {
+        let teamInfo: [String: [Any]] = ["Team": ["\(team.name ?? "")", "\(team.founded ?? 0)", "\(team.logo ?? "")"]]
+        watchSession?.sendMessage(teamInfo, replyHandler: nil, errorHandler: nil)
+    }
 }
 
 extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -90,11 +95,6 @@ extension TeamViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.configureTeamCell(for: team)
         
         return cell
-    }
-    
-    private func sendTeamMessage(team: Team) {
-        let teamInfo: [String: [Any]] = ["Team": ["\(team.name ?? "")", "\(team.founded ?? 0)", "\(team.logo ?? "")"]]
-        watchSession?.sendMessage(teamInfo, replyHandler: nil, errorHandler: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -145,7 +145,7 @@ extension TeamViewController: WCSessionDelegate {
     
     func sessionDidDeactivate(_ session: WCSession) {}
     
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+    func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         DispatchQueue.main.async {
             if let searchString = message["Search"] as? String {
                 self.updateSearchData(searchString: searchString)

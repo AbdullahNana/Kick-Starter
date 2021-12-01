@@ -55,6 +55,7 @@ extension InterfaceController: WCSessionDelegate {
             searchString = team[0].components(separatedBy: " ").first ?? team[0]
             teamSearchButton.setTitle("Search \(searchString)")
             teamNameLabel.setText(team[0])
+            teamYearFoundedLabel.setHidden(team[1] == "0")
             teamYearFoundedLabel.setText("Founded: \(team[1])")
             teamLogoImageView.loadImage(urlString: team[2])
         }
