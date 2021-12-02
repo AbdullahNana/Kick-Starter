@@ -72,7 +72,7 @@ final class TeamViewController: UIViewController {
     }
     
     private func sendTeamMessage(team: Team) {
-        let teamInfo: [String: [Any]] = ["Team": ["\(team.name ?? "")", "\(team.founded ?? 0)", "\(team.logo ?? "")"]]
+        let teamInfo: [String: [String]] = ["Team": ["\(team.name ?? "")", "\(team.founded ?? 0)", "\(team.logo ?? "")"]]
         watchSession?.sendMessage(teamInfo, replyHandler: nil, errorHandler: nil)
     }
 }
