@@ -20,6 +20,7 @@
 		2739420927439A1E0087315F /* DisplayPlayersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739420827439A1E0087315F /* DisplayPlayersCollectionViewCell.swift */; };
 		2739420E2743E6510087315F /* DisplayCoachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739420D2743E6500087315F /* DisplayCoachesViewController.swift */; };
 		2739421A2743EA140087315F /* DisplayCoachesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273942192743EA140087315F /* DisplayCoachesTableViewCell.swift */; };
+		273B364427563DFE004D69D4 /* WKInterfaceImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B364327563DFE004D69D4 /* WKInterfaceImage + Extension.swift */; };
 		279023EB2738D6490086012E /* fixtures.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023E82738D6490086012E /* fixtures.html */; };
 		279023EC2738D6490086012E /* livescores.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023E92738D6490086012E /* livescores.html */; };
 		279023ED2738D6490086012E /* single fixture.html in Resources */ = {isa = PBXBuildFile; fileRef = 279023EA2738D6490086012E /* single fixture.html */; };
@@ -49,6 +50,18 @@
 		27A22876272973BD00686D91 /* LeagueViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A22875272973BD00686D91 /* LeagueViewModelTests.swift */; };
 		27A2287827297C7D00686D91 /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2284D271F32FF00686D91 /* LeagueViewModel.swift */; };
 		27A2287A27297CB500686D91 /* LeagueRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2286627215B4700686D91 /* LeagueRepositable.swift */; };
+		27B0765127541828007CD1CB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B0764F27541828007CD1CB /* Interface.storyboard */; };
+		27B076532754182D007CD1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B076522754182D007CD1CB /* Assets.xcassets */; };
+		27B076592754182E007CD1CB /* TeamInformationWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27B076582754182E007CD1CB /* TeamInformationWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27B0765E2754182E007CD1CB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0765D2754182E007CD1CB /* InterfaceController.swift */; };
+		27B076602754182E007CD1CB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0765F2754182E007CD1CB /* ExtensionDelegate.swift */; };
+		27B076622754182E007CD1CB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B076612754182E007CD1CB /* NotificationController.swift */; };
+		27B076642754182E007CD1CB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B076632754182E007CD1CB /* ComplicationController.swift */; };
+		27B0766627541831007CD1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B0766527541831007CD1CB /* Assets.xcassets */; };
+		27B0767227541831007CD1CB /* TeamInformationWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0767127541831007CD1CB /* TeamInformationWatchTests.swift */; };
+		27B0767C27541831007CD1CB /* TeamInformationWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0767B27541831007CD1CB /* TeamInformationWatchUITests.swift */; };
+		27B0767E27541831007CD1CB /* TeamInformationWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0767D27541831007CD1CB /* TeamInformationWatchUITestsLaunchTests.swift */; };
+		27B0768127541831007CD1CB /* TeamInformationWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 27B0764D27541828007CD1CB /* TeamInformationWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		27C90171270AED4300FAE650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90170270AED4300FAE650 /* AppDelegate.swift */; };
 		27C90173270AED4300FAE650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90172270AED4300FAE650 /* SceneDelegate.swift */; };
 		27C90175270AED4300FAE650 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C90174270AED4300FAE650 /* TeamViewController.swift */; };
@@ -60,12 +73,40 @@
 		27C901A6270B46D100FAE650 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 27C901A5270B46D100FAE650 /* .swiftlint.yml */; };
 		27C901B9270C5CCB00FAE650 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901B3270C540900FAE650 /* Constants.swift */; };
 		27C901BB270C837A00FAE650 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C901BA270C837A00FAE650 /* Endpoints.swift */; };
-		BB1583CAF0767942A2650C44 /* Pods_Kick_Starter_Kick_StarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF4978F05DEEB871E0B312A /* Pods_Kick_Starter_Kick_StarterUITests.framework */; };
-		CEB530AE3EB240E066A12768 /* Pods_Kick_StarterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69E21CCA73834A69E77CDF2 /* Pods_Kick_StarterTests.framework */; };
-		EF2FB50FC16C6D264FCA67A7 /* Pods_Kick_Starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF6F307E457E877BCFCD216 /* Pods_Kick_Starter.framework */; };
+		A6D37ACDDFEDCD95F69ECC65 /* Pods_Kick_Starter_Kick_StarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF3F8E239AD527417783AC9 /* Pods_Kick_Starter_Kick_StarterUITests.framework */; };
+		E1C1D4B5766D0FC81A950444 /* Pods_Kick_StarterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5762F79093198313CC0E7306 /* Pods_Kick_StarterTests.framework */; };
+		E4E7CD5752F1810A4AF5730E /* Pods_Kick_Starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C60F8FE911B8583629754DD /* Pods_Kick_Starter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		27B0765A2754182E007CD1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C90165270AED4300FAE650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B076572754182E007CD1CB;
+			remoteInfo = "TeamInformationWatch WatchKit Extension";
+		};
+		27B0766E27541831007CD1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C90165270AED4300FAE650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B076572754182E007CD1CB;
+			remoteInfo = "TeamInformationWatch WatchKit Extension";
+		};
+		27B0767827541831007CD1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C90165270AED4300FAE650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B0764C27541828007CD1CB;
+			remoteInfo = TeamInformationWatch;
+		};
+		27B0767F27541831007CD1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C90165270AED4300FAE650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B0764C27541828007CD1CB;
+			remoteInfo = TeamInformationWatch;
+		};
 		27C90184270AED4700FAE650 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27C90165270AED4300FAE650 /* Project object */;
@@ -82,8 +123,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		27B0768227541831007CD1CB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				27B0768127541831007CD1CB /* TeamInformationWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B0768527541831007CD1CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27B076592754182E007CD1CB /* TeamInformationWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		260F52CC4E6BEEF24967B12F /* Pods-Kick-StarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-StarterTests.debug.xcconfig"; path = "Target Support Files/Pods-Kick-StarterTests/Pods-Kick-StarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		00913A5E69A12D2FF1DB064C /* Pods-Kick-StarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-StarterTests.debug.xcconfig"; path = "Target Support Files/Pods-Kick-StarterTests/Pods-Kick-StarterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		272F3136270DBBB000C467DA /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		272F3138270EFBBA00C467DA /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
 		272F313A270EFF5500C467DA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -95,6 +161,7 @@
 		2739420827439A1E0087315F /* DisplayPlayersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPlayersCollectionViewCell.swift; sourceTree = "<group>"; };
 		2739420D2743E6500087315F /* DisplayCoachesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCoachesViewController.swift; sourceTree = "<group>"; };
 		273942192743EA140087315F /* DisplayCoachesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCoachesTableViewCell.swift; sourceTree = "<group>"; };
+		273B364327563DFE004D69D4 /* WKInterfaceImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKInterfaceImage + Extension.swift"; sourceTree = "<group>"; };
 		279023E82738D6490086012E /* fixtures.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fixtures.html; sourceTree = "<group>"; };
 		279023E92738D6490086012E /* livescores.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = livescores.html; sourceTree = "<group>"; };
 		279023EA2738D6490086012E /* single fixture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "single fixture.html"; sourceTree = "<group>"; };
@@ -123,6 +190,22 @@
 		27A2286627215B4700686D91 /* LeagueRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepositable.swift; sourceTree = "<group>"; };
 		27A2286F27217F4500686D91 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		27A22875272973BD00686D91 /* LeagueViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModelTests.swift; sourceTree = "<group>"; };
+		27B0764D27541828007CD1CB /* TeamInformationWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamInformationWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B0765027541828007CD1CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		27B076522754182D007CD1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27B076582754182E007CD1CB /* TeamInformationWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TeamInformationWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B0765D2754182E007CD1CB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		27B0765F2754182E007CD1CB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		27B076612754182E007CD1CB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		27B076632754182E007CD1CB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		27B0766527541831007CD1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27B0766727541831007CD1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B0766827541831007CD1CB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		27B0766D27541831007CD1CB /* TeamInformationWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamInformationWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B0767127541831007CD1CB /* TeamInformationWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInformationWatchTests.swift; sourceTree = "<group>"; };
+		27B0767727541831007CD1CB /* TeamInformationWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamInformationWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B0767B27541831007CD1CB /* TeamInformationWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInformationWatchUITests.swift; sourceTree = "<group>"; };
+		27B0767D27541831007CD1CB /* TeamInformationWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInformationWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		27C9016D270AED4300FAE650 /* Kick-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C90170270AED4300FAE650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C90172270AED4300FAE650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,22 +221,43 @@
 		27C901A5270B46D100FAE650 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		27C901B3270C540900FAE650 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27C901BA270C837A00FAE650 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		2EF4978F05DEEB871E0B312A /* Pods_Kick_Starter_Kick_StarterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kick_Starter_Kick_StarterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E441C46B72F6A00083223D8 /* Pods-Kick-Starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter.debug.xcconfig"; path = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter.debug.xcconfig"; sourceTree = "<group>"; };
-		5EF6F307E457E877BCFCD216 /* Pods_Kick_Starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kick_Starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		976E31F97150890D273A9C85 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig"; path = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C2F6A0835FF142601E828ECA /* Pods-Kick-Starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter.release.xcconfig"; path = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter.release.xcconfig"; sourceTree = "<group>"; };
-		C69E21CCA73834A69E77CDF2 /* Pods_Kick_StarterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kick_StarterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E47D792EA21D4262D94D44FC /* Pods-Kick-StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-StarterTests.release.xcconfig"; path = "Target Support Files/Pods-Kick-StarterTests/Pods-Kick-StarterTests.release.xcconfig"; sourceTree = "<group>"; };
-		F7E3D52AC24DF844D8CC5ACD /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AA23E371D9C52425F893427 /* Pods-Kick-Starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter.release.xcconfig"; path = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter.release.xcconfig"; sourceTree = "<group>"; };
+		34AD2679D73F8CE194E3E5F7 /* Pods-Kick-Starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter.debug.xcconfig"; path = "Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter.debug.xcconfig"; sourceTree = "<group>"; };
+		4BF3F8E239AD527417783AC9 /* Pods_Kick_Starter_Kick_StarterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kick_Starter_Kick_StarterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5762F79093198313CC0E7306 /* Pods_Kick_StarterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kick_StarterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750B5B41735A8B3375615E01 /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C60F8FE911B8583629754DD /* Pods_Kick_Starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kick_Starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72DFA94FC3ADC1DFA5468C4 /* Pods-Kick-StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-StarterTests.release.xcconfig"; path = "Target Support Files/Pods-Kick-StarterTests/Pods-Kick-StarterTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4FB5672A0C5B83E57D2EC52 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig"; path = "Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27B076552754182E007CD1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B0766A27541831007CD1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B0767427541831007CD1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27C9016A270AED4300FAE650 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2FB50FC16C6D264FCA67A7 /* Pods_Kick_Starter.framework in Frameworks */,
+				E4E7CD5752F1810A4AF5730E /* Pods_Kick_Starter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB530AE3EB240E066A12768 /* Pods_Kick_StarterTests.framework in Frameworks */,
+				E1C1D4B5766D0FC81A950444 /* Pods_Kick_StarterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1583CAF0767942A2650C44 /* Pods_Kick_Starter_Kick_StarterUITests.framework in Frameworks */,
+				A6D37ACDDFEDCD95F69ECC65 /* Pods_Kick_Starter_Kick_StarterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,15 +491,60 @@
 			path = "Display Results";
 			sourceTree = "<group>";
 		};
+		27B0764E27541828007CD1CB /* TeamInformationWatch */ = {
+			isa = PBXGroup;
+			children = (
+				27B0764F27541828007CD1CB /* Interface.storyboard */,
+				27B076522754182D007CD1CB /* Assets.xcassets */,
+			);
+			path = TeamInformationWatch;
+			sourceTree = "<group>";
+		};
+		27B0765C2754182E007CD1CB /* TeamInformationWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				27B0765D2754182E007CD1CB /* InterfaceController.swift */,
+				27B0765F2754182E007CD1CB /* ExtensionDelegate.swift */,
+				27B076612754182E007CD1CB /* NotificationController.swift */,
+				27B076632754182E007CD1CB /* ComplicationController.swift */,
+				27B0766527541831007CD1CB /* Assets.xcassets */,
+				27B0766727541831007CD1CB /* Info.plist */,
+				27B0766827541831007CD1CB /* PushNotificationPayload.apns */,
+				273B364327563DFE004D69D4 /* WKInterfaceImage + Extension.swift */,
+			);
+			path = "TeamInformationWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		27B0767027541831007CD1CB /* TeamInformationWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				27B0767127541831007CD1CB /* TeamInformationWatchTests.swift */,
+			);
+			path = TeamInformationWatchTests;
+			sourceTree = "<group>";
+		};
+		27B0767A27541831007CD1CB /* TeamInformationWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27B0767B27541831007CD1CB /* TeamInformationWatchUITests.swift */,
+				27B0767D27541831007CD1CB /* TeamInformationWatchUITestsLaunchTests.swift */,
+			);
+			path = TeamInformationWatchUITests;
+			sourceTree = "<group>";
+		};
 		27C90164270AED4300FAE650 = {
 			isa = PBXGroup;
 			children = (
 				27C9016F270AED4300FAE650 /* Kick-Starter */,
 				27C90186270AED4700FAE650 /* Kick-StarterTests */,
 				27C90190270AED4700FAE650 /* Kick-StarterUITests */,
+				27B0764E27541828007CD1CB /* TeamInformationWatch */,
+				27B0765C2754182E007CD1CB /* TeamInformationWatch WatchKit Extension */,
+				27B0767027541831007CD1CB /* TeamInformationWatchTests */,
+				27B0767A27541831007CD1CB /* TeamInformationWatchUITests */,
 				27C9016E270AED4300FAE650 /* Products */,
 				4494011CBB1A21DA9118F992 /* Pods */,
-				74480FEA28568A3C9459B7D5 /* Frameworks */,
+				5521A1CDA9A97E4F51515334 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -405,6 +554,10 @@
 				27C9016D270AED4300FAE650 /* Kick-Starter.app */,
 				27C90183270AED4700FAE650 /* Kick-StarterTests.xctest */,
 				27C9018D270AED4700FAE650 /* Kick-StarterUITests.xctest */,
+				27B0764D27541828007CD1CB /* TeamInformationWatch.app */,
+				27B076582754182E007CD1CB /* TeamInformationWatch WatchKit Extension.appex */,
+				27B0766D27541831007CD1CB /* TeamInformationWatchTests.xctest */,
+				27B0767727541831007CD1CB /* TeamInformationWatchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -481,22 +634,22 @@
 		4494011CBB1A21DA9118F992 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E441C46B72F6A00083223D8 /* Pods-Kick-Starter.debug.xcconfig */,
-				C2F6A0835FF142601E828ECA /* Pods-Kick-Starter.release.xcconfig */,
-				F7E3D52AC24DF844D8CC5ACD /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */,
-				976E31F97150890D273A9C85 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */,
-				260F52CC4E6BEEF24967B12F /* Pods-Kick-StarterTests.debug.xcconfig */,
-				E47D792EA21D4262D94D44FC /* Pods-Kick-StarterTests.release.xcconfig */,
+				34AD2679D73F8CE194E3E5F7 /* Pods-Kick-Starter.debug.xcconfig */,
+				2AA23E371D9C52425F893427 /* Pods-Kick-Starter.release.xcconfig */,
+				750B5B41735A8B3375615E01 /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */,
+				F4FB5672A0C5B83E57D2EC52 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */,
+				00913A5E69A12D2FF1DB064C /* Pods-Kick-StarterTests.debug.xcconfig */,
+				D72DFA94FC3ADC1DFA5468C4 /* Pods-Kick-StarterTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		74480FEA28568A3C9459B7D5 /* Frameworks */ = {
+		5521A1CDA9A97E4F51515334 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5EF6F307E457E877BCFCD216 /* Pods_Kick_Starter.framework */,
-				2EF4978F05DEEB871E0B312A /* Pods_Kick_Starter_Kick_StarterUITests.framework */,
-				C69E21CCA73834A69E77CDF2 /* Pods_Kick_StarterTests.framework */,
+				8C60F8FE911B8583629754DD /* Pods_Kick_Starter.framework */,
+				4BF3F8E239AD527417783AC9 /* Pods_Kick_Starter_Kick_StarterUITests.framework */,
+				5762F79093198313CC0E7306 /* Pods_Kick_StarterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -504,20 +657,92 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27C9016C270AED4300FAE650 /* Kick-Starter */ = {
+		27B0764C27541828007CD1CB /* TeamInformationWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27C90197270AED4700FAE650 /* Build configuration list for PBXNativeTarget "Kick-Starter" */;
+			buildConfigurationList = 27B0768D27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatch" */;
 			buildPhases = (
-				6192C69DD3A3A2E2A3010D63 /* [CP] Check Pods Manifest.lock */,
-				27C90169270AED4300FAE650 /* Sources */,
-				27C9016A270AED4300FAE650 /* Frameworks */,
-				27C9016B270AED4300FAE650 /* Resources */,
-				27C901A4270B463800FAE650 /* ShellScript */,
-				398C3FF53D951797BEE8044B /* [CP] Embed Pods Frameworks */,
+				27B0764B27541828007CD1CB /* Resources */,
+				27B0768527541831007CD1CB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27B0765B2754182E007CD1CB /* PBXTargetDependency */,
+			);
+			name = TeamInformationWatch;
+			productName = TeamInformationWatch;
+			productReference = 27B0764D27541828007CD1CB /* TeamInformationWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		27B076572754182E007CD1CB /* TeamInformationWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B0768C27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatch WatchKit Extension" */;
+			buildPhases = (
+				27B076542754182E007CD1CB /* Sources */,
+				27B076552754182E007CD1CB /* Frameworks */,
+				27B076562754182E007CD1CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TeamInformationWatch WatchKit Extension";
+			productName = "TeamInformationWatch WatchKit Extension";
+			productReference = 27B076582754182E007CD1CB /* TeamInformationWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		27B0766C27541831007CD1CB /* TeamInformationWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B0768E27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatchTests" */;
+			buildPhases = (
+				27B0766927541831007CD1CB /* Sources */,
+				27B0766A27541831007CD1CB /* Frameworks */,
+				27B0766B27541831007CD1CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B0766F27541831007CD1CB /* PBXTargetDependency */,
+			);
+			name = TeamInformationWatchTests;
+			productName = TeamInformationWatchTests;
+			productReference = 27B0766D27541831007CD1CB /* TeamInformationWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27B0767627541831007CD1CB /* TeamInformationWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B0768F27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatchUITests" */;
+			buildPhases = (
+				27B0767327541831007CD1CB /* Sources */,
+				27B0767427541831007CD1CB /* Frameworks */,
+				27B0767527541831007CD1CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B0767927541831007CD1CB /* PBXTargetDependency */,
+			);
+			name = TeamInformationWatchUITests;
+			productName = TeamInformationWatchUITests;
+			productReference = 27B0767727541831007CD1CB /* TeamInformationWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		27C9016C270AED4300FAE650 /* Kick-Starter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C90197270AED4700FAE650 /* Build configuration list for PBXNativeTarget "Kick-Starter" */;
+			buildPhases = (
+				1B750FE92D01F41EB23F689E /* [CP] Check Pods Manifest.lock */,
+				27C90169270AED4300FAE650 /* Sources */,
+				27C9016A270AED4300FAE650 /* Frameworks */,
+				27C9016B270AED4300FAE650 /* Resources */,
+				27C901A4270B463800FAE650 /* ShellScript */,
+				27B0768227541831007CD1CB /* Embed Watch Content */,
+				03E2B872BC151A1C04386ABF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B0768027541831007CD1CB /* PBXTargetDependency */,
 			);
 			name = "Kick-Starter";
 			productName = "Kick-Starter";
@@ -528,7 +753,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27C9019A270AED4700FAE650 /* Build configuration list for PBXNativeTarget "Kick-StarterTests" */;
 			buildPhases = (
-				774489DBD069F80FFD666850 /* [CP] Check Pods Manifest.lock */,
+				E68B3F032A45A2E82B258DF9 /* [CP] Check Pods Manifest.lock */,
 				27C9017F270AED4700FAE650 /* Sources */,
 				27C90180270AED4700FAE650 /* Frameworks */,
 				27C90181270AED4700FAE650 /* Resources */,
@@ -547,11 +772,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27C9019D270AED4700FAE650 /* Build configuration list for PBXNativeTarget "Kick-StarterUITests" */;
 			buildPhases = (
-				96E21A61EF069355DEFFDBDD /* [CP] Check Pods Manifest.lock */,
+				8B822E4E806FCC591E83955B /* [CP] Check Pods Manifest.lock */,
 				27C90189270AED4700FAE650 /* Sources */,
 				27C9018A270AED4700FAE650 /* Frameworks */,
 				27C9018B270AED4700FAE650 /* Resources */,
-				56D81EBBC59886266A84FC10 /* [CP] Embed Pods Frameworks */,
+				069F3F12B7CB3D7722FCF878 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -570,9 +795,23 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					27B0764C27541828007CD1CB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					27B076572754182E007CD1CB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					27B0766C27541831007CD1CB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 27B076572754182E007CD1CB;
+					};
+					27B0767627541831007CD1CB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 27B0764C27541828007CD1CB;
+					};
 					27C9016C270AED4300FAE650 = {
 						CreatedOnToolsVersion = 13.0;
 						LastSwiftMigration = 1300;
@@ -603,11 +842,46 @@
 				27C9016C270AED4300FAE650 /* Kick-Starter */,
 				27C90182270AED4700FAE650 /* Kick-StarterTests */,
 				27C9018C270AED4700FAE650 /* Kick-StarterUITests */,
+				27B0764C27541828007CD1CB /* TeamInformationWatch */,
+				27B076572754182E007CD1CB /* TeamInformationWatch WatchKit Extension */,
+				27B0766C27541831007CD1CB /* TeamInformationWatchTests */,
+				27B0767627541831007CD1CB /* TeamInformationWatchUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		27B0764B27541828007CD1CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B076532754182D007CD1CB /* Assets.xcassets in Resources */,
+				27B0765127541828007CD1CB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B076562754182E007CD1CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B0766627541831007CD1CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B0766B27541831007CD1CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B0767527541831007CD1CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27C9016B270AED4300FAE650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -642,24 +916,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27C901A4270B463800FAE650 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		398C3FF53D951797BEE8044B /* [CP] Embed Pods Frameworks */ = {
+		03E2B872BC151A1C04386ABF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -676,7 +933,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kick-Starter/Pods-Kick-Starter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		56D81EBBC59886266A84FC10 /* [CP] Embed Pods Frameworks */ = {
+		069F3F12B7CB3D7722FCF878 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -693,7 +950,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kick-Starter-Kick-StarterUITests/Pods-Kick-Starter-Kick-StarterUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6192C69DD3A3A2E2A3010D63 /* [CP] Check Pods Manifest.lock */ = {
+		1B750FE92D01F41EB23F689E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -715,7 +972,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		774489DBD069F80FFD666850 /* [CP] Check Pods Manifest.lock */ = {
+		27C901A4270B463800FAE650 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -723,21 +980,16 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Kick-StarterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		96E21A61EF069355DEFFDBDD /* [CP] Check Pods Manifest.lock */ = {
+		8B822E4E806FCC591E83955B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -759,9 +1011,60 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E68B3F032A45A2E82B258DF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kick-StarterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		27B076542754182E007CD1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273B364427563DFE004D69D4 /* WKInterfaceImage + Extension.swift in Sources */,
+				27B076622754182E007CD1CB /* NotificationController.swift in Sources */,
+				27B076642754182E007CD1CB /* ComplicationController.swift in Sources */,
+				27B076602754182E007CD1CB /* ExtensionDelegate.swift in Sources */,
+				27B0765E2754182E007CD1CB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B0766927541831007CD1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B0767227541831007CD1CB /* TeamInformationWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B0767327541831007CD1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B0767E27541831007CD1CB /* TeamInformationWatchUITestsLaunchTests.swift in Sources */,
+				27B0767C27541831007CD1CB /* TeamInformationWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27C90169270AED4300FAE650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -829,6 +1132,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		27B0765B2754182E007CD1CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B076572754182E007CD1CB /* TeamInformationWatch WatchKit Extension */;
+			targetProxy = 27B0765A2754182E007CD1CB /* PBXContainerItemProxy */;
+		};
+		27B0766F27541831007CD1CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B076572754182E007CD1CB /* TeamInformationWatch WatchKit Extension */;
+			targetProxy = 27B0766E27541831007CD1CB /* PBXContainerItemProxy */;
+		};
+		27B0767927541831007CD1CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B0764C27541828007CD1CB /* TeamInformationWatch */;
+			targetProxy = 27B0767827541831007CD1CB /* PBXContainerItemProxy */;
+		};
+		27B0768027541831007CD1CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B0764C27541828007CD1CB /* TeamInformationWatch */;
+			targetProxy = 27B0767F27541831007CD1CB /* PBXContainerItemProxy */;
+		};
 		27C90185270AED4700FAE650 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 27C9016C270AED4300FAE650 /* Kick-Starter */;
@@ -842,6 +1165,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		27B0764F27541828007CD1CB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B0765027541828007CD1CB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		27C90176270AED4300FAE650 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -861,6 +1192,210 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		27B0768327541831007CD1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TeamInformationWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = TeamInformationWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.an.Kick-Starter";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		27B0768427541831007CD1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TeamInformationWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = TeamInformationWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.an.Kick-Starter";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		27B0768627541831007CD1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TeamInformationWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TeamInformationWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		27B0768727541831007CD1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TeamInformationWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TeamInformationWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		27B0768827541831007CD1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.TeamInformationWatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeamInformationWatch WatchKit Extension.appex/TeamInformationWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		27B0768927541831007CD1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.TeamInformationWatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeamInformationWatch WatchKit Extension.appex/TeamInformationWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		27B0768A27541831007CD1CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.TeamInformationWatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = TeamInformationWatch;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		27B0768B27541831007CD1CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.an.Kick-Starter.TeamInformationWatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = TeamInformationWatch;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 		27C90195270AED4700FAE650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -981,7 +1516,7 @@
 		};
 		27C90198270AED4700FAE650 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E441C46B72F6A00083223D8 /* Pods-Kick-Starter.debug.xcconfig */;
+			baseConfigurationReference = 34AD2679D73F8CE194E3E5F7 /* Pods-Kick-Starter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1013,7 +1548,7 @@
 		};
 		27C90199270AED4700FAE650 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2F6A0835FF142601E828ECA /* Pods-Kick-Starter.release.xcconfig */;
+			baseConfigurationReference = 2AA23E371D9C52425F893427 /* Pods-Kick-Starter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1044,7 +1579,7 @@
 		};
 		27C9019B270AED4700FAE650 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 260F52CC4E6BEEF24967B12F /* Pods-Kick-StarterTests.debug.xcconfig */;
+			baseConfigurationReference = 00913A5E69A12D2FF1DB064C /* Pods-Kick-StarterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1071,7 +1606,7 @@
 		};
 		27C9019C270AED4700FAE650 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E47D792EA21D4262D94D44FC /* Pods-Kick-StarterTests.release.xcconfig */;
+			baseConfigurationReference = D72DFA94FC3ADC1DFA5468C4 /* Pods-Kick-StarterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1098,7 +1633,7 @@
 		};
 		27C9019E270AED4700FAE650 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E3D52AC24DF844D8CC5ACD /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */;
+			baseConfigurationReference = 750B5B41735A8B3375615E01 /* Pods-Kick-Starter-Kick-StarterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1121,7 +1656,7 @@
 		};
 		27C9019F270AED4700FAE650 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 976E31F97150890D273A9C85 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */;
+			baseConfigurationReference = F4FB5672A0C5B83E57D2EC52 /* Pods-Kick-Starter-Kick-StarterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1145,6 +1680,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27B0768C27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B0768627541831007CD1CB /* Debug */,
+				27B0768727541831007CD1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B0768D27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B0768327541831007CD1CB /* Debug */,
+				27B0768427541831007CD1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B0768E27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B0768827541831007CD1CB /* Debug */,
+				27B0768927541831007CD1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B0768F27541831007CD1CB /* Build configuration list for PBXNativeTarget "TeamInformationWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B0768A27541831007CD1CB /* Debug */,
+				27B0768B27541831007CD1CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		27C90168270AED4300FAE650 /* Build configuration list for PBXProject "Kick-Starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
