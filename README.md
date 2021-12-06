@@ -69,15 +69,15 @@ Upon clicking on a certain league, all the teams within that league are displaye
 
 The user may select a team to view the coaches of that team, the stadium of the team or the current squad of the team. The team that is selected is also displayed on the watch application that accompanies Kick-Starter.
 
-![Uploading Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14.42.35.png…]()
+![Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14 42 35](https://user-images.githubusercontent.com/79845386/144856642-56708488-5caf-474f-9b4b-089e8b8278ca.png)
 
 ![Simulator Screen Shot - Apple Watch Series 7 - 45mm - 2021-12-06 at 14 42 30](https://user-images.githubusercontent.com/79845386/144849802-95e506dd-5b1a-44f6-9d57-1e39ec6fcf36.png)
 
-![Uploading Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14.42.35.png…]()
+![Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14 43 10](https://user-images.githubusercontent.com/79845386/144856685-01ce7ee3-6ce9-486e-ab86-d31cbb20771a.png)
 
-![Uploading Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14.43.10.png…]()
+![Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14 43 15](https://user-images.githubusercontent.com/79845386/144856710-f6cbcddf-2467-4a8c-ad80-bef9d8e18fe9.png)
 
-![Uploading Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14.43.15.png…]()
+![Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14 43 28](https://user-images.githubusercontent.com/79845386/144856735-31ac96ec-a4d6-4c2c-84c0-9967c21b18d5.png)
 
-![Uploading Simulator Screen Shot - iPhone 13 - 2021-12-06 at 14.43.28.png…]()
+
 
