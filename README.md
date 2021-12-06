@@ -30,3 +30,4 @@ Kick-Starter is an iOS application that displays information about football team
 ## Development pods
 
 - Logic for certain functionalities has been extracted into a framework. The development pod used can be found here: https://github.com/AbdullahNanaDVT/KickStarterFramework.git
+- Please run 'pod install' after cloning the project in order to download the dependencies from the framework.
